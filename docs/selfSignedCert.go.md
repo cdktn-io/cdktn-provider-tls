@@ -1,28 +1,28 @@
-# `selfSignedCert` Submodule <a name="`selfSignedCert` Submodule" id="@cdktf/provider-tls.selfSignedCert"></a>
+# `selfSignedCert` Submodule <a name="`selfSignedCert` Submodule" id="@cdktn/provider-tls.selfSignedCert"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### SelfSignedCert <a name="SelfSignedCert" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert"></a>
+### SelfSignedCert <a name="SelfSignedCert" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/self_signed_cert tls_self_signed_cert}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/selfsignedcert"
 
 selfsignedcert.NewSelfSignedCert(scope Construct, id *string, config SelfSignedCertConfig) SelfSignedCert
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig">SelfSignedCertConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig">SelfSignedCertConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig">SelfSignedCertConfig</a>
+- *Type:* <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig">SelfSignedCertConfig</a>
 
 ---
 
@@ -50,42 +50,42 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.putSubject">PutSubject</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetDnsNames">ResetDnsNames</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetEarlyRenewalHours">ResetEarlyRenewalHours</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetIpAddresses">ResetIpAddresses</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetIsCaCertificate">ResetIsCaCertificate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetSetAuthorityKeyId">ResetSetAuthorityKeyId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetSetSubjectKeyId">ResetSetSubjectKeyId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetSubject">ResetSubject</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetUris">ResetUris</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.putSubject">PutSubject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetDnsNames">ResetDnsNames</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetEarlyRenewalHours">ResetEarlyRenewalHours</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetIpAddresses">ResetIpAddresses</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetIsCaCertificate">ResetIsCaCertificate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetSetAuthorityKeyId">ResetSetAuthorityKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetSetSubjectKeyId">ResetSetSubjectKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetSubject">ResetSubject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetUris">ResetUris</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.toString"></a>
 
 ```go
 func ToString() *string
@@ -93,25 +93,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -119,7 +119,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -127,7 +127,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -135,19 +135,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -155,7 +155,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -163,7 +163,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -171,151 +171,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -325,7 +325,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -333,7 +333,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -341,7 +341,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -357,7 +357,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -365,7 +365,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -373,61 +373,61 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutSubject` <a name="PutSubject" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.putSubject"></a>
+##### `PutSubject` <a name="PutSubject" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.putSubject"></a>
 
 ```go
 func PutSubject(value interface{})
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.putSubject.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.putSubject.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `ResetDnsNames` <a name="ResetDnsNames" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetDnsNames"></a>
+##### `ResetDnsNames` <a name="ResetDnsNames" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetDnsNames"></a>
 
 ```go
 func ResetDnsNames()
 ```
 
-##### `ResetEarlyRenewalHours` <a name="ResetEarlyRenewalHours" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetEarlyRenewalHours"></a>
+##### `ResetEarlyRenewalHours` <a name="ResetEarlyRenewalHours" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetEarlyRenewalHours"></a>
 
 ```go
 func ResetEarlyRenewalHours()
 ```
 
-##### `ResetIpAddresses` <a name="ResetIpAddresses" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetIpAddresses"></a>
+##### `ResetIpAddresses` <a name="ResetIpAddresses" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetIpAddresses"></a>
 
 ```go
 func ResetIpAddresses()
 ```
 
-##### `ResetIsCaCertificate` <a name="ResetIsCaCertificate" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetIsCaCertificate"></a>
+##### `ResetIsCaCertificate` <a name="ResetIsCaCertificate" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetIsCaCertificate"></a>
 
 ```go
 func ResetIsCaCertificate()
 ```
 
-##### `ResetSetAuthorityKeyId` <a name="ResetSetAuthorityKeyId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetSetAuthorityKeyId"></a>
+##### `ResetSetAuthorityKeyId` <a name="ResetSetAuthorityKeyId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetSetAuthorityKeyId"></a>
 
 ```go
 func ResetSetAuthorityKeyId()
 ```
 
-##### `ResetSetSubjectKeyId` <a name="ResetSetSubjectKeyId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetSetSubjectKeyId"></a>
+##### `ResetSetSubjectKeyId` <a name="ResetSetSubjectKeyId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetSetSubjectKeyId"></a>
 
 ```go
 func ResetSetSubjectKeyId()
 ```
 
-##### `ResetSubject` <a name="ResetSubject" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetSubject"></a>
+##### `ResetSubject` <a name="ResetSubject" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetSubject"></a>
 
 ```go
 func ResetSubject()
 ```
 
-##### `ResetUris` <a name="ResetUris" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.resetUris"></a>
+##### `ResetUris` <a name="ResetUris" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.resetUris"></a>
 
 ```go
 func ResetUris()
@@ -437,17 +437,17 @@ func ResetUris()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a SelfSignedCert resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a SelfSignedCert resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/selfsignedcert"
 
 selfsignedcert.SelfSignedCert_IsConstruct(x interface{}) *bool
 ```
@@ -468,7 +468,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -476,45 +476,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/selfsignedcert"
 
 selfsignedcert.SelfSignedCert_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/selfsignedcert"
 
 selfsignedcert.SelfSignedCert_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/selfsignedcert"
 
 selfsignedcert.SelfSignedCert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a SelfSignedCert resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -522,7 +522,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the SelfSignedCert to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -540,7 +540,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -552,52 +552,52 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.certPem">CertPem</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.keyAlgorithm">KeyAlgorithm</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.readyForRenewal">ReadyForRenewal</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.subject">Subject</a></code> | <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList">SelfSignedCertSubjectList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.validityEndTime">ValidityEndTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.validityStartTime">ValidityStartTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.allowedUsesInput">AllowedUsesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.dnsNamesInput">DnsNamesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.earlyRenewalHoursInput">EarlyRenewalHoursInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.ipAddressesInput">IpAddressesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.isCaCertificateInput">IsCaCertificateInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.privateKeyPemInput">PrivateKeyPemInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.setAuthorityKeyIdInput">SetAuthorityKeyIdInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.setSubjectKeyIdInput">SetSubjectKeyIdInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.subjectInput">SubjectInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.urisInput">UrisInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.validityPeriodHoursInput">ValidityPeriodHoursInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.allowedUses">AllowedUses</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.dnsNames">DnsNames</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.earlyRenewalHours">EarlyRenewalHours</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.ipAddresses">IpAddresses</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.isCaCertificate">IsCaCertificate</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.privateKeyPem">PrivateKeyPem</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.setAuthorityKeyId">SetAuthorityKeyId</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.setSubjectKeyId">SetSubjectKeyId</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.uris">Uris</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.validityPeriodHours">ValidityPeriodHours</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.certPem">CertPem</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.keyAlgorithm">KeyAlgorithm</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.readyForRenewal">ReadyForRenewal</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.subject">Subject</a></code> | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList">SelfSignedCertSubjectList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.validityEndTime">ValidityEndTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.validityStartTime">ValidityStartTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.allowedUsesInput">AllowedUsesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.dnsNamesInput">DnsNamesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.earlyRenewalHoursInput">EarlyRenewalHoursInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.ipAddressesInput">IpAddressesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.isCaCertificateInput">IsCaCertificateInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.privateKeyPemInput">PrivateKeyPemInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setAuthorityKeyIdInput">SetAuthorityKeyIdInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setSubjectKeyIdInput">SetSubjectKeyIdInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.subjectInput">SubjectInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.urisInput">UrisInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.validityPeriodHoursInput">ValidityPeriodHoursInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.allowedUses">AllowedUses</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.dnsNames">DnsNames</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.earlyRenewalHours">EarlyRenewalHours</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.ipAddresses">IpAddresses</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.isCaCertificate">IsCaCertificate</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.privateKeyPem">PrivateKeyPem</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setAuthorityKeyId">SetAuthorityKeyId</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setSubjectKeyId">SetSubjectKeyId</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.uris">Uris</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.validityPeriodHours">ValidityPeriodHours</a></code> | <code>*f64</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.node"></a>
 
 ```go
 func Node() Node
@@ -609,7 +609,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -619,7 +619,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -629,7 +629,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -639,7 +639,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -649,7 +649,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -659,7 +659,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -669,7 +669,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -679,7 +679,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -689,7 +689,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -699,7 +699,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -709,7 +709,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -719,7 +719,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -729,7 +729,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -739,7 +739,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `CertPem`<sup>Required</sup> <a name="CertPem" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.certPem"></a>
+##### `CertPem`<sup>Required</sup> <a name="CertPem" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.certPem"></a>
 
 ```go
 func CertPem() *string
@@ -749,7 +749,7 @@ func CertPem() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.id"></a>
 
 ```go
 func Id() *string
@@ -759,7 +759,7 @@ func Id() *string
 
 ---
 
-##### `KeyAlgorithm`<sup>Required</sup> <a name="KeyAlgorithm" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.keyAlgorithm"></a>
+##### `KeyAlgorithm`<sup>Required</sup> <a name="KeyAlgorithm" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.keyAlgorithm"></a>
 
 ```go
 func KeyAlgorithm() *string
@@ -769,7 +769,7 @@ func KeyAlgorithm() *string
 
 ---
 
-##### `ReadyForRenewal`<sup>Required</sup> <a name="ReadyForRenewal" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.readyForRenewal"></a>
+##### `ReadyForRenewal`<sup>Required</sup> <a name="ReadyForRenewal" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.readyForRenewal"></a>
 
 ```go
 func ReadyForRenewal() IResolvable
@@ -779,17 +779,17 @@ func ReadyForRenewal() IResolvable
 
 ---
 
-##### `Subject`<sup>Required</sup> <a name="Subject" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.subject"></a>
+##### `Subject`<sup>Required</sup> <a name="Subject" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.subject"></a>
 
 ```go
 func Subject() SelfSignedCertSubjectList
 ```
 
-- *Type:* <a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList">SelfSignedCertSubjectList</a>
+- *Type:* <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList">SelfSignedCertSubjectList</a>
 
 ---
 
-##### `ValidityEndTime`<sup>Required</sup> <a name="ValidityEndTime" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.validityEndTime"></a>
+##### `ValidityEndTime`<sup>Required</sup> <a name="ValidityEndTime" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.validityEndTime"></a>
 
 ```go
 func ValidityEndTime() *string
@@ -799,7 +799,7 @@ func ValidityEndTime() *string
 
 ---
 
-##### `ValidityStartTime`<sup>Required</sup> <a name="ValidityStartTime" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.validityStartTime"></a>
+##### `ValidityStartTime`<sup>Required</sup> <a name="ValidityStartTime" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.validityStartTime"></a>
 
 ```go
 func ValidityStartTime() *string
@@ -809,7 +809,7 @@ func ValidityStartTime() *string
 
 ---
 
-##### `AllowedUsesInput`<sup>Optional</sup> <a name="AllowedUsesInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.allowedUsesInput"></a>
+##### `AllowedUsesInput`<sup>Optional</sup> <a name="AllowedUsesInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.allowedUsesInput"></a>
 
 ```go
 func AllowedUsesInput() *[]*string
@@ -819,7 +819,7 @@ func AllowedUsesInput() *[]*string
 
 ---
 
-##### `DnsNamesInput`<sup>Optional</sup> <a name="DnsNamesInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.dnsNamesInput"></a>
+##### `DnsNamesInput`<sup>Optional</sup> <a name="DnsNamesInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.dnsNamesInput"></a>
 
 ```go
 func DnsNamesInput() *[]*string
@@ -829,7 +829,7 @@ func DnsNamesInput() *[]*string
 
 ---
 
-##### `EarlyRenewalHoursInput`<sup>Optional</sup> <a name="EarlyRenewalHoursInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.earlyRenewalHoursInput"></a>
+##### `EarlyRenewalHoursInput`<sup>Optional</sup> <a name="EarlyRenewalHoursInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.earlyRenewalHoursInput"></a>
 
 ```go
 func EarlyRenewalHoursInput() *f64
@@ -839,7 +839,7 @@ func EarlyRenewalHoursInput() *f64
 
 ---
 
-##### `IpAddressesInput`<sup>Optional</sup> <a name="IpAddressesInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.ipAddressesInput"></a>
+##### `IpAddressesInput`<sup>Optional</sup> <a name="IpAddressesInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.ipAddressesInput"></a>
 
 ```go
 func IpAddressesInput() *[]*string
@@ -849,7 +849,7 @@ func IpAddressesInput() *[]*string
 
 ---
 
-##### `IsCaCertificateInput`<sup>Optional</sup> <a name="IsCaCertificateInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.isCaCertificateInput"></a>
+##### `IsCaCertificateInput`<sup>Optional</sup> <a name="IsCaCertificateInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.isCaCertificateInput"></a>
 
 ```go
 func IsCaCertificateInput() interface{}
@@ -859,7 +859,7 @@ func IsCaCertificateInput() interface{}
 
 ---
 
-##### `PrivateKeyPemInput`<sup>Optional</sup> <a name="PrivateKeyPemInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.privateKeyPemInput"></a>
+##### `PrivateKeyPemInput`<sup>Optional</sup> <a name="PrivateKeyPemInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.privateKeyPemInput"></a>
 
 ```go
 func PrivateKeyPemInput() *string
@@ -869,7 +869,7 @@ func PrivateKeyPemInput() *string
 
 ---
 
-##### `SetAuthorityKeyIdInput`<sup>Optional</sup> <a name="SetAuthorityKeyIdInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.setAuthorityKeyIdInput"></a>
+##### `SetAuthorityKeyIdInput`<sup>Optional</sup> <a name="SetAuthorityKeyIdInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setAuthorityKeyIdInput"></a>
 
 ```go
 func SetAuthorityKeyIdInput() interface{}
@@ -879,7 +879,7 @@ func SetAuthorityKeyIdInput() interface{}
 
 ---
 
-##### `SetSubjectKeyIdInput`<sup>Optional</sup> <a name="SetSubjectKeyIdInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.setSubjectKeyIdInput"></a>
+##### `SetSubjectKeyIdInput`<sup>Optional</sup> <a name="SetSubjectKeyIdInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setSubjectKeyIdInput"></a>
 
 ```go
 func SetSubjectKeyIdInput() interface{}
@@ -889,7 +889,7 @@ func SetSubjectKeyIdInput() interface{}
 
 ---
 
-##### `SubjectInput`<sup>Optional</sup> <a name="SubjectInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.subjectInput"></a>
+##### `SubjectInput`<sup>Optional</sup> <a name="SubjectInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.subjectInput"></a>
 
 ```go
 func SubjectInput() interface{}
@@ -899,7 +899,7 @@ func SubjectInput() interface{}
 
 ---
 
-##### `UrisInput`<sup>Optional</sup> <a name="UrisInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.urisInput"></a>
+##### `UrisInput`<sup>Optional</sup> <a name="UrisInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.urisInput"></a>
 
 ```go
 func UrisInput() *[]*string
@@ -909,7 +909,7 @@ func UrisInput() *[]*string
 
 ---
 
-##### `ValidityPeriodHoursInput`<sup>Optional</sup> <a name="ValidityPeriodHoursInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.validityPeriodHoursInput"></a>
+##### `ValidityPeriodHoursInput`<sup>Optional</sup> <a name="ValidityPeriodHoursInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.validityPeriodHoursInput"></a>
 
 ```go
 func ValidityPeriodHoursInput() *f64
@@ -919,7 +919,7 @@ func ValidityPeriodHoursInput() *f64
 
 ---
 
-##### `AllowedUses`<sup>Required</sup> <a name="AllowedUses" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.allowedUses"></a>
+##### `AllowedUses`<sup>Required</sup> <a name="AllowedUses" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.allowedUses"></a>
 
 ```go
 func AllowedUses() *[]*string
@@ -929,7 +929,7 @@ func AllowedUses() *[]*string
 
 ---
 
-##### `DnsNames`<sup>Required</sup> <a name="DnsNames" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.dnsNames"></a>
+##### `DnsNames`<sup>Required</sup> <a name="DnsNames" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.dnsNames"></a>
 
 ```go
 func DnsNames() *[]*string
@@ -939,7 +939,7 @@ func DnsNames() *[]*string
 
 ---
 
-##### `EarlyRenewalHours`<sup>Required</sup> <a name="EarlyRenewalHours" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.earlyRenewalHours"></a>
+##### `EarlyRenewalHours`<sup>Required</sup> <a name="EarlyRenewalHours" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.earlyRenewalHours"></a>
 
 ```go
 func EarlyRenewalHours() *f64
@@ -949,7 +949,7 @@ func EarlyRenewalHours() *f64
 
 ---
 
-##### `IpAddresses`<sup>Required</sup> <a name="IpAddresses" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.ipAddresses"></a>
+##### `IpAddresses`<sup>Required</sup> <a name="IpAddresses" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.ipAddresses"></a>
 
 ```go
 func IpAddresses() *[]*string
@@ -959,7 +959,7 @@ func IpAddresses() *[]*string
 
 ---
 
-##### `IsCaCertificate`<sup>Required</sup> <a name="IsCaCertificate" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.isCaCertificate"></a>
+##### `IsCaCertificate`<sup>Required</sup> <a name="IsCaCertificate" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.isCaCertificate"></a>
 
 ```go
 func IsCaCertificate() interface{}
@@ -969,7 +969,7 @@ func IsCaCertificate() interface{}
 
 ---
 
-##### `PrivateKeyPem`<sup>Required</sup> <a name="PrivateKeyPem" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.privateKeyPem"></a>
+##### `PrivateKeyPem`<sup>Required</sup> <a name="PrivateKeyPem" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.privateKeyPem"></a>
 
 ```go
 func PrivateKeyPem() *string
@@ -979,7 +979,7 @@ func PrivateKeyPem() *string
 
 ---
 
-##### `SetAuthorityKeyId`<sup>Required</sup> <a name="SetAuthorityKeyId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.setAuthorityKeyId"></a>
+##### `SetAuthorityKeyId`<sup>Required</sup> <a name="SetAuthorityKeyId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setAuthorityKeyId"></a>
 
 ```go
 func SetAuthorityKeyId() interface{}
@@ -989,7 +989,7 @@ func SetAuthorityKeyId() interface{}
 
 ---
 
-##### `SetSubjectKeyId`<sup>Required</sup> <a name="SetSubjectKeyId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.setSubjectKeyId"></a>
+##### `SetSubjectKeyId`<sup>Required</sup> <a name="SetSubjectKeyId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setSubjectKeyId"></a>
 
 ```go
 func SetSubjectKeyId() interface{}
@@ -999,7 +999,7 @@ func SetSubjectKeyId() interface{}
 
 ---
 
-##### `Uris`<sup>Required</sup> <a name="Uris" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.uris"></a>
+##### `Uris`<sup>Required</sup> <a name="Uris" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.uris"></a>
 
 ```go
 func Uris() *[]*string
@@ -1009,7 +1009,7 @@ func Uris() *[]*string
 
 ---
 
-##### `ValidityPeriodHours`<sup>Required</sup> <a name="ValidityPeriodHours" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.validityPeriodHours"></a>
+##### `ValidityPeriodHours`<sup>Required</sup> <a name="ValidityPeriodHours" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.validityPeriodHours"></a>
 
 ```go
 func ValidityPeriodHours() *f64
@@ -1023,11 +1023,11 @@ func ValidityPeriodHours() *f64
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCert.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1039,12 +1039,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### SelfSignedCertConfig <a name="SelfSignedCertConfig" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig"></a>
+### SelfSignedCertConfig <a name="SelfSignedCertConfig" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/selfsignedcert"
 
 &selfsignedcert.SelfSignedCertConfig {
 	Connection: interface{},
@@ -1072,28 +1072,28 @@ import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.allowedUses">AllowedUses</a></code> | <code>*[]*string</code> | List of key usages allowed for the issued certificate. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.privateKeyPem">PrivateKeyPem</a></code> | <code>*string</code> | Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.validityPeriodHours">ValidityPeriodHours</a></code> | <code>*f64</code> | Number of hours, after initial issuing, that the certificate will remain valid for. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.dnsNames">DnsNames</a></code> | <code>*[]*string</code> | List of DNS names for which a certificate is being requested (i.e. certificate subjects). |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.earlyRenewalHours">EarlyRenewalHours</a></code> | <code>*f64</code> | The resource will consider the certificate to have expired the given number of hours before its actual expiry time. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.ipAddresses">IpAddresses</a></code> | <code>*[]*string</code> | List of IP addresses for which a certificate is being requested (i.e. certificate subjects). |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.isCaCertificate">IsCaCertificate</a></code> | <code>interface{}</code> | Is the generated certificate representing a Certificate Authority (CA) (default: `false`). |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.setAuthorityKeyId">SetAuthorityKeyId</a></code> | <code>interface{}</code> | Should the generated certificate include an [authority key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.1): for self-signed certificates this is the same value as the [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.setSubjectKeyId">SetSubjectKeyId</a></code> | <code>interface{}</code> | Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.subject">Subject</a></code> | <code>interface{}</code> | subject block. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.uris">Uris</a></code> | <code>*[]*string</code> | List of URIs for which a certificate is being requested (i.e. certificate subjects). |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.allowedUses">AllowedUses</a></code> | <code>*[]*string</code> | List of key usages allowed for the issued certificate. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.privateKeyPem">PrivateKeyPem</a></code> | <code>*string</code> | Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.validityPeriodHours">ValidityPeriodHours</a></code> | <code>*f64</code> | Number of hours, after initial issuing, that the certificate will remain valid for. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.dnsNames">DnsNames</a></code> | <code>*[]*string</code> | List of DNS names for which a certificate is being requested (i.e. certificate subjects). |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.earlyRenewalHours">EarlyRenewalHours</a></code> | <code>*f64</code> | The resource will consider the certificate to have expired the given number of hours before its actual expiry time. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.ipAddresses">IpAddresses</a></code> | <code>*[]*string</code> | List of IP addresses for which a certificate is being requested (i.e. certificate subjects). |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.isCaCertificate">IsCaCertificate</a></code> | <code>interface{}</code> | Is the generated certificate representing a Certificate Authority (CA) (default: `false`). |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.setAuthorityKeyId">SetAuthorityKeyId</a></code> | <code>interface{}</code> | Should the generated certificate include an [authority key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.1): for self-signed certificates this is the same value as the [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.setSubjectKeyId">SetSubjectKeyId</a></code> | <code>interface{}</code> | Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.subject">Subject</a></code> | <code>interface{}</code> | subject block. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.uris">Uris</a></code> | <code>*[]*string</code> | List of URIs for which a certificate is being requested (i.e. certificate subjects). |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1103,7 +1103,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1113,7 +1113,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -1123,7 +1123,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -1133,7 +1133,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -1143,7 +1143,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -1153,7 +1153,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1163,7 +1163,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AllowedUses`<sup>Required</sup> <a name="AllowedUses" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.allowedUses"></a>
+##### `AllowedUses`<sup>Required</sup> <a name="AllowedUses" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.allowedUses"></a>
 
 ```go
 AllowedUses *[]*string
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `PrivateKeyPem`<sup>Required</sup> <a name="PrivateKeyPem" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.privateKeyPem"></a>
+##### `PrivateKeyPem`<sup>Required</sup> <a name="PrivateKeyPem" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.privateKeyPem"></a>
 
 ```go
 PrivateKeyPem *string
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ValidityPeriodHours`<sup>Required</sup> <a name="ValidityPeriodHours" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.validityPeriodHours"></a>
+##### `ValidityPeriodHours`<sup>Required</sup> <a name="ValidityPeriodHours" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.validityPeriodHours"></a>
 
 ```go
 ValidityPeriodHours *f64
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `DnsNames`<sup>Optional</sup> <a name="DnsNames" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.dnsNames"></a>
+##### `DnsNames`<sup>Optional</sup> <a name="DnsNames" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.dnsNames"></a>
 
 ```go
 DnsNames *[]*string
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `EarlyRenewalHours`<sup>Optional</sup> <a name="EarlyRenewalHours" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.earlyRenewalHours"></a>
+##### `EarlyRenewalHours`<sup>Optional</sup> <a name="EarlyRenewalHours" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.earlyRenewalHours"></a>
 
 ```go
 EarlyRenewalHours *f64
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `IpAddresses`<sup>Optional</sup> <a name="IpAddresses" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.ipAddresses"></a>
+##### `IpAddresses`<sup>Optional</sup> <a name="IpAddresses" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.ipAddresses"></a>
 
 ```go
 IpAddresses *[]*string
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `IsCaCertificate`<sup>Optional</sup> <a name="IsCaCertificate" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.isCaCertificate"></a>
+##### `IsCaCertificate`<sup>Optional</sup> <a name="IsCaCertificate" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.isCaCertificate"></a>
 
 ```go
 IsCaCertificate interface{}
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `SetAuthorityKeyId`<sup>Optional</sup> <a name="SetAuthorityKeyId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.setAuthorityKeyId"></a>
+##### `SetAuthorityKeyId`<sup>Optional</sup> <a name="SetAuthorityKeyId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.setAuthorityKeyId"></a>
 
 ```go
 SetAuthorityKeyId interface{}
@@ -1279,7 +1279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `SetSubjectKeyId`<sup>Optional</sup> <a name="SetSubjectKeyId" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.setSubjectKeyId"></a>
+##### `SetSubjectKeyId`<sup>Optional</sup> <a name="SetSubjectKeyId" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.setSubjectKeyId"></a>
 
 ```go
 SetSubjectKeyId interface{}
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Subject`<sup>Optional</sup> <a name="Subject" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.subject"></a>
+##### `Subject`<sup>Optional</sup> <a name="Subject" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.subject"></a>
 
 ```go
 Subject interface{}
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Uris`<sup>Optional</sup> <a name="Uris" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertConfig.property.uris"></a>
+##### `Uris`<sup>Optional</sup> <a name="Uris" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.uris"></a>
 
 ```go
 Uris *[]*string
@@ -1321,12 +1321,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### SelfSignedCertSubject <a name="SelfSignedCertSubject" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject"></a>
+### SelfSignedCertSubject <a name="SelfSignedCertSubject" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/selfsignedcert"
 
 &selfsignedcert.SelfSignedCertSubject {
 	CommonName: *string,
@@ -1346,20 +1346,20 @@ import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.commonName">CommonName</a></code> | <code>*string</code> | Distinguished name: `CN`. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.country">Country</a></code> | <code>*string</code> | Distinguished name: `C`. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | ASN.1 Object Identifier (OID): `1.2.840.113549.1.9.1`. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.locality">Locality</a></code> | <code>*string</code> | Distinguished name: `L`. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.organization">Organization</a></code> | <code>*string</code> | Distinguished name: `O`. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.organizationalUnit">OrganizationalUnit</a></code> | <code>*string</code> | Distinguished name: `OU`. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.postalCode">PostalCode</a></code> | <code>*string</code> | Distinguished name: `PC`. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.province">Province</a></code> | <code>*string</code> | Distinguished name: `ST`. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.serialNumber">SerialNumber</a></code> | <code>*string</code> | Distinguished name: `SERIALNUMBER`. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.streetAddress">StreetAddress</a></code> | <code>*[]*string</code> | Distinguished name: `STREET`. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.commonName">CommonName</a></code> | <code>*string</code> | Distinguished name: `CN`. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.country">Country</a></code> | <code>*string</code> | Distinguished name: `C`. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | ASN.1 Object Identifier (OID): `1.2.840.113549.1.9.1`. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.locality">Locality</a></code> | <code>*string</code> | Distinguished name: `L`. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.organization">Organization</a></code> | <code>*string</code> | Distinguished name: `O`. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.organizationalUnit">OrganizationalUnit</a></code> | <code>*string</code> | Distinguished name: `OU`. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.postalCode">PostalCode</a></code> | <code>*string</code> | Distinguished name: `PC`. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.province">Province</a></code> | <code>*string</code> | Distinguished name: `ST`. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.serialNumber">SerialNumber</a></code> | <code>*string</code> | Distinguished name: `SERIALNUMBER`. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.streetAddress">StreetAddress</a></code> | <code>*[]*string</code> | Distinguished name: `STREET`. |
 
 ---
 
-##### `CommonName`<sup>Optional</sup> <a name="CommonName" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.commonName"></a>
+##### `CommonName`<sup>Optional</sup> <a name="CommonName" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.commonName"></a>
 
 ```go
 CommonName *string
@@ -1373,7 +1373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Country`<sup>Optional</sup> <a name="Country" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.country"></a>
+##### `Country`<sup>Optional</sup> <a name="Country" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.country"></a>
 
 ```go
 Country *string
@@ -1387,7 +1387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `EmailAddress`<sup>Optional</sup> <a name="EmailAddress" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.emailAddress"></a>
+##### `EmailAddress`<sup>Optional</sup> <a name="EmailAddress" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.emailAddress"></a>
 
 ```go
 EmailAddress *string
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Locality`<sup>Optional</sup> <a name="Locality" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.locality"></a>
+##### `Locality`<sup>Optional</sup> <a name="Locality" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.locality"></a>
 
 ```go
 Locality *string
@@ -1415,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Organization`<sup>Optional</sup> <a name="Organization" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.organization"></a>
+##### `Organization`<sup>Optional</sup> <a name="Organization" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.organization"></a>
 
 ```go
 Organization *string
@@ -1429,7 +1429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `OrganizationalUnit`<sup>Optional</sup> <a name="OrganizationalUnit" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.organizationalUnit"></a>
+##### `OrganizationalUnit`<sup>Optional</sup> <a name="OrganizationalUnit" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.organizationalUnit"></a>
 
 ```go
 OrganizationalUnit *string
@@ -1443,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `PostalCode`<sup>Optional</sup> <a name="PostalCode" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.postalCode"></a>
+##### `PostalCode`<sup>Optional</sup> <a name="PostalCode" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.postalCode"></a>
 
 ```go
 PostalCode *string
@@ -1457,7 +1457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Province`<sup>Optional</sup> <a name="Province" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.province"></a>
+##### `Province`<sup>Optional</sup> <a name="Province" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.province"></a>
 
 ```go
 Province *string
@@ -1471,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `SerialNumber`<sup>Optional</sup> <a name="SerialNumber" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.serialNumber"></a>
+##### `SerialNumber`<sup>Optional</sup> <a name="SerialNumber" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.serialNumber"></a>
 
 ```go
 SerialNumber *string
@@ -1485,7 +1485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `StreetAddress`<sup>Optional</sup> <a name="StreetAddress" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubject.property.streetAddress"></a>
+##### `StreetAddress`<sup>Optional</sup> <a name="StreetAddress" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject.property.streetAddress"></a>
 
 ```go
 StreetAddress *[]*string
@@ -1501,25 +1501,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### SelfSignedCertSubjectList <a name="SelfSignedCertSubjectList" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList"></a>
+### SelfSignedCertSubjectList <a name="SelfSignedCertSubjectList" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/selfsignedcert"
 
 selfsignedcert.NewSelfSignedCertSubjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SelfSignedCertSubjectList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1527,7 +1527,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1535,7 +1535,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -1547,15 +1547,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -1565,19 +1565,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1585,13 +1585,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.toString"></a>
 
 ```go
 func ToString() *string
@@ -1601,13 +1601,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.get"></a>
 
 ```go
 func Get(index *f64) SelfSignedCertSubjectOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -1620,13 +1620,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1640,7 +1640,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1650,7 +1650,7 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -1661,26 +1661,26 @@ func InternalValue() interface{}
 ---
 
 
-### SelfSignedCertSubjectOutputReference <a name="SelfSignedCertSubjectOutputReference" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference"></a>
+### SelfSignedCertSubjectOutputReference <a name="SelfSignedCertSubjectOutputReference" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/selfsignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/selfsignedcert"
 
 selfsignedcert.NewSelfSignedCertSubjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SelfSignedCertSubjectOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1688,7 +1688,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1696,7 +1696,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -1704,7 +1704,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -1716,159 +1716,159 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetCommonName">ResetCommonName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetCountry">ResetCountry</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetEmailAddress">ResetEmailAddress</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetLocality">ResetLocality</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetOrganization">ResetOrganization</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetOrganizationalUnit">ResetOrganizationalUnit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetPostalCode">ResetPostalCode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetProvince">ResetProvince</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetSerialNumber">ResetSerialNumber</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetStreetAddress">ResetStreetAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetCommonName">ResetCommonName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetCountry">ResetCountry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetEmailAddress">ResetEmailAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetLocality">ResetLocality</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetOrganization">ResetOrganization</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetOrganizationalUnit">ResetOrganizationalUnit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetPostalCode">ResetPostalCode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetProvince">ResetProvince</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetSerialNumber">ResetSerialNumber</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetStreetAddress">ResetStreetAddress</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1876,13 +1876,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1892,61 +1892,61 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCommonName` <a name="ResetCommonName" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetCommonName"></a>
+##### `ResetCommonName` <a name="ResetCommonName" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetCommonName"></a>
 
 ```go
 func ResetCommonName()
 ```
 
-##### `ResetCountry` <a name="ResetCountry" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetCountry"></a>
+##### `ResetCountry` <a name="ResetCountry" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetCountry"></a>
 
 ```go
 func ResetCountry()
 ```
 
-##### `ResetEmailAddress` <a name="ResetEmailAddress" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetEmailAddress"></a>
+##### `ResetEmailAddress` <a name="ResetEmailAddress" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetEmailAddress"></a>
 
 ```go
 func ResetEmailAddress()
 ```
 
-##### `ResetLocality` <a name="ResetLocality" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetLocality"></a>
+##### `ResetLocality` <a name="ResetLocality" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetLocality"></a>
 
 ```go
 func ResetLocality()
 ```
 
-##### `ResetOrganization` <a name="ResetOrganization" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetOrganization"></a>
+##### `ResetOrganization` <a name="ResetOrganization" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetOrganization"></a>
 
 ```go
 func ResetOrganization()
 ```
 
-##### `ResetOrganizationalUnit` <a name="ResetOrganizationalUnit" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetOrganizationalUnit"></a>
+##### `ResetOrganizationalUnit` <a name="ResetOrganizationalUnit" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetOrganizationalUnit"></a>
 
 ```go
 func ResetOrganizationalUnit()
 ```
 
-##### `ResetPostalCode` <a name="ResetPostalCode" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetPostalCode"></a>
+##### `ResetPostalCode` <a name="ResetPostalCode" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetPostalCode"></a>
 
 ```go
 func ResetPostalCode()
 ```
 
-##### `ResetProvince` <a name="ResetProvince" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetProvince"></a>
+##### `ResetProvince` <a name="ResetProvince" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetProvince"></a>
 
 ```go
 func ResetProvince()
 ```
 
-##### `ResetSerialNumber` <a name="ResetSerialNumber" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetSerialNumber"></a>
+##### `ResetSerialNumber` <a name="ResetSerialNumber" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetSerialNumber"></a>
 
 ```go
 func ResetSerialNumber()
 ```
 
-##### `ResetStreetAddress` <a name="ResetStreetAddress" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetStreetAddress"></a>
+##### `ResetStreetAddress` <a name="ResetStreetAddress" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resetStreetAddress"></a>
 
 ```go
 func ResetStreetAddress()
@@ -1957,33 +1957,33 @@ func ResetStreetAddress()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.commonNameInput">CommonNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.countryInput">CountryInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.emailAddressInput">EmailAddressInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.localityInput">LocalityInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organizationalUnitInput">OrganizationalUnitInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organizationInput">OrganizationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.postalCodeInput">PostalCodeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.provinceInput">ProvinceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.serialNumberInput">SerialNumberInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.streetAddressInput">StreetAddressInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.commonName">CommonName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.country">Country</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.locality">Locality</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organization">Organization</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organizationalUnit">OrganizationalUnit</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.postalCode">PostalCode</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.province">Province</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.serialNumber">SerialNumber</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.streetAddress">StreetAddress</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.commonNameInput">CommonNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.countryInput">CountryInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.emailAddressInput">EmailAddressInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.localityInput">LocalityInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organizationalUnitInput">OrganizationalUnitInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organizationInput">OrganizationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.postalCodeInput">PostalCodeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.provinceInput">ProvinceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.serialNumberInput">SerialNumberInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.streetAddressInput">StreetAddressInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.commonName">CommonName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.country">Country</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.locality">Locality</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organization">Organization</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organizationalUnit">OrganizationalUnit</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.postalCode">PostalCode</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.province">Province</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.serialNumber">SerialNumber</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.streetAddress">StreetAddress</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1997,7 +1997,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2007,7 +2007,7 @@ func Fqn() *string
 
 ---
 
-##### `CommonNameInput`<sup>Optional</sup> <a name="CommonNameInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.commonNameInput"></a>
+##### `CommonNameInput`<sup>Optional</sup> <a name="CommonNameInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.commonNameInput"></a>
 
 ```go
 func CommonNameInput() *string
@@ -2017,7 +2017,7 @@ func CommonNameInput() *string
 
 ---
 
-##### `CountryInput`<sup>Optional</sup> <a name="CountryInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.countryInput"></a>
+##### `CountryInput`<sup>Optional</sup> <a name="CountryInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.countryInput"></a>
 
 ```go
 func CountryInput() *string
@@ -2027,7 +2027,7 @@ func CountryInput() *string
 
 ---
 
-##### `EmailAddressInput`<sup>Optional</sup> <a name="EmailAddressInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.emailAddressInput"></a>
+##### `EmailAddressInput`<sup>Optional</sup> <a name="EmailAddressInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.emailAddressInput"></a>
 
 ```go
 func EmailAddressInput() *string
@@ -2037,7 +2037,7 @@ func EmailAddressInput() *string
 
 ---
 
-##### `LocalityInput`<sup>Optional</sup> <a name="LocalityInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.localityInput"></a>
+##### `LocalityInput`<sup>Optional</sup> <a name="LocalityInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.localityInput"></a>
 
 ```go
 func LocalityInput() *string
@@ -2047,7 +2047,7 @@ func LocalityInput() *string
 
 ---
 
-##### `OrganizationalUnitInput`<sup>Optional</sup> <a name="OrganizationalUnitInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organizationalUnitInput"></a>
+##### `OrganizationalUnitInput`<sup>Optional</sup> <a name="OrganizationalUnitInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organizationalUnitInput"></a>
 
 ```go
 func OrganizationalUnitInput() *string
@@ -2057,7 +2057,7 @@ func OrganizationalUnitInput() *string
 
 ---
 
-##### `OrganizationInput`<sup>Optional</sup> <a name="OrganizationInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organizationInput"></a>
+##### `OrganizationInput`<sup>Optional</sup> <a name="OrganizationInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organizationInput"></a>
 
 ```go
 func OrganizationInput() *string
@@ -2067,7 +2067,7 @@ func OrganizationInput() *string
 
 ---
 
-##### `PostalCodeInput`<sup>Optional</sup> <a name="PostalCodeInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.postalCodeInput"></a>
+##### `PostalCodeInput`<sup>Optional</sup> <a name="PostalCodeInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.postalCodeInput"></a>
 
 ```go
 func PostalCodeInput() *string
@@ -2077,7 +2077,7 @@ func PostalCodeInput() *string
 
 ---
 
-##### `ProvinceInput`<sup>Optional</sup> <a name="ProvinceInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.provinceInput"></a>
+##### `ProvinceInput`<sup>Optional</sup> <a name="ProvinceInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.provinceInput"></a>
 
 ```go
 func ProvinceInput() *string
@@ -2087,7 +2087,7 @@ func ProvinceInput() *string
 
 ---
 
-##### `SerialNumberInput`<sup>Optional</sup> <a name="SerialNumberInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.serialNumberInput"></a>
+##### `SerialNumberInput`<sup>Optional</sup> <a name="SerialNumberInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.serialNumberInput"></a>
 
 ```go
 func SerialNumberInput() *string
@@ -2097,7 +2097,7 @@ func SerialNumberInput() *string
 
 ---
 
-##### `StreetAddressInput`<sup>Optional</sup> <a name="StreetAddressInput" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.streetAddressInput"></a>
+##### `StreetAddressInput`<sup>Optional</sup> <a name="StreetAddressInput" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.streetAddressInput"></a>
 
 ```go
 func StreetAddressInput() *[]*string
@@ -2107,7 +2107,7 @@ func StreetAddressInput() *[]*string
 
 ---
 
-##### `CommonName`<sup>Required</sup> <a name="CommonName" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.commonName"></a>
+##### `CommonName`<sup>Required</sup> <a name="CommonName" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.commonName"></a>
 
 ```go
 func CommonName() *string
@@ -2117,7 +2117,7 @@ func CommonName() *string
 
 ---
 
-##### `Country`<sup>Required</sup> <a name="Country" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.country"></a>
+##### `Country`<sup>Required</sup> <a name="Country" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.country"></a>
 
 ```go
 func Country() *string
@@ -2127,7 +2127,7 @@ func Country() *string
 
 ---
 
-##### `EmailAddress`<sup>Required</sup> <a name="EmailAddress" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.emailAddress"></a>
+##### `EmailAddress`<sup>Required</sup> <a name="EmailAddress" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.emailAddress"></a>
 
 ```go
 func EmailAddress() *string
@@ -2137,7 +2137,7 @@ func EmailAddress() *string
 
 ---
 
-##### `Locality`<sup>Required</sup> <a name="Locality" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.locality"></a>
+##### `Locality`<sup>Required</sup> <a name="Locality" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.locality"></a>
 
 ```go
 func Locality() *string
@@ -2147,7 +2147,7 @@ func Locality() *string
 
 ---
 
-##### `Organization`<sup>Required</sup> <a name="Organization" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organization"></a>
+##### `Organization`<sup>Required</sup> <a name="Organization" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organization"></a>
 
 ```go
 func Organization() *string
@@ -2157,7 +2157,7 @@ func Organization() *string
 
 ---
 
-##### `OrganizationalUnit`<sup>Required</sup> <a name="OrganizationalUnit" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organizationalUnit"></a>
+##### `OrganizationalUnit`<sup>Required</sup> <a name="OrganizationalUnit" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.organizationalUnit"></a>
 
 ```go
 func OrganizationalUnit() *string
@@ -2167,7 +2167,7 @@ func OrganizationalUnit() *string
 
 ---
 
-##### `PostalCode`<sup>Required</sup> <a name="PostalCode" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.postalCode"></a>
+##### `PostalCode`<sup>Required</sup> <a name="PostalCode" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.postalCode"></a>
 
 ```go
 func PostalCode() *string
@@ -2177,7 +2177,7 @@ func PostalCode() *string
 
 ---
 
-##### `Province`<sup>Required</sup> <a name="Province" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.province"></a>
+##### `Province`<sup>Required</sup> <a name="Province" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.province"></a>
 
 ```go
 func Province() *string
@@ -2187,7 +2187,7 @@ func Province() *string
 
 ---
 
-##### `SerialNumber`<sup>Required</sup> <a name="SerialNumber" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.serialNumber"></a>
+##### `SerialNumber`<sup>Required</sup> <a name="SerialNumber" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.serialNumber"></a>
 
 ```go
 func SerialNumber() *string
@@ -2197,7 +2197,7 @@ func SerialNumber() *string
 
 ---
 
-##### `StreetAddress`<sup>Required</sup> <a name="StreetAddress" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.streetAddress"></a>
+##### `StreetAddress`<sup>Required</sup> <a name="StreetAddress" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.streetAddress"></a>
 
 ```go
 func StreetAddress() *[]*string
@@ -2207,7 +2207,7 @@ func StreetAddress() *[]*string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

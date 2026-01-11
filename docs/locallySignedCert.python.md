@@ -1,15 +1,15 @@
-# `locallySignedCert` Submodule <a name="`locallySignedCert` Submodule" id="@cdktf/provider-tls.locallySignedCert"></a>
+# `locallySignedCert` Submodule <a name="`locallySignedCert` Submodule" id="@cdktn/provider-tls.locallySignedCert"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### LocallySignedCert <a name="LocallySignedCert" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert"></a>
+### LocallySignedCert <a name="LocallySignedCert" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/locally_signed_cert tls_locally_signed_cert}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_tls import locally_signed_cert
+from cdktn_provider_tls import locally_signed_cert
 
 locallySignedCert.LocallySignedCert(
   scope: Construct,
@@ -34,27 +34,27 @@ locallySignedCert.LocallySignedCert(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.allowedUses">allowed_uses</a></code> | <code>typing.List[str]</code> | List of key usages allowed for the issued certificate. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.caCertPem">ca_cert_pem</a></code> | <code>str</code> | Certificate data of the Certificate Authority (CA) in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.caPrivateKeyPem">ca_private_key_pem</a></code> | <code>str</code> | Private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.certRequestPem">cert_request_pem</a></code> | <code>str</code> | Certificate request data in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.validityPeriodHours">validity_period_hours</a></code> | <code>typing.Union[int, float]</code> | Number of hours, after initial issuing, that the certificate will remain valid for. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.earlyRenewalHours">early_renewal_hours</a></code> | <code>typing.Union[int, float]</code> | The resource will consider the certificate to have expired the given number of hours before its actual expiry time. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.isCaCertificate">is_ca_certificate</a></code> | <code>bool \| cdktf.IResolvable</code> | Is the generated certificate representing a Certificate Authority (CA) (default: `false`). |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.setSubjectKeyId">set_subject_key_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.allowedUses">allowed_uses</a></code> | <code>typing.List[str]</code> | List of key usages allowed for the issued certificate. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.caCertPem">ca_cert_pem</a></code> | <code>str</code> | Certificate data of the Certificate Authority (CA) in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.caPrivateKeyPem">ca_private_key_pem</a></code> | <code>str</code> | Private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.certRequestPem">cert_request_pem</a></code> | <code>str</code> | Certificate request data in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.validityPeriodHours">validity_period_hours</a></code> | <code>typing.Union[int, float]</code> | Number of hours, after initial issuing, that the certificate will remain valid for. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.earlyRenewalHours">early_renewal_hours</a></code> | <code>typing.Union[int, float]</code> | The resource will consider the certificate to have expired the given number of hours before its actual expiry time. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.isCaCertificate">is_ca_certificate</a></code> | <code>bool \| cdktf.IResolvable</code> | Is the generated certificate representing a Certificate Authority (CA) (default: `false`). |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.setSubjectKeyId">set_subject_key_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -62,7 +62,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -72,49 +72,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `allowed_uses`<sup>Required</sup> <a name="allowed_uses" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.allowedUses"></a>
+##### `allowed_uses`<sup>Required</sup> <a name="allowed_uses" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.allowedUses"></a>
 
 - *Type:* typing.List[str]
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ca_cert_pem`<sup>Required</sup> <a name="ca_cert_pem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.caCertPem"></a>
+##### `ca_cert_pem`<sup>Required</sup> <a name="ca_cert_pem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.caCertPem"></a>
 
 - *Type:* str
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ca_private_key_pem`<sup>Required</sup> <a name="ca_private_key_pem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.caPrivateKeyPem"></a>
+##### `ca_private_key_pem`<sup>Required</sup> <a name="ca_private_key_pem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.caPrivateKeyPem"></a>
 
 - *Type:* str
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cert_request_pem`<sup>Required</sup> <a name="cert_request_pem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.certRequestPem"></a>
+##### `cert_request_pem`<sup>Required</sup> <a name="cert_request_pem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.certRequestPem"></a>
 
 - *Type:* str
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `validity_period_hours`<sup>Required</sup> <a name="validity_period_hours" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.validityPeriodHours"></a>
+##### `validity_period_hours`<sup>Required</sup> <a name="validity_period_hours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.validityPeriodHours"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `early_renewal_hours`<sup>Optional</sup> <a name="early_renewal_hours" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.earlyRenewalHours"></a>
+##### `early_renewal_hours`<sup>Optional</sup> <a name="early_renewal_hours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.earlyRenewalHours"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `is_ca_certificate`<sup>Optional</sup> <a name="is_ca_certificate" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.isCaCertificate"></a>
+##### `is_ca_certificate`<sup>Optional</sup> <a name="is_ca_certificate" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.isCaCertificate"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `set_subject_key_id`<sup>Optional</sup> <a name="set_subject_key_id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.setSubjectKeyId"></a>
+##### `set_subject_key_id`<sup>Optional</sup> <a name="set_subject_key_id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.setSubjectKeyId"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -202,36 +202,36 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetEarlyRenewalHours">reset_early_renewal_hours</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetIsCaCertificate">reset_is_ca_certificate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetSetSubjectKeyId">reset_set_subject_key_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetEarlyRenewalHours">reset_early_renewal_hours</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetIsCaCertificate">reset_is_ca_certificate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetSetSubjectKeyId">reset_set_subject_key_id</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toString"></a>
 
 ```python
 def to_string() -> str
@@ -239,7 +239,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addOverride"></a>
 
 ```python
 def add_override(
@@ -248,19 +248,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -270,7 +270,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -278,7 +278,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -286,19 +286,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -306,7 +306,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -316,7 +316,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -324,7 +324,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -332,13 +332,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -346,13 +346,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -360,13 +360,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -374,13 +374,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -388,13 +388,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -402,13 +402,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -416,13 +416,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -430,13 +430,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -444,19 +444,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.importFrom"></a>
 
 ```python
 def import_from(
@@ -465,19 +465,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -485,13 +485,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -503,7 +503,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -511,7 +511,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveTo"></a>
 
 ```python
 def move_to(
@@ -522,7 +522,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -530,7 +530,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -538,7 +538,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -548,7 +548,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -556,19 +556,19 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_early_renewal_hours` <a name="reset_early_renewal_hours" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetEarlyRenewalHours"></a>
+##### `reset_early_renewal_hours` <a name="reset_early_renewal_hours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetEarlyRenewalHours"></a>
 
 ```python
 def reset_early_renewal_hours() -> None
 ```
 
-##### `reset_is_ca_certificate` <a name="reset_is_ca_certificate" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetIsCaCertificate"></a>
+##### `reset_is_ca_certificate` <a name="reset_is_ca_certificate" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetIsCaCertificate"></a>
 
 ```python
 def reset_is_ca_certificate() -> None
 ```
 
-##### `reset_set_subject_key_id` <a name="reset_set_subject_key_id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetSetSubjectKeyId"></a>
+##### `reset_set_subject_key_id` <a name="reset_set_subject_key_id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetSetSubjectKeyId"></a>
 
 ```python
 def reset_set_subject_key_id() -> None
@@ -578,17 +578,17 @@ def reset_set_subject_key_id() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a LocallySignedCert resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a LocallySignedCert resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_tls import locally_signed_cert
+from cdktn_provider_tls import locally_signed_cert
 
 locallySignedCert.LocallySignedCert.is_construct(
   x: typing.Any
@@ -611,7 +611,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -619,42 +619,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_tls import locally_signed_cert
+from cdktn_provider_tls import locally_signed_cert
 
 locallySignedCert.LocallySignedCert.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_tls import locally_signed_cert
+from cdktn_provider_tls import locally_signed_cert
 
 locallySignedCert.LocallySignedCert.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_tls import locally_signed_cert
+from cdktn_provider_tls import locally_signed_cert
 
 locallySignedCert.LocallySignedCert.generate_config_for_import(
   scope: Construct,
@@ -666,7 +666,7 @@ locallySignedCert.LocallySignedCert.generate_config_for_import(
 
 Generates CDKTF code for importing a LocallySignedCert resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -674,7 +674,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -682,7 +682,7 @@ The construct id used in the generated config for the LocallySignedCert to impor
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -692,7 +692,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -704,46 +704,46 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caKeyAlgorithm">ca_key_algorithm</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.certPem">cert_pem</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.readyForRenewal">ready_for_renewal</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityEndTime">validity_end_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityStartTime">validity_start_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUsesInput">allowed_uses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPemInput">ca_cert_pem_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemInput">ca_private_key_pem_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPemInput">cert_request_pem_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHoursInput">early_renewal_hours_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificateInput">is_ca_certificate_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyIdInput">set_subject_key_id_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHoursInput">validity_period_hours_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUses">allowed_uses</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPem">ca_cert_pem</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPem">ca_private_key_pem</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPem">cert_request_pem</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHours">early_renewal_hours</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificate">is_ca_certificate</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyId">set_subject_key_id</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHours">validity_period_hours</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caKeyAlgorithm">ca_key_algorithm</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certPem">cert_pem</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.readyForRenewal">ready_for_renewal</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityEndTime">validity_end_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityStartTime">validity_start_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUsesInput">allowed_uses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPemInput">ca_cert_pem_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemInput">ca_private_key_pem_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPemInput">cert_request_pem_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHoursInput">early_renewal_hours_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificateInput">is_ca_certificate_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyIdInput">set_subject_key_id_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHoursInput">validity_period_hours_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUses">allowed_uses</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPem">ca_cert_pem</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPem">ca_private_key_pem</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPem">cert_request_pem</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHours">early_renewal_hours</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificate">is_ca_certificate</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyId">set_subject_key_id</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHours">validity_period_hours</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.node"></a>
 
 ```python
 node: Node
@@ -755,7 +755,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -765,7 +765,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.fqn"></a>
 
 ```python
 fqn: str
@@ -775,7 +775,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -785,7 +785,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -795,7 +795,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -805,7 +805,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -815,7 +815,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -825,7 +825,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -835,7 +835,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -845,7 +845,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -855,7 +855,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -865,7 +865,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -875,7 +875,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -885,7 +885,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `ca_key_algorithm`<sup>Required</sup> <a name="ca_key_algorithm" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caKeyAlgorithm"></a>
+##### `ca_key_algorithm`<sup>Required</sup> <a name="ca_key_algorithm" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caKeyAlgorithm"></a>
 
 ```python
 ca_key_algorithm: str
@@ -895,7 +895,7 @@ ca_key_algorithm: str
 
 ---
 
-##### `cert_pem`<sup>Required</sup> <a name="cert_pem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.certPem"></a>
+##### `cert_pem`<sup>Required</sup> <a name="cert_pem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certPem"></a>
 
 ```python
 cert_pem: str
@@ -905,7 +905,7 @@ cert_pem: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.id"></a>
 
 ```python
 id: str
@@ -915,7 +915,7 @@ id: str
 
 ---
 
-##### `ready_for_renewal`<sup>Required</sup> <a name="ready_for_renewal" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.readyForRenewal"></a>
+##### `ready_for_renewal`<sup>Required</sup> <a name="ready_for_renewal" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.readyForRenewal"></a>
 
 ```python
 ready_for_renewal: IResolvable
@@ -925,7 +925,7 @@ ready_for_renewal: IResolvable
 
 ---
 
-##### `validity_end_time`<sup>Required</sup> <a name="validity_end_time" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityEndTime"></a>
+##### `validity_end_time`<sup>Required</sup> <a name="validity_end_time" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityEndTime"></a>
 
 ```python
 validity_end_time: str
@@ -935,7 +935,7 @@ validity_end_time: str
 
 ---
 
-##### `validity_start_time`<sup>Required</sup> <a name="validity_start_time" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityStartTime"></a>
+##### `validity_start_time`<sup>Required</sup> <a name="validity_start_time" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityStartTime"></a>
 
 ```python
 validity_start_time: str
@@ -945,7 +945,7 @@ validity_start_time: str
 
 ---
 
-##### `allowed_uses_input`<sup>Optional</sup> <a name="allowed_uses_input" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUsesInput"></a>
+##### `allowed_uses_input`<sup>Optional</sup> <a name="allowed_uses_input" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUsesInput"></a>
 
 ```python
 allowed_uses_input: typing.List[str]
@@ -955,7 +955,7 @@ allowed_uses_input: typing.List[str]
 
 ---
 
-##### `ca_cert_pem_input`<sup>Optional</sup> <a name="ca_cert_pem_input" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPemInput"></a>
+##### `ca_cert_pem_input`<sup>Optional</sup> <a name="ca_cert_pem_input" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPemInput"></a>
 
 ```python
 ca_cert_pem_input: str
@@ -965,7 +965,7 @@ ca_cert_pem_input: str
 
 ---
 
-##### `ca_private_key_pem_input`<sup>Optional</sup> <a name="ca_private_key_pem_input" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemInput"></a>
+##### `ca_private_key_pem_input`<sup>Optional</sup> <a name="ca_private_key_pem_input" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemInput"></a>
 
 ```python
 ca_private_key_pem_input: str
@@ -975,7 +975,7 @@ ca_private_key_pem_input: str
 
 ---
 
-##### `cert_request_pem_input`<sup>Optional</sup> <a name="cert_request_pem_input" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPemInput"></a>
+##### `cert_request_pem_input`<sup>Optional</sup> <a name="cert_request_pem_input" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPemInput"></a>
 
 ```python
 cert_request_pem_input: str
@@ -985,7 +985,7 @@ cert_request_pem_input: str
 
 ---
 
-##### `early_renewal_hours_input`<sup>Optional</sup> <a name="early_renewal_hours_input" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHoursInput"></a>
+##### `early_renewal_hours_input`<sup>Optional</sup> <a name="early_renewal_hours_input" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHoursInput"></a>
 
 ```python
 early_renewal_hours_input: typing.Union[int, float]
@@ -995,7 +995,7 @@ early_renewal_hours_input: typing.Union[int, float]
 
 ---
 
-##### `is_ca_certificate_input`<sup>Optional</sup> <a name="is_ca_certificate_input" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificateInput"></a>
+##### `is_ca_certificate_input`<sup>Optional</sup> <a name="is_ca_certificate_input" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificateInput"></a>
 
 ```python
 is_ca_certificate_input: bool | IResolvable
@@ -1005,7 +1005,7 @@ is_ca_certificate_input: bool | IResolvable
 
 ---
 
-##### `set_subject_key_id_input`<sup>Optional</sup> <a name="set_subject_key_id_input" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyIdInput"></a>
+##### `set_subject_key_id_input`<sup>Optional</sup> <a name="set_subject_key_id_input" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyIdInput"></a>
 
 ```python
 set_subject_key_id_input: bool | IResolvable
@@ -1015,7 +1015,7 @@ set_subject_key_id_input: bool | IResolvable
 
 ---
 
-##### `validity_period_hours_input`<sup>Optional</sup> <a name="validity_period_hours_input" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHoursInput"></a>
+##### `validity_period_hours_input`<sup>Optional</sup> <a name="validity_period_hours_input" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHoursInput"></a>
 
 ```python
 validity_period_hours_input: typing.Union[int, float]
@@ -1025,7 +1025,7 @@ validity_period_hours_input: typing.Union[int, float]
 
 ---
 
-##### `allowed_uses`<sup>Required</sup> <a name="allowed_uses" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUses"></a>
+##### `allowed_uses`<sup>Required</sup> <a name="allowed_uses" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUses"></a>
 
 ```python
 allowed_uses: typing.List[str]
@@ -1035,7 +1035,7 @@ allowed_uses: typing.List[str]
 
 ---
 
-##### `ca_cert_pem`<sup>Required</sup> <a name="ca_cert_pem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPem"></a>
+##### `ca_cert_pem`<sup>Required</sup> <a name="ca_cert_pem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPem"></a>
 
 ```python
 ca_cert_pem: str
@@ -1045,7 +1045,7 @@ ca_cert_pem: str
 
 ---
 
-##### `ca_private_key_pem`<sup>Required</sup> <a name="ca_private_key_pem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPem"></a>
+##### `ca_private_key_pem`<sup>Required</sup> <a name="ca_private_key_pem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPem"></a>
 
 ```python
 ca_private_key_pem: str
@@ -1055,7 +1055,7 @@ ca_private_key_pem: str
 
 ---
 
-##### `cert_request_pem`<sup>Required</sup> <a name="cert_request_pem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPem"></a>
+##### `cert_request_pem`<sup>Required</sup> <a name="cert_request_pem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPem"></a>
 
 ```python
 cert_request_pem: str
@@ -1065,7 +1065,7 @@ cert_request_pem: str
 
 ---
 
-##### `early_renewal_hours`<sup>Required</sup> <a name="early_renewal_hours" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHours"></a>
+##### `early_renewal_hours`<sup>Required</sup> <a name="early_renewal_hours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHours"></a>
 
 ```python
 early_renewal_hours: typing.Union[int, float]
@@ -1075,7 +1075,7 @@ early_renewal_hours: typing.Union[int, float]
 
 ---
 
-##### `is_ca_certificate`<sup>Required</sup> <a name="is_ca_certificate" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificate"></a>
+##### `is_ca_certificate`<sup>Required</sup> <a name="is_ca_certificate" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificate"></a>
 
 ```python
 is_ca_certificate: bool | IResolvable
@@ -1085,7 +1085,7 @@ is_ca_certificate: bool | IResolvable
 
 ---
 
-##### `set_subject_key_id`<sup>Required</sup> <a name="set_subject_key_id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyId"></a>
+##### `set_subject_key_id`<sup>Required</sup> <a name="set_subject_key_id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyId"></a>
 
 ```python
 set_subject_key_id: bool | IResolvable
@@ -1095,7 +1095,7 @@ set_subject_key_id: bool | IResolvable
 
 ---
 
-##### `validity_period_hours`<sup>Required</sup> <a name="validity_period_hours" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHours"></a>
+##### `validity_period_hours`<sup>Required</sup> <a name="validity_period_hours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHours"></a>
 
 ```python
 validity_period_hours: typing.Union[int, float]
@@ -1109,11 +1109,11 @@ validity_period_hours: typing.Union[int, float]
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1125,12 +1125,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### LocallySignedCertConfig <a name="LocallySignedCertConfig" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig"></a>
+### LocallySignedCertConfig <a name="LocallySignedCertConfig" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_tls import locally_signed_cert
+from cdktn_provider_tls import locally_signed_cert
 
 locallySignedCert.LocallySignedCertConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1155,25 +1155,25 @@ locallySignedCert.LocallySignedCertConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.allowedUses">allowed_uses</a></code> | <code>typing.List[str]</code> | List of key usages allowed for the issued certificate. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caCertPem">ca_cert_pem</a></code> | <code>str</code> | Certificate data of the Certificate Authority (CA) in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPem">ca_private_key_pem</a></code> | <code>str</code> | Private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.certRequestPem">cert_request_pem</a></code> | <code>str</code> | Certificate request data in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.validityPeriodHours">validity_period_hours</a></code> | <code>typing.Union[int, float]</code> | Number of hours, after initial issuing, that the certificate will remain valid for. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.earlyRenewalHours">early_renewal_hours</a></code> | <code>typing.Union[int, float]</code> | The resource will consider the certificate to have expired the given number of hours before its actual expiry time. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.isCaCertificate">is_ca_certificate</a></code> | <code>bool \| cdktf.IResolvable</code> | Is the generated certificate representing a Certificate Authority (CA) (default: `false`). |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.setSubjectKeyId">set_subject_key_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.allowedUses">allowed_uses</a></code> | <code>typing.List[str]</code> | List of key usages allowed for the issued certificate. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caCertPem">ca_cert_pem</a></code> | <code>str</code> | Certificate data of the Certificate Authority (CA) in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPem">ca_private_key_pem</a></code> | <code>str</code> | Private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.certRequestPem">cert_request_pem</a></code> | <code>str</code> | Certificate request data in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.validityPeriodHours">validity_period_hours</a></code> | <code>typing.Union[int, float]</code> | Number of hours, after initial issuing, that the certificate will remain valid for. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.earlyRenewalHours">early_renewal_hours</a></code> | <code>typing.Union[int, float]</code> | The resource will consider the certificate to have expired the given number of hours before its actual expiry time. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.isCaCertificate">is_ca_certificate</a></code> | <code>bool \| cdktf.IResolvable</code> | Is the generated certificate representing a Certificate Authority (CA) (default: `false`). |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.setSubjectKeyId">set_subject_key_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1183,7 +1183,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1193,7 +1193,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1203,7 +1203,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1213,7 +1213,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1223,7 +1223,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1233,7 +1233,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1243,7 +1243,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `allowed_uses`<sup>Required</sup> <a name="allowed_uses" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.allowedUses"></a>
+##### `allowed_uses`<sup>Required</sup> <a name="allowed_uses" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.allowedUses"></a>
 
 ```python
 allowed_uses: typing.List[str]
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ca_cert_pem`<sup>Required</sup> <a name="ca_cert_pem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caCertPem"></a>
+##### `ca_cert_pem`<sup>Required</sup> <a name="ca_cert_pem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caCertPem"></a>
 
 ```python
 ca_cert_pem: str
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ca_private_key_pem`<sup>Required</sup> <a name="ca_private_key_pem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPem"></a>
+##### `ca_private_key_pem`<sup>Required</sup> <a name="ca_private_key_pem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPem"></a>
 
 ```python
 ca_private_key_pem: str
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cert_request_pem`<sup>Required</sup> <a name="cert_request_pem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.certRequestPem"></a>
+##### `cert_request_pem`<sup>Required</sup> <a name="cert_request_pem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.certRequestPem"></a>
 
 ```python
 cert_request_pem: str
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `validity_period_hours`<sup>Required</sup> <a name="validity_period_hours" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.validityPeriodHours"></a>
+##### `validity_period_hours`<sup>Required</sup> <a name="validity_period_hours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.validityPeriodHours"></a>
 
 ```python
 validity_period_hours: typing.Union[int, float]
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `early_renewal_hours`<sup>Optional</sup> <a name="early_renewal_hours" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.earlyRenewalHours"></a>
+##### `early_renewal_hours`<sup>Optional</sup> <a name="early_renewal_hours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.earlyRenewalHours"></a>
 
 ```python
 early_renewal_hours: typing.Union[int, float]
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `is_ca_certificate`<sup>Optional</sup> <a name="is_ca_certificate" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.isCaCertificate"></a>
+##### `is_ca_certificate`<sup>Optional</sup> <a name="is_ca_certificate" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.isCaCertificate"></a>
 
 ```python
 is_ca_certificate: bool | IResolvable
@@ -1345,7 +1345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `set_subject_key_id`<sup>Optional</sup> <a name="set_subject_key_id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.setSubjectKeyId"></a>
+##### `set_subject_key_id`<sup>Optional</sup> <a name="set_subject_key_id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.setSubjectKeyId"></a>
 
 ```python
 set_subject_key_id: bool | IResolvable
