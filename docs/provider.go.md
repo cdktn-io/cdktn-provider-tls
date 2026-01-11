@@ -1,28 +1,28 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-tls.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-tls.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### TlsProvider <a name="TlsProvider" id="@cdktf/provider-tls.provider.TlsProvider"></a>
+### TlsProvider <a name="TlsProvider" id="@cdktn/provider-tls.provider.TlsProvider"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs tls}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-tls.provider.TlsProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-tls.provider.TlsProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/provider"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/provider"
 
 provider.NewTlsProvider(scope Construct, id *string, config TlsProviderConfig) TlsProvider
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-tls.provider.TlsProviderConfig">TlsProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-tls.provider.TlsProviderConfig">TlsProviderConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tls.provider.TlsProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-tls.provider.TlsProvider.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.provider.TlsProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.provider.TlsProvider.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-tls.provider.TlsProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-tls.provider.TlsProvider.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-tls.provider.TlsProviderConfig">TlsProviderConfig</a>
+- *Type:* <a href="#@cdktn/provider-tls.provider.TlsProviderConfig">TlsProviderConfig</a>
 
 ---
 
@@ -50,19 +50,19 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.resetAlias">ResetAlias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.resetProxy">ResetProxy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.resetAlias">ResetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.resetProxy">ResetProxy</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-tls.provider.TlsProvider.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-tls.provider.TlsProvider.toString"></a>
 
 ```go
 func ToString() *string
@@ -70,25 +70,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-tls.provider.TlsProvider.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-tls.provider.TlsProvider.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-tls.provider.TlsProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-tls.provider.TlsProvider.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-tls.provider.TlsProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-tls.provider.TlsProvider.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-tls.provider.TlsProvider.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-tls.provider.TlsProvider.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -96,7 +96,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-tls.provider.TlsProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-tls.provider.TlsProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -104,7 +104,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-tls.provider.TlsProvider.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-tls.provider.TlsProvider.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -112,19 +112,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-tls.provider.TlsProvider.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-tls.provider.TlsProvider.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-tls.provider.TlsProvider.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-tls.provider.TlsProvider.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-tls.provider.TlsProvider.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-tls.provider.TlsProvider.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -132,13 +132,13 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ResetAlias` <a name="ResetAlias" id="@cdktf/provider-tls.provider.TlsProvider.resetAlias"></a>
+##### `ResetAlias` <a name="ResetAlias" id="@cdktn/provider-tls.provider.TlsProvider.resetAlias"></a>
 
 ```go
 func ResetAlias()
 ```
 
-##### `ResetProxy` <a name="ResetProxy" id="@cdktf/provider-tls.provider.TlsProvider.resetProxy"></a>
+##### `ResetProxy` <a name="ResetProxy" id="@cdktn/provider-tls.provider.TlsProvider.resetProxy"></a>
 
 ```go
 func ResetProxy()
@@ -148,17 +148,17 @@ func ResetProxy()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a TlsProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a TlsProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-tls.provider.TlsProvider.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-tls.provider.TlsProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/provider"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/provider"
 
 provider.TlsProvider_IsConstruct(x interface{}) *bool
 ```
@@ -179,7 +179,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tls.provider.TlsProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-tls.provider.TlsProvider.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -187,45 +187,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-tls.provider.TlsProvider.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-tls.provider.TlsProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/provider"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/provider"
 
 provider.TlsProvider_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tls.provider.TlsProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-tls.provider.TlsProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-tls.provider.TlsProvider.isTerraformProvider"></a>
+##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-tls.provider.TlsProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/provider"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/provider"
 
 provider.TlsProvider_IsTerraformProvider(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tls.provider.TlsProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-tls.provider.TlsProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-tls.provider.TlsProvider.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/provider"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/provider"
 
 provider.TlsProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a TlsProvider resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tls.provider.TlsProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -233,7 +233,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-tls.provider.TlsProvider.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -241,7 +241,7 @@ The construct id used in the generated config for the TlsProvider to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-tls.provider.TlsProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -251,7 +251,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tls.provider.TlsProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -263,22 +263,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.metaAttributes">MetaAttributes</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.proxyInput">ProxyInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.proxy">Proxy</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.metaAttributes">MetaAttributes</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.proxyInput">ProxyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.proxy">Proxy</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-tls.provider.TlsProvider.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-tls.provider.TlsProvider.property.node"></a>
 
 ```go
 func Node() Node
@@ -290,7 +290,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-tls.provider.TlsProvider.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-tls.provider.TlsProvider.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -300,7 +300,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-tls.provider.TlsProvider.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-tls.provider.TlsProvider.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -310,7 +310,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-tls.provider.TlsProvider.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-tls.provider.TlsProvider.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -320,7 +320,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `MetaAttributes`<sup>Required</sup> <a name="MetaAttributes" id="@cdktf/provider-tls.provider.TlsProvider.property.metaAttributes"></a>
+##### `MetaAttributes`<sup>Required</sup> <a name="MetaAttributes" id="@cdktn/provider-tls.provider.TlsProvider.property.metaAttributes"></a>
 
 ```go
 func MetaAttributes() *map[string]interface{}
@@ -330,7 +330,7 @@ func MetaAttributes() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-tls.provider.TlsProvider.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-tls.provider.TlsProvider.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -340,7 +340,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-tls.provider.TlsProvider.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-tls.provider.TlsProvider.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -350,7 +350,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `TerraformProviderSource`<sup>Optional</sup> <a name="TerraformProviderSource" id="@cdktf/provider-tls.provider.TlsProvider.property.terraformProviderSource"></a>
+##### `TerraformProviderSource`<sup>Optional</sup> <a name="TerraformProviderSource" id="@cdktn/provider-tls.provider.TlsProvider.property.terraformProviderSource"></a>
 
 ```go
 func TerraformProviderSource() *string
@@ -360,7 +360,7 @@ func TerraformProviderSource() *string
 
 ---
 
-##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktf/provider-tls.provider.TlsProvider.property.alias"></a>
+##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktn/provider-tls.provider.TlsProvider.property.alias"></a>
 
 ```go
 func Alias() *string
@@ -370,7 +370,7 @@ func Alias() *string
 
 ---
 
-##### `AliasInput`<sup>Optional</sup> <a name="AliasInput" id="@cdktf/provider-tls.provider.TlsProvider.property.aliasInput"></a>
+##### `AliasInput`<sup>Optional</sup> <a name="AliasInput" id="@cdktn/provider-tls.provider.TlsProvider.property.aliasInput"></a>
 
 ```go
 func AliasInput() *string
@@ -380,7 +380,7 @@ func AliasInput() *string
 
 ---
 
-##### `ProxyInput`<sup>Optional</sup> <a name="ProxyInput" id="@cdktf/provider-tls.provider.TlsProvider.property.proxyInput"></a>
+##### `ProxyInput`<sup>Optional</sup> <a name="ProxyInput" id="@cdktn/provider-tls.provider.TlsProvider.property.proxyInput"></a>
 
 ```go
 func ProxyInput() interface{}
@@ -390,7 +390,7 @@ func ProxyInput() interface{}
 
 ---
 
-##### `Proxy`<sup>Optional</sup> <a name="Proxy" id="@cdktf/provider-tls.provider.TlsProvider.property.proxy"></a>
+##### `Proxy`<sup>Optional</sup> <a name="Proxy" id="@cdktn/provider-tls.provider.TlsProvider.property.proxy"></a>
 
 ```go
 func Proxy() interface{}
@@ -404,11 +404,11 @@ func Proxy() interface{}
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProvider.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-tls.provider.TlsProvider.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-tls.provider.TlsProvider.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -420,12 +420,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### TlsProviderConfig <a name="TlsProviderConfig" id="@cdktf/provider-tls.provider.TlsProviderConfig"></a>
+### TlsProviderConfig <a name="TlsProviderConfig" id="@cdktn/provider-tls.provider.TlsProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-tls.provider.TlsProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-tls.provider.TlsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/provider"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/provider"
 
 &provider.TlsProviderConfig {
 	Alias: *string,
@@ -437,12 +437,12 @@ import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/provider"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProviderConfig.property.proxy">Proxy</a></code> | <code>interface{}</code> | proxy block. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProviderConfig.property.proxy">Proxy</a></code> | <code>interface{}</code> | proxy block. |
 
 ---
 
-##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktf/provider-tls.provider.TlsProviderConfig.property.alias"></a>
+##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktn/provider-tls.provider.TlsProviderConfig.property.alias"></a>
 
 ```go
 Alias *string
@@ -456,7 +456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Proxy`<sup>Optional</sup> <a name="Proxy" id="@cdktf/provider-tls.provider.TlsProviderConfig.property.proxy"></a>
+##### `Proxy`<sup>Optional</sup> <a name="Proxy" id="@cdktn/provider-tls.provider.TlsProviderConfig.property.proxy"></a>
 
 ```go
 Proxy interface{}
@@ -470,12 +470,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### TlsProviderProxy <a name="TlsProviderProxy" id="@cdktf/provider-tls.provider.TlsProviderProxy"></a>
+### TlsProviderProxy <a name="TlsProviderProxy" id="@cdktn/provider-tls.provider.TlsProviderProxy"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-tls.provider.TlsProviderProxy.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-tls.provider.TlsProviderProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/provider"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v11/provider"
 
 &provider.TlsProviderProxy {
 	FromEnv: interface{},
@@ -489,14 +489,14 @@ import "github.com/cdktf/cdktf-provider-tls-go/tls/v11/provider"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProviderProxy.property.fromEnv">FromEnv</a></code> | <code>interface{}</code> | When `true` the provider will discover the proxy configuration from environment variables. |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProviderProxy.property.password">Password</a></code> | <code>*string</code> | Password used for Basic authentication against the Proxy. |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProviderProxy.property.url">Url</a></code> | <code>*string</code> | URL used to connect to the Proxy. Accepted schemes are: `http`, `https`, `socks5`. |
-| <code><a href="#@cdktf/provider-tls.provider.TlsProviderProxy.property.username">Username</a></code> | <code>*string</code> | Username (or Token) used for Basic authentication against the Proxy. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.fromEnv">FromEnv</a></code> | <code>interface{}</code> | When `true` the provider will discover the proxy configuration from environment variables. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.password">Password</a></code> | <code>*string</code> | Password used for Basic authentication against the Proxy. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.url">Url</a></code> | <code>*string</code> | URL used to connect to the Proxy. Accepted schemes are: `http`, `https`, `socks5`. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.username">Username</a></code> | <code>*string</code> | Username (or Token) used for Basic authentication against the Proxy. |
 
 ---
 
-##### `FromEnv`<sup>Optional</sup> <a name="FromEnv" id="@cdktf/provider-tls.provider.TlsProviderProxy.property.fromEnv"></a>
+##### `FromEnv`<sup>Optional</sup> <a name="FromEnv" id="@cdktn/provider-tls.provider.TlsProviderProxy.property.fromEnv"></a>
 
 ```go
 FromEnv interface{}
@@ -512,7 +512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktf/provider-tls.provider.TlsProviderProxy.property.password"></a>
+##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktn/provider-tls.provider.TlsProviderProxy.property.password"></a>
 
 ```go
 Password *string
@@ -526,7 +526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Url`<sup>Optional</sup> <a name="Url" id="@cdktf/provider-tls.provider.TlsProviderProxy.property.url"></a>
+##### `Url`<sup>Optional</sup> <a name="Url" id="@cdktn/provider-tls.provider.TlsProviderProxy.property.url"></a>
 
 ```go
 Url *string
@@ -540,7 +540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktf/provider-tls.provider.TlsProviderProxy.property.username"></a>
+##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktn/provider-tls.provider.TlsProviderProxy.property.username"></a>
 
 ```go
 Username *string

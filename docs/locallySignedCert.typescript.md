@@ -1,28 +1,28 @@
-# `locallySignedCert` Submodule <a name="`locallySignedCert` Submodule" id="@cdktf/provider-tls.locallySignedCert"></a>
+# `locallySignedCert` Submodule <a name="`locallySignedCert` Submodule" id="@cdktn/provider-tls.locallySignedCert"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### LocallySignedCert <a name="LocallySignedCert" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert"></a>
+### LocallySignedCert <a name="LocallySignedCert" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/resources/locally_signed_cert tls_locally_signed_cert}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer"></a>
 
 ```typescript
-import { locallySignedCert } from '@cdktf/provider-tls'
+import { locallySignedCert } from '@cdktn/provider-tls'
 
 new locallySignedCert.LocallySignedCert(scope: Construct, id: string, config: LocallySignedCertConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig">LocallySignedCertConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig">LocallySignedCertConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig">LocallySignedCertConfig</a>
+- *Type:* <a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig">LocallySignedCertConfig</a>
 
 ---
 
@@ -50,36 +50,36 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetEarlyRenewalHours">resetEarlyRenewalHours</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetIsCaCertificate">resetIsCaCertificate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetSetSubjectKeyId">resetSetSubjectKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetEarlyRenewalHours">resetEarlyRenewalHours</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetIsCaCertificate">resetIsCaCertificate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetSetSubjectKeyId">resetSetSubjectKeyId</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toString"></a>
 
 ```typescript
 public toString(): string
@@ -87,25 +87,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -113,7 +113,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -121,7 +121,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -129,19 +129,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -149,7 +149,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -157,7 +157,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -165,151 +165,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -319,7 +319,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -327,7 +327,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -335,7 +335,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -343,7 +343,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -351,7 +351,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -359,7 +359,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -367,19 +367,19 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetEarlyRenewalHours` <a name="resetEarlyRenewalHours" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetEarlyRenewalHours"></a>
+##### `resetEarlyRenewalHours` <a name="resetEarlyRenewalHours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetEarlyRenewalHours"></a>
 
 ```typescript
 public resetEarlyRenewalHours(): void
 ```
 
-##### `resetIsCaCertificate` <a name="resetIsCaCertificate" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetIsCaCertificate"></a>
+##### `resetIsCaCertificate` <a name="resetIsCaCertificate" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetIsCaCertificate"></a>
 
 ```typescript
 public resetIsCaCertificate(): void
 ```
 
-##### `resetSetSubjectKeyId` <a name="resetSetSubjectKeyId" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.resetSetSubjectKeyId"></a>
+##### `resetSetSubjectKeyId` <a name="resetSetSubjectKeyId" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetSetSubjectKeyId"></a>
 
 ```typescript
 public resetSetSubjectKeyId(): void
@@ -389,17 +389,17 @@ public resetSetSubjectKeyId(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a LocallySignedCert resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a LocallySignedCert resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isConstruct"></a>
 
 ```typescript
-import { locallySignedCert } from '@cdktf/provider-tls'
+import { locallySignedCert } from '@cdktn/provider-tls'
 
 locallySignedCert.LocallySignedCert.isConstruct(x: any)
 ```
@@ -420,7 +420,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -428,45 +428,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement"></a>
 
 ```typescript
-import { locallySignedCert } from '@cdktf/provider-tls'
+import { locallySignedCert } from '@cdktn/provider-tls'
 
 locallySignedCert.LocallySignedCert.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource"></a>
 
 ```typescript
-import { locallySignedCert } from '@cdktf/provider-tls'
+import { locallySignedCert } from '@cdktn/provider-tls'
 
 locallySignedCert.LocallySignedCert.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport"></a>
 
 ```typescript
-import { locallySignedCert } from '@cdktf/provider-tls'
+import { locallySignedCert } from '@cdktn/provider-tls'
 
 locallySignedCert.LocallySignedCert.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a LocallySignedCert resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -474,7 +474,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -482,7 +482,7 @@ The construct id used in the generated config for the LocallySignedCert to impor
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -492,7 +492,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -504,46 +504,46 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caKeyAlgorithm">caKeyAlgorithm</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.certPem">certPem</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.readyForRenewal">readyForRenewal</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityEndTime">validityEndTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityStartTime">validityStartTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUsesInput">allowedUsesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPemInput">caCertPemInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemInput">caPrivateKeyPemInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPemInput">certRequestPemInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHoursInput">earlyRenewalHoursInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificateInput">isCaCertificateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyIdInput">setSubjectKeyIdInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHoursInput">validityPeriodHoursInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUses">allowedUses</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPem">caCertPem</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPem">caPrivateKeyPem</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPem">certRequestPem</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHours">earlyRenewalHours</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificate">isCaCertificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyId">setSubjectKeyId</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHours">validityPeriodHours</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caKeyAlgorithm">caKeyAlgorithm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certPem">certPem</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.readyForRenewal">readyForRenewal</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityEndTime">validityEndTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityStartTime">validityStartTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUsesInput">allowedUsesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPemInput">caCertPemInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemInput">caPrivateKeyPemInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPemInput">certRequestPemInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHoursInput">earlyRenewalHoursInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificateInput">isCaCertificateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyIdInput">setSubjectKeyIdInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHoursInput">validityPeriodHoursInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUses">allowedUses</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPem">caCertPem</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPem">caPrivateKeyPem</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPem">certRequestPem</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHours">earlyRenewalHours</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificate">isCaCertificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyId">setSubjectKeyId</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHours">validityPeriodHours</a></code> | <code>number</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -555,7 +555,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -565,7 +565,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -575,7 +575,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -585,7 +585,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -595,7 +595,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -605,7 +605,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -615,7 +615,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -625,7 +625,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -635,7 +635,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -645,7 +645,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -655,7 +655,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -665,7 +665,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -675,7 +675,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -685,7 +685,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `caKeyAlgorithm`<sup>Required</sup> <a name="caKeyAlgorithm" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caKeyAlgorithm"></a>
+##### `caKeyAlgorithm`<sup>Required</sup> <a name="caKeyAlgorithm" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caKeyAlgorithm"></a>
 
 ```typescript
 public readonly caKeyAlgorithm: string;
@@ -695,7 +695,7 @@ public readonly caKeyAlgorithm: string;
 
 ---
 
-##### `certPem`<sup>Required</sup> <a name="certPem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.certPem"></a>
+##### `certPem`<sup>Required</sup> <a name="certPem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certPem"></a>
 
 ```typescript
 public readonly certPem: string;
@@ -705,7 +705,7 @@ public readonly certPem: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -715,7 +715,7 @@ public readonly id: string;
 
 ---
 
-##### `readyForRenewal`<sup>Required</sup> <a name="readyForRenewal" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.readyForRenewal"></a>
+##### `readyForRenewal`<sup>Required</sup> <a name="readyForRenewal" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.readyForRenewal"></a>
 
 ```typescript
 public readonly readyForRenewal: IResolvable;
@@ -725,7 +725,7 @@ public readonly readyForRenewal: IResolvable;
 
 ---
 
-##### `validityEndTime`<sup>Required</sup> <a name="validityEndTime" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityEndTime"></a>
+##### `validityEndTime`<sup>Required</sup> <a name="validityEndTime" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityEndTime"></a>
 
 ```typescript
 public readonly validityEndTime: string;
@@ -735,7 +735,7 @@ public readonly validityEndTime: string;
 
 ---
 
-##### `validityStartTime`<sup>Required</sup> <a name="validityStartTime" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityStartTime"></a>
+##### `validityStartTime`<sup>Required</sup> <a name="validityStartTime" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityStartTime"></a>
 
 ```typescript
 public readonly validityStartTime: string;
@@ -745,7 +745,7 @@ public readonly validityStartTime: string;
 
 ---
 
-##### `allowedUsesInput`<sup>Optional</sup> <a name="allowedUsesInput" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUsesInput"></a>
+##### `allowedUsesInput`<sup>Optional</sup> <a name="allowedUsesInput" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUsesInput"></a>
 
 ```typescript
 public readonly allowedUsesInput: string[];
@@ -755,7 +755,7 @@ public readonly allowedUsesInput: string[];
 
 ---
 
-##### `caCertPemInput`<sup>Optional</sup> <a name="caCertPemInput" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPemInput"></a>
+##### `caCertPemInput`<sup>Optional</sup> <a name="caCertPemInput" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPemInput"></a>
 
 ```typescript
 public readonly caCertPemInput: string;
@@ -765,7 +765,7 @@ public readonly caCertPemInput: string;
 
 ---
 
-##### `caPrivateKeyPemInput`<sup>Optional</sup> <a name="caPrivateKeyPemInput" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemInput"></a>
+##### `caPrivateKeyPemInput`<sup>Optional</sup> <a name="caPrivateKeyPemInput" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemInput"></a>
 
 ```typescript
 public readonly caPrivateKeyPemInput: string;
@@ -775,7 +775,7 @@ public readonly caPrivateKeyPemInput: string;
 
 ---
 
-##### `certRequestPemInput`<sup>Optional</sup> <a name="certRequestPemInput" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPemInput"></a>
+##### `certRequestPemInput`<sup>Optional</sup> <a name="certRequestPemInput" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPemInput"></a>
 
 ```typescript
 public readonly certRequestPemInput: string;
@@ -785,7 +785,7 @@ public readonly certRequestPemInput: string;
 
 ---
 
-##### `earlyRenewalHoursInput`<sup>Optional</sup> <a name="earlyRenewalHoursInput" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHoursInput"></a>
+##### `earlyRenewalHoursInput`<sup>Optional</sup> <a name="earlyRenewalHoursInput" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHoursInput"></a>
 
 ```typescript
 public readonly earlyRenewalHoursInput: number;
@@ -795,7 +795,7 @@ public readonly earlyRenewalHoursInput: number;
 
 ---
 
-##### `isCaCertificateInput`<sup>Optional</sup> <a name="isCaCertificateInput" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificateInput"></a>
+##### `isCaCertificateInput`<sup>Optional</sup> <a name="isCaCertificateInput" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificateInput"></a>
 
 ```typescript
 public readonly isCaCertificateInput: boolean | IResolvable;
@@ -805,7 +805,7 @@ public readonly isCaCertificateInput: boolean | IResolvable;
 
 ---
 
-##### `setSubjectKeyIdInput`<sup>Optional</sup> <a name="setSubjectKeyIdInput" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyIdInput"></a>
+##### `setSubjectKeyIdInput`<sup>Optional</sup> <a name="setSubjectKeyIdInput" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyIdInput"></a>
 
 ```typescript
 public readonly setSubjectKeyIdInput: boolean | IResolvable;
@@ -815,7 +815,7 @@ public readonly setSubjectKeyIdInput: boolean | IResolvable;
 
 ---
 
-##### `validityPeriodHoursInput`<sup>Optional</sup> <a name="validityPeriodHoursInput" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHoursInput"></a>
+##### `validityPeriodHoursInput`<sup>Optional</sup> <a name="validityPeriodHoursInput" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHoursInput"></a>
 
 ```typescript
 public readonly validityPeriodHoursInput: number;
@@ -825,7 +825,7 @@ public readonly validityPeriodHoursInput: number;
 
 ---
 
-##### `allowedUses`<sup>Required</sup> <a name="allowedUses" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUses"></a>
+##### `allowedUses`<sup>Required</sup> <a name="allowedUses" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUses"></a>
 
 ```typescript
 public readonly allowedUses: string[];
@@ -835,7 +835,7 @@ public readonly allowedUses: string[];
 
 ---
 
-##### `caCertPem`<sup>Required</sup> <a name="caCertPem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPem"></a>
+##### `caCertPem`<sup>Required</sup> <a name="caCertPem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPem"></a>
 
 ```typescript
 public readonly caCertPem: string;
@@ -845,7 +845,7 @@ public readonly caCertPem: string;
 
 ---
 
-##### `caPrivateKeyPem`<sup>Required</sup> <a name="caPrivateKeyPem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPem"></a>
+##### `caPrivateKeyPem`<sup>Required</sup> <a name="caPrivateKeyPem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPem"></a>
 
 ```typescript
 public readonly caPrivateKeyPem: string;
@@ -855,7 +855,7 @@ public readonly caPrivateKeyPem: string;
 
 ---
 
-##### `certRequestPem`<sup>Required</sup> <a name="certRequestPem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPem"></a>
+##### `certRequestPem`<sup>Required</sup> <a name="certRequestPem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPem"></a>
 
 ```typescript
 public readonly certRequestPem: string;
@@ -865,7 +865,7 @@ public readonly certRequestPem: string;
 
 ---
 
-##### `earlyRenewalHours`<sup>Required</sup> <a name="earlyRenewalHours" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHours"></a>
+##### `earlyRenewalHours`<sup>Required</sup> <a name="earlyRenewalHours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHours"></a>
 
 ```typescript
 public readonly earlyRenewalHours: number;
@@ -875,7 +875,7 @@ public readonly earlyRenewalHours: number;
 
 ---
 
-##### `isCaCertificate`<sup>Required</sup> <a name="isCaCertificate" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificate"></a>
+##### `isCaCertificate`<sup>Required</sup> <a name="isCaCertificate" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificate"></a>
 
 ```typescript
 public readonly isCaCertificate: boolean | IResolvable;
@@ -885,7 +885,7 @@ public readonly isCaCertificate: boolean | IResolvable;
 
 ---
 
-##### `setSubjectKeyId`<sup>Required</sup> <a name="setSubjectKeyId" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyId"></a>
+##### `setSubjectKeyId`<sup>Required</sup> <a name="setSubjectKeyId" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.setSubjectKeyId"></a>
 
 ```typescript
 public readonly setSubjectKeyId: boolean | IResolvable;
@@ -895,7 +895,7 @@ public readonly setSubjectKeyId: boolean | IResolvable;
 
 ---
 
-##### `validityPeriodHours`<sup>Required</sup> <a name="validityPeriodHours" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHours"></a>
+##### `validityPeriodHours`<sup>Required</sup> <a name="validityPeriodHours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.validityPeriodHours"></a>
 
 ```typescript
 public readonly validityPeriodHours: number;
@@ -909,11 +909,11 @@ public readonly validityPeriodHours: number;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCert.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -925,12 +925,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### LocallySignedCertConfig <a name="LocallySignedCertConfig" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig"></a>
+### LocallySignedCertConfig <a name="LocallySignedCertConfig" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.Initializer"></a>
 
 ```typescript
-import { locallySignedCert } from '@cdktf/provider-tls'
+import { locallySignedCert } from '@cdktn/provider-tls'
 
 const locallySignedCertConfig: locallySignedCert.LocallySignedCertConfig = { ... }
 ```
@@ -939,25 +939,25 @@ const locallySignedCertConfig: locallySignedCert.LocallySignedCertConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.allowedUses">allowedUses</a></code> | <code>string[]</code> | List of key usages allowed for the issued certificate. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caCertPem">caCertPem</a></code> | <code>string</code> | Certificate data of the Certificate Authority (CA) in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPem">caPrivateKeyPem</a></code> | <code>string</code> | Private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.certRequestPem">certRequestPem</a></code> | <code>string</code> | Certificate request data in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.validityPeriodHours">validityPeriodHours</a></code> | <code>number</code> | Number of hours, after initial issuing, that the certificate will remain valid for. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.earlyRenewalHours">earlyRenewalHours</a></code> | <code>number</code> | The resource will consider the certificate to have expired the given number of hours before its actual expiry time. |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.isCaCertificate">isCaCertificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is the generated certificate representing a Certificate Authority (CA) (default: `false`). |
-| <code><a href="#@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.setSubjectKeyId">setSubjectKeyId</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.allowedUses">allowedUses</a></code> | <code>string[]</code> | List of key usages allowed for the issued certificate. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caCertPem">caCertPem</a></code> | <code>string</code> | Certificate data of the Certificate Authority (CA) in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPem">caPrivateKeyPem</a></code> | <code>string</code> | Private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.certRequestPem">certRequestPem</a></code> | <code>string</code> | Certificate request data in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.validityPeriodHours">validityPeriodHours</a></code> | <code>number</code> | Number of hours, after initial issuing, that the certificate will remain valid for. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.earlyRenewalHours">earlyRenewalHours</a></code> | <code>number</code> | The resource will consider the certificate to have expired the given number of hours before its actual expiry time. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.isCaCertificate">isCaCertificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is the generated certificate representing a Certificate Authority (CA) (default: `false`). |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.setSubjectKeyId">setSubjectKeyId</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -967,7 +967,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -977,7 +977,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -987,7 +987,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -997,7 +997,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1007,7 +1007,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1017,7 +1017,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1027,7 +1027,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `allowedUses`<sup>Required</sup> <a name="allowedUses" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.allowedUses"></a>
+##### `allowedUses`<sup>Required</sup> <a name="allowedUses" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.allowedUses"></a>
 
 ```typescript
 public readonly allowedUses: string[];
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `caCertPem`<sup>Required</sup> <a name="caCertPem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caCertPem"></a>
+##### `caCertPem`<sup>Required</sup> <a name="caCertPem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caCertPem"></a>
 
 ```typescript
 public readonly caCertPem: string;
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `caPrivateKeyPem`<sup>Required</sup> <a name="caPrivateKeyPem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPem"></a>
+##### `caPrivateKeyPem`<sup>Required</sup> <a name="caPrivateKeyPem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPem"></a>
 
 ```typescript
 public readonly caPrivateKeyPem: string;
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `certRequestPem`<sup>Required</sup> <a name="certRequestPem" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.certRequestPem"></a>
+##### `certRequestPem`<sup>Required</sup> <a name="certRequestPem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.certRequestPem"></a>
 
 ```typescript
 public readonly certRequestPem: string;
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `validityPeriodHours`<sup>Required</sup> <a name="validityPeriodHours" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.validityPeriodHours"></a>
+##### `validityPeriodHours`<sup>Required</sup> <a name="validityPeriodHours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.validityPeriodHours"></a>
 
 ```typescript
 public readonly validityPeriodHours: number;
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `earlyRenewalHours`<sup>Optional</sup> <a name="earlyRenewalHours" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.earlyRenewalHours"></a>
+##### `earlyRenewalHours`<sup>Optional</sup> <a name="earlyRenewalHours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.earlyRenewalHours"></a>
 
 ```typescript
 public readonly earlyRenewalHours: number;
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `isCaCertificate`<sup>Optional</sup> <a name="isCaCertificate" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.isCaCertificate"></a>
+##### `isCaCertificate`<sup>Optional</sup> <a name="isCaCertificate" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.isCaCertificate"></a>
 
 ```typescript
 public readonly isCaCertificate: boolean | IResolvable;
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `setSubjectKeyId`<sup>Optional</sup> <a name="setSubjectKeyId" id="@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig.property.setSubjectKeyId"></a>
+##### `setSubjectKeyId`<sup>Optional</sup> <a name="setSubjectKeyId" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.setSubjectKeyId"></a>
 
 ```typescript
 public readonly setSubjectKeyId: boolean | IResolvable;
