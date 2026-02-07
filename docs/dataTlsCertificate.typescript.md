@@ -4,7 +4,7 @@
 
 ### DataTlsCertificate <a name="DataTlsCertificate" id="@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/data-sources/certificate tls_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/certificate tls_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificate.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataTlsCertificate to impo
 
 The id of the existing DataTlsCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/data-sources/certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -765,7 +765,7 @@ public readonly content: string;
 
 The content of the certificate in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/data-sources/certificate#content DataTlsCertificate#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/certificate#content DataTlsCertificate#content}
 
 ---
 
@@ -781,7 +781,7 @@ URL of the endpoint to get the certificates from.
 
 Accepted schemes are: `https`, `tls`. For scheme `https://` it will use the HTTP protocol and apply the `proxy` configuration of the provider, if set. For scheme `tls://` it will instead use a secure TCP socket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/data-sources/certificate#url DataTlsCertificate#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/certificate#url DataTlsCertificate#url}
 
 ---
 
@@ -795,7 +795,7 @@ public readonly verifyChain: boolean | IResolvable;
 
 Whether to verify the certificate chain while parsing it or not (default: `true`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.1.0/docs/data-sources/certificate#verify_chain DataTlsCertificate#verify_chain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/certificate#verify_chain DataTlsCertificate#verify_chain}
 
 ---
 
@@ -1181,6 +1181,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference.property.certPem">certPem</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference.property.isCa">isCa</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference.property.issuer">issuer</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference.property.maxPathLength">maxPathLength</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference.property.notAfter">notAfter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference.property.notBefore">notBefore</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference.property.publicKeyAlgorithm">publicKeyAlgorithm</a></code> | <code>string</code> | *No description.* |
@@ -1244,6 +1245,16 @@ public readonly issuer: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `maxPathLength`<sup>Required</sup> <a name="maxPathLength" id="@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference.property.maxPathLength"></a>
+
+```typescript
+public readonly maxPathLength: number;
+```
+
+- *Type:* number
 
 ---
 
