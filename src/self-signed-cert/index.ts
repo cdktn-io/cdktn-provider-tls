@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SelfSignedCertConfig extends cdktf.TerraformMetaArguments {
+export interface SelfSignedCertConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of key usages allowed for the issued certificate. Values are defined in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280) and combine flags defined by both [Key Usages](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3) and [Extended Key Usages](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12). Accepted values: `any_extended`, `cert_signing`, `client_auth`, `code_signing`, `content_commitment`, `crl_signing`, `data_encipherment`, `decipher_only`, `digital_signature`, `email_protection`, `encipher_only`, `ipsec_end_system`, `ipsec_tunnel`, `ipsec_user`, `key_agreement`, `key_encipherment`, `microsoft_commercial_code_signing`, `microsoft_kernel_code_signing`, `microsoft_server_gated_crypto`, `netscape_server_gated_crypto`, `ocsp_signing`, `server_auth`, `timestamping`.
   *
@@ -41,7 +41,7 @@ export interface SelfSignedCertConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#is_ca_certificate SelfSignedCert#is_ca_certificate}
   */
-  readonly isCaCertificate?: boolean | cdktf.IResolvable;
+  readonly isCaCertificate?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of intermediate certificates that may follow this certificate in a valid certification path. If `is_ca_certificate` is `false`, this value is ignored.
   *
@@ -59,13 +59,13 @@ export interface SelfSignedCertConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#set_authority_key_id SelfSignedCert#set_authority_key_id}
   */
-  readonly setAuthorityKeyId?: boolean | cdktf.IResolvable;
+  readonly setAuthorityKeyId?: boolean | cdktn.IResolvable;
   /**
   * Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#set_subject_key_id SelfSignedCert#set_subject_key_id}
   */
-  readonly setSubjectKeyId?: boolean | cdktf.IResolvable;
+  readonly setSubjectKeyId?: boolean | cdktn.IResolvable;
   /**
   * List of URIs for which a certificate is being requested (i.e. certificate subjects).
   *
@@ -83,7 +83,7 @@ export interface SelfSignedCertConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#subject SelfSignedCert#subject}
   */
-  readonly subject?: SelfSignedCertSubject[] | cdktf.IResolvable;
+  readonly subject?: SelfSignedCertSubject[] | cdktn.IResolvable;
 }
 export interface SelfSignedCertSubject {
   /**
@@ -148,88 +148,88 @@ export interface SelfSignedCertSubject {
   readonly streetAddress?: string[];
 }
 
-export function selfSignedCertSubjectToTerraform(struct?: SelfSignedCertSubject | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function selfSignedCertSubjectToTerraform(struct?: SelfSignedCertSubject | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    common_name: cdktf.stringToTerraform(struct!.commonName),
-    country: cdktf.stringToTerraform(struct!.country),
-    email_address: cdktf.stringToTerraform(struct!.emailAddress),
-    locality: cdktf.stringToTerraform(struct!.locality),
-    organization: cdktf.stringToTerraform(struct!.organization),
-    organizational_unit: cdktf.stringToTerraform(struct!.organizationalUnit),
-    postal_code: cdktf.stringToTerraform(struct!.postalCode),
-    province: cdktf.stringToTerraform(struct!.province),
-    serial_number: cdktf.stringToTerraform(struct!.serialNumber),
-    street_address: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.streetAddress),
+    common_name: cdktn.stringToTerraform(struct!.commonName),
+    country: cdktn.stringToTerraform(struct!.country),
+    email_address: cdktn.stringToTerraform(struct!.emailAddress),
+    locality: cdktn.stringToTerraform(struct!.locality),
+    organization: cdktn.stringToTerraform(struct!.organization),
+    organizational_unit: cdktn.stringToTerraform(struct!.organizationalUnit),
+    postal_code: cdktn.stringToTerraform(struct!.postalCode),
+    province: cdktn.stringToTerraform(struct!.province),
+    serial_number: cdktn.stringToTerraform(struct!.serialNumber),
+    street_address: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.streetAddress),
   }
 }
 
 
-export function selfSignedCertSubjectToHclTerraform(struct?: SelfSignedCertSubject | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function selfSignedCertSubjectToHclTerraform(struct?: SelfSignedCertSubject | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     common_name: {
-      value: cdktf.stringToHclTerraform(struct!.commonName),
+      value: cdktn.stringToHclTerraform(struct!.commonName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country: {
-      value: cdktf.stringToHclTerraform(struct!.country),
+      value: cdktn.stringToHclTerraform(struct!.country),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email_address: {
-      value: cdktf.stringToHclTerraform(struct!.emailAddress),
+      value: cdktn.stringToHclTerraform(struct!.emailAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     locality: {
-      value: cdktf.stringToHclTerraform(struct!.locality),
+      value: cdktn.stringToHclTerraform(struct!.locality),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organization: {
-      value: cdktf.stringToHclTerraform(struct!.organization),
+      value: cdktn.stringToHclTerraform(struct!.organization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organizational_unit: {
-      value: cdktf.stringToHclTerraform(struct!.organizationalUnit),
+      value: cdktn.stringToHclTerraform(struct!.organizationalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     postal_code: {
-      value: cdktf.stringToHclTerraform(struct!.postalCode),
+      value: cdktn.stringToHclTerraform(struct!.postalCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     province: {
-      value: cdktf.stringToHclTerraform(struct!.province),
+      value: cdktn.stringToHclTerraform(struct!.province),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     serial_number: {
-      value: cdktf.stringToHclTerraform(struct!.serialNumber),
+      value: cdktn.stringToHclTerraform(struct!.serialNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     street_address: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.streetAddress),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.streetAddress),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -240,9 +240,9 @@ export function selfSignedCertSubjectToHclTerraform(struct?: SelfSignedCertSubje
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SelfSignedCertSubjectOutputReference extends cdktf.ComplexObject {
+export class SelfSignedCertSubjectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -250,11 +250,11 @@ export class SelfSignedCertSubjectOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SelfSignedCertSubject | cdktf.IResolvable | undefined {
+  public get internalValue(): SelfSignedCertSubject | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -303,7 +303,7 @@ export class SelfSignedCertSubjectOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SelfSignedCertSubject | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SelfSignedCertSubject | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -318,7 +318,7 @@ export class SelfSignedCertSubjectOutputReference extends cdktf.ComplexObject {
       this._serialNumber = undefined;
       this._streetAddress = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -499,15 +499,15 @@ export class SelfSignedCertSubjectOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SelfSignedCertSubjectList extends cdktf.ComplexList {
-  public internalValue? : SelfSignedCertSubject[] | cdktf.IResolvable
+export class SelfSignedCertSubjectList extends cdktn.ComplexList {
+  public internalValue? : SelfSignedCertSubject[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -522,7 +522,7 @@ export class SelfSignedCertSubjectList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert tls_self_signed_cert}
 */
-export class SelfSignedCert extends cdktf.TerraformResource {
+export class SelfSignedCert extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -533,14 +533,14 @@ export class SelfSignedCert extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SelfSignedCert resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SelfSignedCert resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SelfSignedCert to import
   * @param importFromId The id of the existing SelfSignedCert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/self_signed_cert#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SelfSignedCert to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "tls_self_signed_cert", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "tls_self_signed_cert", importId: importFromId, provider });
       }
 
   // ===========
@@ -660,11 +660,11 @@ export class SelfSignedCert extends cdktf.TerraformResource {
   }
 
   // is_ca_certificate - computed: true, optional: true, required: false
-  private _isCaCertificate?: boolean | cdktf.IResolvable; 
+  private _isCaCertificate?: boolean | cdktn.IResolvable; 
   public get isCaCertificate() {
     return this.getBooleanAttribute('is_ca_certificate');
   }
-  public set isCaCertificate(value: boolean | cdktf.IResolvable) {
+  public set isCaCertificate(value: boolean | cdktn.IResolvable) {
     this._isCaCertificate = value;
   }
   public resetIsCaCertificate() {
@@ -715,11 +715,11 @@ export class SelfSignedCert extends cdktf.TerraformResource {
   }
 
   // set_authority_key_id - computed: true, optional: true, required: false
-  private _setAuthorityKeyId?: boolean | cdktf.IResolvable; 
+  private _setAuthorityKeyId?: boolean | cdktn.IResolvable; 
   public get setAuthorityKeyId() {
     return this.getBooleanAttribute('set_authority_key_id');
   }
-  public set setAuthorityKeyId(value: boolean | cdktf.IResolvable) {
+  public set setAuthorityKeyId(value: boolean | cdktn.IResolvable) {
     this._setAuthorityKeyId = value;
   }
   public resetSetAuthorityKeyId() {
@@ -731,11 +731,11 @@ export class SelfSignedCert extends cdktf.TerraformResource {
   }
 
   // set_subject_key_id - computed: true, optional: true, required: false
-  private _setSubjectKeyId?: boolean | cdktf.IResolvable; 
+  private _setSubjectKeyId?: boolean | cdktn.IResolvable; 
   public get setSubjectKeyId() {
     return this.getBooleanAttribute('set_subject_key_id');
   }
-  public set setSubjectKeyId(value: boolean | cdktf.IResolvable) {
+  public set setSubjectKeyId(value: boolean | cdktn.IResolvable) {
     this._setSubjectKeyId = value;
   }
   public resetSetSubjectKeyId() {
@@ -790,7 +790,7 @@ export class SelfSignedCert extends cdktf.TerraformResource {
   public get subject() {
     return this._subject;
   }
-  public putSubject(value: SelfSignedCertSubject[] | cdktf.IResolvable) {
+  public putSubject(value: SelfSignedCertSubject[] | cdktn.IResolvable) {
     this._subject.internalValue = value;
   }
   public resetSubject() {
@@ -807,91 +807,91 @@ export class SelfSignedCert extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_uses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedUses),
-      dns_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dnsNames),
-      early_renewal_hours: cdktf.numberToTerraform(this._earlyRenewalHours),
-      ip_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipAddresses),
-      is_ca_certificate: cdktf.booleanToTerraform(this._isCaCertificate),
-      max_path_length: cdktf.numberToTerraform(this._maxPathLength),
-      private_key_pem: cdktf.stringToTerraform(this._privateKeyPem),
-      set_authority_key_id: cdktf.booleanToTerraform(this._setAuthorityKeyId),
-      set_subject_key_id: cdktf.booleanToTerraform(this._setSubjectKeyId),
-      uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._uris),
-      validity_period_hours: cdktf.numberToTerraform(this._validityPeriodHours),
-      subject: cdktf.listMapper(selfSignedCertSubjectToTerraform, true)(this._subject.internalValue),
+      allowed_uses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedUses),
+      dns_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dnsNames),
+      early_renewal_hours: cdktn.numberToTerraform(this._earlyRenewalHours),
+      ip_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ipAddresses),
+      is_ca_certificate: cdktn.booleanToTerraform(this._isCaCertificate),
+      max_path_length: cdktn.numberToTerraform(this._maxPathLength),
+      private_key_pem: cdktn.stringToTerraform(this._privateKeyPem),
+      set_authority_key_id: cdktn.booleanToTerraform(this._setAuthorityKeyId),
+      set_subject_key_id: cdktn.booleanToTerraform(this._setSubjectKeyId),
+      uris: cdktn.listMapper(cdktn.stringToTerraform, false)(this._uris),
+      validity_period_hours: cdktn.numberToTerraform(this._validityPeriodHours),
+      subject: cdktn.listMapper(selfSignedCertSubjectToTerraform, true)(this._subject.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_uses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedUses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedUses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       dns_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dnsNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._dnsNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       early_renewal_hours: {
-        value: cdktf.numberToHclTerraform(this._earlyRenewalHours),
+        value: cdktn.numberToHclTerraform(this._earlyRenewalHours),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       ip_addresses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipAddresses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ipAddresses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       is_ca_certificate: {
-        value: cdktf.booleanToHclTerraform(this._isCaCertificate),
+        value: cdktn.booleanToHclTerraform(this._isCaCertificate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       max_path_length: {
-        value: cdktf.numberToHclTerraform(this._maxPathLength),
+        value: cdktn.numberToHclTerraform(this._maxPathLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       private_key_pem: {
-        value: cdktf.stringToHclTerraform(this._privateKeyPem),
+        value: cdktn.stringToHclTerraform(this._privateKeyPem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       set_authority_key_id: {
-        value: cdktf.booleanToHclTerraform(this._setAuthorityKeyId),
+        value: cdktn.booleanToHclTerraform(this._setAuthorityKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       set_subject_key_id: {
-        value: cdktf.booleanToHclTerraform(this._setSubjectKeyId),
+        value: cdktn.booleanToHclTerraform(this._setSubjectKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       uris: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._uris),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._uris),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       validity_period_hours: {
-        value: cdktf.numberToHclTerraform(this._validityPeriodHours),
+        value: cdktn.numberToHclTerraform(this._validityPeriodHours),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       subject: {
-        value: cdktf.listMapperHcl(selfSignedCertSubjectToHclTerraform, true)(this._subject.internalValue),
+        value: cdktn.listMapperHcl(selfSignedCertSubjectToHclTerraform, true)(this._subject.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SelfSignedCertSubjectList",

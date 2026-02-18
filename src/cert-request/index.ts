@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CertRequestConfig extends cdktf.TerraformMetaArguments {
+export interface CertRequestConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of DNS names for which a certificate is being requested (i.e. certificate subjects).
   *
@@ -41,7 +41,7 @@ export interface CertRequestConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#subject CertRequest#subject}
   */
-  readonly subject?: CertRequestSubject[] | cdktf.IResolvable;
+  readonly subject?: CertRequestSubject[] | cdktn.IResolvable;
 }
 export interface CertRequestSubject {
   /**
@@ -106,88 +106,88 @@ export interface CertRequestSubject {
   readonly streetAddress?: string[];
 }
 
-export function certRequestSubjectToTerraform(struct?: CertRequestSubject | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certRequestSubjectToTerraform(struct?: CertRequestSubject | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    common_name: cdktf.stringToTerraform(struct!.commonName),
-    country: cdktf.stringToTerraform(struct!.country),
-    email_address: cdktf.stringToTerraform(struct!.emailAddress),
-    locality: cdktf.stringToTerraform(struct!.locality),
-    organization: cdktf.stringToTerraform(struct!.organization),
-    organizational_unit: cdktf.stringToTerraform(struct!.organizationalUnit),
-    postal_code: cdktf.stringToTerraform(struct!.postalCode),
-    province: cdktf.stringToTerraform(struct!.province),
-    serial_number: cdktf.stringToTerraform(struct!.serialNumber),
-    street_address: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.streetAddress),
+    common_name: cdktn.stringToTerraform(struct!.commonName),
+    country: cdktn.stringToTerraform(struct!.country),
+    email_address: cdktn.stringToTerraform(struct!.emailAddress),
+    locality: cdktn.stringToTerraform(struct!.locality),
+    organization: cdktn.stringToTerraform(struct!.organization),
+    organizational_unit: cdktn.stringToTerraform(struct!.organizationalUnit),
+    postal_code: cdktn.stringToTerraform(struct!.postalCode),
+    province: cdktn.stringToTerraform(struct!.province),
+    serial_number: cdktn.stringToTerraform(struct!.serialNumber),
+    street_address: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.streetAddress),
   }
 }
 
 
-export function certRequestSubjectToHclTerraform(struct?: CertRequestSubject | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certRequestSubjectToHclTerraform(struct?: CertRequestSubject | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     common_name: {
-      value: cdktf.stringToHclTerraform(struct!.commonName),
+      value: cdktn.stringToHclTerraform(struct!.commonName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     country: {
-      value: cdktf.stringToHclTerraform(struct!.country),
+      value: cdktn.stringToHclTerraform(struct!.country),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email_address: {
-      value: cdktf.stringToHclTerraform(struct!.emailAddress),
+      value: cdktn.stringToHclTerraform(struct!.emailAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     locality: {
-      value: cdktf.stringToHclTerraform(struct!.locality),
+      value: cdktn.stringToHclTerraform(struct!.locality),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organization: {
-      value: cdktf.stringToHclTerraform(struct!.organization),
+      value: cdktn.stringToHclTerraform(struct!.organization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organizational_unit: {
-      value: cdktf.stringToHclTerraform(struct!.organizationalUnit),
+      value: cdktn.stringToHclTerraform(struct!.organizationalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     postal_code: {
-      value: cdktf.stringToHclTerraform(struct!.postalCode),
+      value: cdktn.stringToHclTerraform(struct!.postalCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     province: {
-      value: cdktf.stringToHclTerraform(struct!.province),
+      value: cdktn.stringToHclTerraform(struct!.province),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     serial_number: {
-      value: cdktf.stringToHclTerraform(struct!.serialNumber),
+      value: cdktn.stringToHclTerraform(struct!.serialNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     street_address: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.streetAddress),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.streetAddress),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -198,9 +198,9 @@ export function certRequestSubjectToHclTerraform(struct?: CertRequestSubject | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertRequestSubjectOutputReference extends cdktf.ComplexObject {
+export class CertRequestSubjectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -208,11 +208,11 @@ export class CertRequestSubjectOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CertRequestSubject | cdktf.IResolvable | undefined {
+  public get internalValue(): CertRequestSubject | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -261,7 +261,7 @@ export class CertRequestSubjectOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CertRequestSubject | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CertRequestSubject | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -276,7 +276,7 @@ export class CertRequestSubjectOutputReference extends cdktf.ComplexObject {
       this._serialNumber = undefined;
       this._streetAddress = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -457,15 +457,15 @@ export class CertRequestSubjectOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class CertRequestSubjectList extends cdktf.ComplexList {
-  public internalValue? : CertRequestSubject[] | cdktf.IResolvable
+export class CertRequestSubjectList extends cdktn.ComplexList {
+  public internalValue? : CertRequestSubject[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -480,7 +480,7 @@ export class CertRequestSubjectList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request tls_cert_request}
 */
-export class CertRequest extends cdktf.TerraformResource {
+export class CertRequest extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -491,14 +491,14 @@ export class CertRequest extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CertRequest resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CertRequest resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CertRequest to import
   * @param importFromId The id of the existing CertRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CertRequest to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "tls_cert_request", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "tls_cert_request", importId: importFromId, provider });
       }
 
   // ===========
@@ -620,7 +620,7 @@ export class CertRequest extends cdktf.TerraformResource {
   public get subject() {
     return this._subject;
   }
-  public putSubject(value: CertRequestSubject[] | cdktf.IResolvable) {
+  public putSubject(value: CertRequestSubject[] | cdktn.IResolvable) {
     this._subject.internalValue = value;
   }
   public resetSubject() {
@@ -637,42 +637,42 @@ export class CertRequest extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dns_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dnsNames),
-      ip_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipAddresses),
-      private_key_pem: cdktf.stringToTerraform(this._privateKeyPem),
-      uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._uris),
-      subject: cdktf.listMapper(certRequestSubjectToTerraform, true)(this._subject.internalValue),
+      dns_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dnsNames),
+      ip_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ipAddresses),
+      private_key_pem: cdktn.stringToTerraform(this._privateKeyPem),
+      uris: cdktn.listMapper(cdktn.stringToTerraform, false)(this._uris),
+      subject: cdktn.listMapper(certRequestSubjectToTerraform, true)(this._subject.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dns_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dnsNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._dnsNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       ip_addresses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipAddresses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ipAddresses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       private_key_pem: {
-        value: cdktf.stringToHclTerraform(this._privateKeyPem),
+        value: cdktn.stringToHclTerraform(this._privateKeyPem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       uris: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._uris),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._uris),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       subject: {
-        value: cdktf.listMapperHcl(certRequestSubjectToHclTerraform, true)(this._subject.internalValue),
+        value: cdktn.listMapperHcl(certRequestSubjectToHclTerraform, true)(this._subject.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CertRequestSubjectList",

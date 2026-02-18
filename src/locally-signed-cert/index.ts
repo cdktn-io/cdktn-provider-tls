@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LocallySignedCertConfig extends cdktf.TerraformMetaArguments {
+export interface LocallySignedCertConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of key usages allowed for the issued certificate. Values are defined in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280) and combine flags defined by both [Key Usages](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3) and [Extended Key Usages](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12). Accepted values: `any_extended`, `cert_signing`, `client_auth`, `code_signing`, `content_commitment`, `crl_signing`, `data_encipherment`, `decipher_only`, `digital_signature`, `email_protection`, `encipher_only`, `ipsec_end_system`, `ipsec_tunnel`, `ipsec_user`, `key_agreement`, `key_encipherment`, `microsoft_commercial_code_signing`, `microsoft_kernel_code_signing`, `microsoft_server_gated_crypto`, `netscape_server_gated_crypto`, `ocsp_signing`, `server_auth`, `timestamping`.
   *
@@ -47,7 +47,7 @@ export interface LocallySignedCertConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/locally_signed_cert#is_ca_certificate LocallySignedCert#is_ca_certificate}
   */
-  readonly isCaCertificate?: boolean | cdktf.IResolvable;
+  readonly isCaCertificate?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of intermediate certificates that may follow this certificate in a valid certification path. If `is_ca_certificate` is `false`, this value is ignored.
   *
@@ -59,7 +59,7 @@ export interface LocallySignedCertConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/locally_signed_cert#set_subject_key_id LocallySignedCert#set_subject_key_id}
   */
-  readonly setSubjectKeyId?: boolean | cdktf.IResolvable;
+  readonly setSubjectKeyId?: boolean | cdktn.IResolvable;
   /**
   * Number of hours, after initial issuing, that the certificate will remain valid for.
   *
@@ -71,7 +71,7 @@ export interface LocallySignedCertConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/locally_signed_cert tls_locally_signed_cert}
 */
-export class LocallySignedCert extends cdktf.TerraformResource {
+export class LocallySignedCert extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -82,14 +82,14 @@ export class LocallySignedCert extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LocallySignedCert resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LocallySignedCert resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LocallySignedCert to import
   * @param importFromId The id of the existing LocallySignedCert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/locally_signed_cert#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LocallySignedCert to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "tls_locally_signed_cert", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "tls_locally_signed_cert", importId: importFromId, provider });
       }
 
   // ===========
@@ -218,11 +218,11 @@ export class LocallySignedCert extends cdktf.TerraformResource {
   }
 
   // is_ca_certificate - computed: true, optional: true, required: false
-  private _isCaCertificate?: boolean | cdktf.IResolvable; 
+  private _isCaCertificate?: boolean | cdktn.IResolvable; 
   public get isCaCertificate() {
     return this.getBooleanAttribute('is_ca_certificate');
   }
-  public set isCaCertificate(value: boolean | cdktf.IResolvable) {
+  public set isCaCertificate(value: boolean | cdktn.IResolvable) {
     this._isCaCertificate = value;
   }
   public resetIsCaCertificate() {
@@ -255,11 +255,11 @@ export class LocallySignedCert extends cdktf.TerraformResource {
   }
 
   // set_subject_key_id - computed: true, optional: true, required: false
-  private _setSubjectKeyId?: boolean | cdktf.IResolvable; 
+  private _setSubjectKeyId?: boolean | cdktn.IResolvable; 
   public get setSubjectKeyId() {
     return this.getBooleanAttribute('set_subject_key_id');
   }
-  public set setSubjectKeyId(value: boolean | cdktf.IResolvable) {
+  public set setSubjectKeyId(value: boolean | cdktn.IResolvable) {
     this._setSubjectKeyId = value;
   }
   public resetSetSubjectKeyId() {
@@ -299,70 +299,70 @@ export class LocallySignedCert extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_uses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedUses),
-      ca_cert_pem: cdktf.stringToTerraform(this._caCertPem),
-      ca_private_key_pem: cdktf.stringToTerraform(this._caPrivateKeyPem),
-      cert_request_pem: cdktf.stringToTerraform(this._certRequestPem),
-      early_renewal_hours: cdktf.numberToTerraform(this._earlyRenewalHours),
-      is_ca_certificate: cdktf.booleanToTerraform(this._isCaCertificate),
-      max_path_length: cdktf.numberToTerraform(this._maxPathLength),
-      set_subject_key_id: cdktf.booleanToTerraform(this._setSubjectKeyId),
-      validity_period_hours: cdktf.numberToTerraform(this._validityPeriodHours),
+      allowed_uses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedUses),
+      ca_cert_pem: cdktn.stringToTerraform(this._caCertPem),
+      ca_private_key_pem: cdktn.stringToTerraform(this._caPrivateKeyPem),
+      cert_request_pem: cdktn.stringToTerraform(this._certRequestPem),
+      early_renewal_hours: cdktn.numberToTerraform(this._earlyRenewalHours),
+      is_ca_certificate: cdktn.booleanToTerraform(this._isCaCertificate),
+      max_path_length: cdktn.numberToTerraform(this._maxPathLength),
+      set_subject_key_id: cdktn.booleanToTerraform(this._setSubjectKeyId),
+      validity_period_hours: cdktn.numberToTerraform(this._validityPeriodHours),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_uses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedUses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedUses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       ca_cert_pem: {
-        value: cdktf.stringToHclTerraform(this._caCertPem),
+        value: cdktn.stringToHclTerraform(this._caCertPem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ca_private_key_pem: {
-        value: cdktf.stringToHclTerraform(this._caPrivateKeyPem),
+        value: cdktn.stringToHclTerraform(this._caPrivateKeyPem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cert_request_pem: {
-        value: cdktf.stringToHclTerraform(this._certRequestPem),
+        value: cdktn.stringToHclTerraform(this._certRequestPem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       early_renewal_hours: {
-        value: cdktf.numberToHclTerraform(this._earlyRenewalHours),
+        value: cdktn.numberToHclTerraform(this._earlyRenewalHours),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       is_ca_certificate: {
-        value: cdktf.booleanToHclTerraform(this._isCaCertificate),
+        value: cdktn.booleanToHclTerraform(this._isCaCertificate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       max_path_length: {
-        value: cdktf.numberToHclTerraform(this._maxPathLength),
+        value: cdktn.numberToHclTerraform(this._maxPathLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       set_subject_key_id: {
-        value: cdktf.booleanToHclTerraform(this._setSubjectKeyId),
+        value: cdktn.booleanToHclTerraform(this._setSubjectKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       validity_period_hours: {
-        value: cdktf.numberToHclTerraform(this._validityPeriodHours),
+        value: cdktn.numberToHclTerraform(this._validityPeriodHours),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

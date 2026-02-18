@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataTlsCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface DataTlsCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * The content of the certificate in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format.
   *
@@ -29,14 +29,14 @@ export interface DataTlsCertificateConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/certificate#verify_chain DataTlsCertificate#verify_chain}
   */
-  readonly verifyChain?: boolean | cdktf.IResolvable;
+  readonly verifyChain?: boolean | cdktn.IResolvable;
 }
 export interface DataTlsCertificateCertificates {
 }
 
 export function dataTlsCertificateCertificatesToTerraform(struct?: DataTlsCertificateCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -45,8 +45,8 @@ export function dataTlsCertificateCertificatesToTerraform(struct?: DataTlsCertif
 
 
 export function dataTlsCertificateCertificatesToHclTerraform(struct?: DataTlsCertificateCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -54,7 +54,7 @@ export function dataTlsCertificateCertificatesToHclTerraform(struct?: DataTlsCer
   return attrs;
 }
 
-export class DataTlsCertificateCertificatesOutputReference extends cdktf.ComplexObject {
+export class DataTlsCertificateCertificatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -63,7 +63,7 @@ export class DataTlsCertificateCertificatesOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -143,14 +143,14 @@ export class DataTlsCertificateCertificatesOutputReference extends cdktf.Complex
   }
 }
 
-export class DataTlsCertificateCertificatesList extends cdktf.ComplexList {
+export class DataTlsCertificateCertificatesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -165,7 +165,7 @@ export class DataTlsCertificateCertificatesList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/certificate tls_certificate}
 */
-export class DataTlsCertificate extends cdktf.TerraformDataSource {
+export class DataTlsCertificate extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -176,14 +176,14 @@ export class DataTlsCertificate extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataTlsCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataTlsCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataTlsCertificate to import
   * @param importFromId The id of the existing DataTlsCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataTlsCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "tls_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "tls_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -266,11 +266,11 @@ export class DataTlsCertificate extends cdktf.TerraformDataSource {
   }
 
   // verify_chain - computed: false, optional: true, required: false
-  private _verifyChain?: boolean | cdktf.IResolvable; 
+  private _verifyChain?: boolean | cdktn.IResolvable; 
   public get verifyChain() {
     return this.getBooleanAttribute('verify_chain');
   }
-  public set verifyChain(value: boolean | cdktf.IResolvable) {
+  public set verifyChain(value: boolean | cdktn.IResolvable) {
     this._verifyChain = value;
   }
   public resetVerifyChain() {
@@ -287,28 +287,28 @@ export class DataTlsCertificate extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content: cdktf.stringToTerraform(this._content),
-      url: cdktf.stringToTerraform(this._url),
-      verify_chain: cdktf.booleanToTerraform(this._verifyChain),
+      content: cdktn.stringToTerraform(this._content),
+      url: cdktn.stringToTerraform(this._url),
+      verify_chain: cdktn.booleanToTerraform(this._verifyChain),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       content: {
-        value: cdktf.stringToHclTerraform(this._content),
+        value: cdktn.stringToHclTerraform(this._content),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       verify_chain: {
-        value: cdktf.booleanToHclTerraform(this._verifyChain),
+        value: cdktn.booleanToHclTerraform(this._verifyChain),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
