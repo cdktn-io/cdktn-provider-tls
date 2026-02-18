@@ -151,7 +151,7 @@ public resetProxy(): void
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a TlsProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a TlsProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -223,7 +223,7 @@ import { provider } from '@cdktn/provider-tls'
 provider.TlsProvider.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a TlsProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a TlsProvider resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport.parameter.scope"></a>
 
@@ -253,7 +253,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the TlsProvider to import is found.
 
@@ -264,17 +264,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.proxyInput">proxyInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.proxy">proxy</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.proxyInput">proxyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.proxy">proxy</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>[]</code> | *No description.* |
 
 ---
 
@@ -296,7 +296,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -346,7 +346,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -386,7 +386,7 @@ public readonly aliasInput: string;
 public readonly proxyInput: IResolvable | TlsProviderProxy[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>[]
 
 ---
 
@@ -396,7 +396,7 @@ public readonly proxyInput: IResolvable | TlsProviderProxy[];
 public readonly proxy: IResolvable | TlsProviderProxy[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>[]
 
 ---
 
@@ -435,7 +435,7 @@ const tlsProviderConfig: provider.TlsProviderConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProviderConfig.property.proxy">proxy</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>[]</code> | proxy block. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProviderConfig.property.proxy">proxy</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>[]</code> | proxy block. |
 
 ---
 
@@ -459,7 +459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly proxy: IResolvable | TlsProviderProxy[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>[]
 
 proxy block.
 
@@ -481,7 +481,7 @@ const tlsProviderProxy: provider.TlsProviderProxy = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.fromEnv">fromEnv</a></code> | <code>boolean \| cdktf.IResolvable</code> | When `true` the provider will discover the proxy configuration from environment variables. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.fromEnv">fromEnv</a></code> | <code>boolean \| cdktn.IResolvable</code> | When `true` the provider will discover the proxy configuration from environment variables. |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.password">password</a></code> | <code>string</code> | Password used for Basic authentication against the Proxy. |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.url">url</a></code> | <code>string</code> | URL used to connect to the Proxy. Accepted schemes are: `http`, `https`, `socks5`. |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.username">username</a></code> | <code>string</code> | Username (or Token) used for Basic authentication against the Proxy. |
@@ -494,7 +494,7 @@ const tlsProviderProxy: provider.TlsProviderProxy = { ... }
 public readonly fromEnv: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When `true` the provider will discover the proxy configuration from environment variables.
 

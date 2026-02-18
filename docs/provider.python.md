@@ -24,7 +24,7 @@ provider.TlsProvider(
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.Initializer.parameter.proxy">proxy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]</code> | proxy block. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.Initializer.parameter.proxy">proxy</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]</code> | proxy block. |
 
 ---
 
@@ -58,7 +58,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `proxy`<sup>Optional</sup> <a name="proxy" id="@cdktn/provider-tls.provider.TlsProvider.Initializer.parameter.proxy"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]
 
 proxy block.
 
@@ -176,7 +176,7 @@ def reset_proxy() -> None
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a TlsProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a TlsProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -259,7 +259,7 @@ provider.TlsProvider.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a TlsProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a TlsProvider resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport.parameter.scope"></a>
 
@@ -289,7 +289,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.provider.TlsProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the TlsProvider to import is found.
 
@@ -300,17 +300,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.proxyInput">proxy_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.proxy">proxy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.proxyInput">proxy_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProvider.property.proxy">proxy</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]</code> | *No description.* |
 
 ---
 
@@ -332,7 +332,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -382,7 +382,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -422,7 +422,7 @@ alias_input: str
 proxy_input: IResolvable | typing.List[TlsProviderProxy]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]
 
 ---
 
@@ -432,7 +432,7 @@ proxy_input: IResolvable | typing.List[TlsProviderProxy]
 proxy: IResolvable | typing.List[TlsProviderProxy]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]
 
 ---
 
@@ -474,7 +474,7 @@ provider.TlsProviderConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProviderConfig.property.proxy">proxy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]</code> | proxy block. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProviderConfig.property.proxy">proxy</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]</code> | proxy block. |
 
 ---
 
@@ -498,7 +498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 proxy: IResolvable | typing.List[TlsProviderProxy]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-tls.provider.TlsProviderProxy">TlsProviderProxy</a>]
 
 proxy block.
 
@@ -525,7 +525,7 @@ provider.TlsProviderProxy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.fromEnv">from_env</a></code> | <code>bool \| cdktf.IResolvable</code> | When `true` the provider will discover the proxy configuration from environment variables. |
+| <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.fromEnv">from_env</a></code> | <code>bool \| cdktn.IResolvable</code> | When `true` the provider will discover the proxy configuration from environment variables. |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.password">password</a></code> | <code>str</code> | Password used for Basic authentication against the Proxy. |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.url">url</a></code> | <code>str</code> | URL used to connect to the Proxy. Accepted schemes are: `http`, `https`, `socks5`. |
 | <code><a href="#@cdktn/provider-tls.provider.TlsProviderProxy.property.username">username</a></code> | <code>str</code> | Username (or Token) used for Basic authentication against the Proxy. |
@@ -538,7 +538,7 @@ provider.TlsProviderProxy(
 from_env: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When `true` the provider will discover the proxy configuration from environment variables.
 

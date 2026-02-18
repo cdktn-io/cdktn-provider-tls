@@ -295,7 +295,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.certRequest.CertRequest.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -377,7 +377,7 @@ public putSubject(value: IResolvable | CertRequestSubject[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-tls.certRequest.CertRequest.putSubject.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]
 
 ---
 
@@ -412,7 +412,7 @@ public resetUris(): void
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a CertRequest resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a CertRequest resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -484,7 +484,7 @@ import { certRequest } from '@cdktn/provider-tls'
 certRequest.CertRequest.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a CertRequest resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a CertRequest resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-tls.certRequest.CertRequest.generateConfigForImport.parameter.scope"></a>
 
@@ -514,7 +514,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.certRequest.CertRequest.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the CertRequest to import is found.
 
@@ -525,19 +525,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.certRequestPem">certRequestPem</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.keyAlgorithm">keyAlgorithm</a></code> | <code>string</code> | *No description.* |
@@ -545,7 +545,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.dnsNamesInput">dnsNamesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.ipAddressesInput">ipAddressesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPemInput">privateKeyPemInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.subjectInput">subjectInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.subjectInput">subjectInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.urisInput">urisInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.dnsNames">dnsNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.ipAddresses">ipAddresses</a></code> | <code>string[]</code> | *No description.* |
@@ -572,7 +572,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -622,7 +622,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -632,7 +632,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -642,7 +642,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -662,7 +662,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -672,7 +672,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -682,7 +682,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -692,7 +692,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -772,7 +772,7 @@ public readonly privateKeyPemInput: string;
 public readonly subjectInput: IResolvable | CertRequestSubject[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]
 
 ---
 
@@ -860,17 +860,17 @@ const certRequestConfig: certRequest.CertRequestConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.privateKeyPem">privateKeyPem</a></code> | <code>string</code> | Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.dnsNames">dnsNames</a></code> | <code>string[]</code> | List of DNS names for which a certificate is being requested (i.e. certificate subjects). |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.ipAddresses">ipAddresses</a></code> | <code>string[]</code> | List of IP addresses for which a certificate is being requested (i.e. certificate subjects). |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.subject">subject</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]</code> | subject block. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.subject">subject</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]</code> | subject block. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.uris">uris</a></code> | <code>string[]</code> | List of URIs for which a certificate is being requested (i.e. certificate subjects). |
 
 ---
@@ -881,7 +881,7 @@ const certRequestConfig: certRequest.CertRequestConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -891,7 +891,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -901,7 +901,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -911,7 +911,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -921,7 +921,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -931,7 +931,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -941,7 +941,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly subject: IResolvable | CertRequestSubject[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]
 
 subject block.
 
@@ -1196,7 +1196,7 @@ new certRequest.CertRequestSubjectList(terraformResource: IInterpolatingParent, 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1204,7 +1204,7 @@ new certRequest.CertRequestSubjectList(terraformResource: IInterpolatingParent, 
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1270,7 +1270,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1305,7 +1305,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]</code> | *No description.* |
 
 ---
 
@@ -1339,7 +1339,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CertRequestSubject[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]
 
 ---
 
@@ -1356,7 +1356,7 @@ new certRequest.CertRequestSubjectOutputReference(terraformResource: IInterpolat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1365,7 +1365,7 @@ new certRequest.CertRequestSubjectOutputReference(terraformResource: IInterpolat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1561,7 +1561,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1662,7 +1662,7 @@ public resetStreetAddress(): void
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.province">province</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.serialNumber">serialNumber</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.streetAddress">streetAddress</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a> \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1896,7 +1896,7 @@ public readonly streetAddress: string[];
 public readonly internalValue: CertRequestSubject | IResolvable;
 ```
 
-- *Type:* <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a> | cdktf.IResolvable
+- *Type:* <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a> | cdktn.IResolvable
 
 ---
 

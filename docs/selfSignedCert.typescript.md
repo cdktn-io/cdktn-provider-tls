@@ -300,7 +300,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -382,7 +382,7 @@ public putSubject(value: IResolvable | SelfSignedCertSubject[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.putSubject.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]
 
 ---
 
@@ -447,7 +447,7 @@ public resetUris(): void
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a SelfSignedCert resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a SelfSignedCert resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -519,7 +519,7 @@ import { selfSignedCert } from '@cdktn/provider-tls'
 selfSignedCert.SelfSignedCert.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a SelfSignedCert resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a SelfSignedCert resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport.parameter.scope"></a>
 
@@ -549,7 +549,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the SelfSignedCert to import is found.
 
@@ -560,23 +560,23 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.certPem">certPem</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.keyAlgorithm">keyAlgorithm</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.readyForRenewal">readyForRenewal</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.readyForRenewal">readyForRenewal</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.subject">subject</a></code> | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList">SelfSignedCertSubjectList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.validityEndTime">validityEndTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.validityStartTime">validityStartTime</a></code> | <code>string</code> | *No description.* |
@@ -584,23 +584,23 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.dnsNamesInput">dnsNamesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.earlyRenewalHoursInput">earlyRenewalHoursInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.ipAddressesInput">ipAddressesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.isCaCertificateInput">isCaCertificateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.isCaCertificateInput">isCaCertificateInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.maxPathLengthInput">maxPathLengthInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.privateKeyPemInput">privateKeyPemInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setAuthorityKeyIdInput">setAuthorityKeyIdInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setSubjectKeyIdInput">setSubjectKeyIdInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.subjectInput">subjectInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setAuthorityKeyIdInput">setAuthorityKeyIdInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setSubjectKeyIdInput">setSubjectKeyIdInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.subjectInput">subjectInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.urisInput">urisInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.validityPeriodHoursInput">validityPeriodHoursInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.allowedUses">allowedUses</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.dnsNames">dnsNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.earlyRenewalHours">earlyRenewalHours</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.ipAddresses">ipAddresses</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.isCaCertificate">isCaCertificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.isCaCertificate">isCaCertificate</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.maxPathLength">maxPathLength</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.privateKeyPem">privateKeyPem</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setAuthorityKeyId">setAuthorityKeyId</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setSubjectKeyId">setSubjectKeyId</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setAuthorityKeyId">setAuthorityKeyId</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.setSubjectKeyId">setSubjectKeyId</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.uris">uris</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCert.property.validityPeriodHours">validityPeriodHours</a></code> | <code>number</code> | *No description.* |
 
@@ -624,7 +624,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -674,7 +674,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -684,7 +684,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -694,7 +694,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -714,7 +714,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -724,7 +724,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -734,7 +734,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -744,7 +744,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -784,7 +784,7 @@ public readonly keyAlgorithm: string;
 public readonly readyForRenewal: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -864,7 +864,7 @@ public readonly ipAddressesInput: string[];
 public readonly isCaCertificateInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -894,7 +894,7 @@ public readonly privateKeyPemInput: string;
 public readonly setAuthorityKeyIdInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -904,7 +904,7 @@ public readonly setAuthorityKeyIdInput: boolean | IResolvable;
 public readonly setSubjectKeyIdInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -914,7 +914,7 @@ public readonly setSubjectKeyIdInput: boolean | IResolvable;
 public readonly subjectInput: IResolvable | SelfSignedCertSubject[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]
 
 ---
 
@@ -984,7 +984,7 @@ public readonly ipAddresses: string[];
 public readonly isCaCertificate: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly privateKeyPem: string;
 public readonly setAuthorityKeyId: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1024,7 +1024,7 @@ public readonly setAuthorityKeyId: boolean | IResolvable;
 public readonly setSubjectKeyId: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1082,24 +1082,24 @@ const selfSignedCertConfig: selfSignedCert.SelfSignedCertConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.allowedUses">allowedUses</a></code> | <code>string[]</code> | List of key usages allowed for the issued certificate. |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.privateKeyPem">privateKeyPem</a></code> | <code>string</code> | Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.validityPeriodHours">validityPeriodHours</a></code> | <code>number</code> | Number of hours, after initial issuing, that the certificate will remain valid for. |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.dnsNames">dnsNames</a></code> | <code>string[]</code> | List of DNS names for which a certificate is being requested (i.e. certificate subjects). |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.earlyRenewalHours">earlyRenewalHours</a></code> | <code>number</code> | The resource will consider the certificate to have expired the given number of hours before its actual expiry time. |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.ipAddresses">ipAddresses</a></code> | <code>string[]</code> | List of IP addresses for which a certificate is being requested (i.e. certificate subjects). |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.isCaCertificate">isCaCertificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is the generated certificate representing a Certificate Authority (CA) (default: `false`). |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.isCaCertificate">isCaCertificate</a></code> | <code>boolean \| cdktn.IResolvable</code> | Is the generated certificate representing a Certificate Authority (CA) (default: `false`). |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.maxPathLength">maxPathLength</a></code> | <code>number</code> | Maximum number of intermediate certificates that may follow this certificate in a valid certification path. |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.setAuthorityKeyId">setAuthorityKeyId</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the generated certificate include an [authority key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.1): for self-signed certificates this is the same value as the [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.setSubjectKeyId">setSubjectKeyId</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.subject">subject</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]</code> | subject block. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.setAuthorityKeyId">setAuthorityKeyId</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the generated certificate include an [authority key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.1): for self-signed certificates this is the same value as the [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.setSubjectKeyId">setSubjectKeyId</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`). |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.subject">subject</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]</code> | subject block. |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertConfig.property.uris">uris</a></code> | <code>string[]</code> | List of URIs for which a certificate is being requested (i.e. certificate subjects). |
 
 ---
@@ -1110,7 +1110,7 @@ const selfSignedCertConfig: selfSignedCert.SelfSignedCertConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1120,7 +1120,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1140,7 +1140,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1150,7 +1150,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1160,7 +1160,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1170,7 +1170,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly isCaCertificate: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Is the generated certificate representing a Certificate Authority (CA) (default: `false`).
 
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly setAuthorityKeyId: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the generated certificate include an [authority key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.1): for self-signed certificates this is the same value as the [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`).
 
@@ -1312,7 +1312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly setSubjectKeyId: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`).
 
@@ -1326,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly subject: IResolvable | SelfSignedCertSubject[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]
 
 subject block.
 
@@ -1529,7 +1529,7 @@ new selfSignedCert.SelfSignedCertSubjectList(terraformResource: IInterpolatingPa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1537,7 +1537,7 @@ new selfSignedCert.SelfSignedCertSubjectList(terraformResource: IInterpolatingPa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1603,7 +1603,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1638,7 +1638,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]</code> | *No description.* |
 
 ---
 
@@ -1672,7 +1672,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SelfSignedCertSubject[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>[]
 
 ---
 
@@ -1689,7 +1689,7 @@ new selfSignedCert.SelfSignedCertSubjectOutputReference(terraformResource: IInte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1698,7 +1698,7 @@ new selfSignedCert.SelfSignedCertSubjectOutputReference(terraformResource: IInte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1894,7 +1894,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1995,7 +1995,7 @@ public resetStreetAddress(): void
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.province">province</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.serialNumber">serialNumber</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.streetAddress">streetAddress</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a></code> | *No description.* |
 
 ---
 
@@ -2229,7 +2229,7 @@ public readonly streetAddress: string[];
 public readonly internalValue: IResolvable | SelfSignedCertSubject;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-tls.selfSignedCert.SelfSignedCertSubject">SelfSignedCertSubject</a>
 
 ---
 
