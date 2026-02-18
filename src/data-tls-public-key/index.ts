@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataTlsPublicKeyConfig extends cdktf.TerraformMetaArguments {
+export interface DataTlsPublicKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * The private key (in  [OpenSSH PEM (RFC 4716)](https://datatracker.ietf.org/doc/html/rfc4716) format) to extract the public key from. This is _mutually exclusive_ with `private_key_pem`. Currently-supported algorithms for keys are: `RSA`, `ECDSA`, `ED25519`. 
   *
@@ -29,7 +29,7 @@ export interface DataTlsPublicKeyConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/public_key tls_public_key}
 */
-export class DataTlsPublicKey extends cdktf.TerraformDataSource {
+export class DataTlsPublicKey extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class DataTlsPublicKey extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataTlsPublicKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataTlsPublicKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataTlsPublicKey to import
   * @param importFromId The id of the existing DataTlsPublicKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/data-sources/public_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataTlsPublicKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "tls_public_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "tls_public_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -153,21 +153,21 @@ export class DataTlsPublicKey extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      private_key_openssh: cdktf.stringToTerraform(this._privateKeyOpenssh),
-      private_key_pem: cdktf.stringToTerraform(this._privateKeyPem),
+      private_key_openssh: cdktn.stringToTerraform(this._privateKeyOpenssh),
+      private_key_pem: cdktn.stringToTerraform(this._privateKeyPem),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       private_key_openssh: {
-        value: cdktf.stringToHclTerraform(this._privateKeyOpenssh),
+        value: cdktn.stringToHclTerraform(this._privateKeyOpenssh),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key_pem: {
-        value: cdktf.stringToHclTerraform(this._privateKeyPem),
+        value: cdktn.stringToHclTerraform(this._privateKeyPem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

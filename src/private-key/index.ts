@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PrivateKeyConfig extends cdktf.TerraformMetaArguments {
+export interface PrivateKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Name of the algorithm to use when generating the private key. Currently-supported values are: `RSA`, `ECDSA`, `ED25519`. 
   *
@@ -35,7 +35,7 @@ export interface PrivateKeyConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/private_key tls_private_key}
 */
-export class PrivateKey extends cdktf.TerraformResource {
+export class PrivateKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class PrivateKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PrivateKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PrivateKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivateKey to import
   * @param importFromId The id of the existing PrivateKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/private_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivateKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "tls_private_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "tls_private_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -183,28 +183,28 @@ export class PrivateKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      algorithm: cdktf.stringToTerraform(this._algorithm),
-      ecdsa_curve: cdktf.stringToTerraform(this._ecdsaCurve),
-      rsa_bits: cdktf.numberToTerraform(this._rsaBits),
+      algorithm: cdktn.stringToTerraform(this._algorithm),
+      ecdsa_curve: cdktn.stringToTerraform(this._ecdsaCurve),
+      rsa_bits: cdktn.numberToTerraform(this._rsaBits),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       algorithm: {
-        value: cdktf.stringToHclTerraform(this._algorithm),
+        value: cdktn.stringToHclTerraform(this._algorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ecdsa_curve: {
-        value: cdktf.stringToHclTerraform(this._ecdsaCurve),
+        value: cdktn.stringToHclTerraform(this._ecdsaCurve),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rsa_bits: {
-        value: cdktf.numberToHclTerraform(this._rsaBits),
+        value: cdktn.numberToHclTerraform(this._rsaBits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
