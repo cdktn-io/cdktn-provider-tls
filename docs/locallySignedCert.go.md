@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v12/locallysignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/locallysignedcert"
 
 locallysignedcert.NewLocallySignedCert(scope Construct, id *string, config LocallySignedCertConfig) LocallySignedCert
 ```
@@ -428,7 +428,7 @@ func ResetSetSubjectKeyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v12/locallysignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/locallysignedcert"
 
 locallysignedcert.LocallySignedCert_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v12/locallysignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/locallysignedcert"
 
 locallysignedcert.LocallySignedCert_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ locallysignedcert.LocallySignedCert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v12/locallysignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/locallysignedcert"
 
 locallysignedcert.LocallySignedCert_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ locallysignedcert.LocallySignedCert_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v12/locallysignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/locallysignedcert"
 
 locallysignedcert.LocallySignedCert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -981,7 +981,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v12/locallysignedcert"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/locallysignedcert"
 
 &locallysignedcert.LocallySignedCertConfig {
 	Connection: interface{},
