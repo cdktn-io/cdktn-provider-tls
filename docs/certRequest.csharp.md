@@ -1,0 +1,1950 @@
+# `certRequest` Submodule <a name="`certRequest` Submodule" id="@cdktn/provider-tls.certRequest"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### CertRequest <a name="CertRequest" id="@cdktn/provider-tls.certRequest.CertRequest"></a>
+
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request tls_cert_request}.
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-tls.certRequest.CertRequest.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Tls;
+
+new CertRequest(Construct Scope, string Id, CertRequestConfig Config);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.scope">Scope</a></code> | <code>Constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.id">Id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.config">Config</a></code> | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig">CertRequestConfig</a></code> | *No description.* |
+
+---
+
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktn/provider-tls.certRequest.CertRequestConfig">CertRequestConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.with">With</a></code> | Applies one or more mixins to this construct. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.putSubject">PutSubject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.resetDnsNames">ResetDnsNames</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.resetIpAddresses">ResetIpAddresses</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.resetSubject">ResetSubject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.resetUris">ResetUris</a></code> | *No description.* |
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-tls.certRequest.CertRequest.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Returns a string representation of this construct.
+
+##### `With` <a name="With" id="@cdktn/provider-tls.certRequest.CertRequest.with"></a>
+
+```csharp
+private IConstruct With(params IMixin[] Mixins)
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `Mixins`<sup>Required</sup> <a name="Mixins" id="@cdktn/provider-tls.certRequest.CertRequest.with.parameter.mixins"></a>
+
+- *Type:* params Constructs.IMixin[]
+
+The mixins to apply.
+
+---
+
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-tls.certRequest.CertRequest.addOverride"></a>
+
+```csharp
+private void AddOverride(string Path, object Value)
+```
+
+###### `Path`<sup>Required</sup> <a name="Path" id="@cdktn/provider-tls.certRequest.CertRequest.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-tls.certRequest.CertRequest.addOverride.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-tls.certRequest.CertRequest.overrideLogicalId"></a>
+
+```csharp
+private void OverrideLogicalId(string NewLogicalId)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `NewLogicalId`<sup>Required</sup> <a name="NewLogicalId" id="@cdktn/provider-tls.certRequest.CertRequest.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-tls.certRequest.CertRequest.resetOverrideLogicalId"></a>
+
+```csharp
+private void ResetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-tls.certRequest.CertRequest.toHclTerraform"></a>
+
+```csharp
+private object ToHclTerraform()
+```
+
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-tls.certRequest.CertRequest.toMetadata"></a>
+
+```csharp
+private object ToMetadata()
+```
+
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-tls.certRequest.CertRequest.toTerraform"></a>
+
+```csharp
+private object ToTerraform()
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-tls.certRequest.CertRequest.addMoveTarget"></a>
+
+```csharp
+private void AddMoveTarget(string MoveTarget)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `MoveTarget`<sup>Required</sup> <a name="MoveTarget" id="@cdktn/provider-tls.certRequest.CertRequest.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The string move target that will correspond to this resource.
+
+---
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-tls.certRequest.CertRequest.hasResourceMove"></a>
+
+```csharp
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
+```
+
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-tls.certRequest.CertRequest.importFrom"></a>
+
+```csharp
+private void ImportFrom(string Id, TerraformProvider Provider = null)
+```
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-tls.certRequest.CertRequest.importFrom.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-tls.certRequest.CertRequest.importFrom.parameter.provider"></a>
+
+- *Type:* Io.Cdktn.TerraformProvider
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequest.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-tls.certRequest.CertRequest.moveFromId"></a>
+
+```csharp
+private void MoveFromId(string Id)
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-tls.certRequest.CertRequest.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-tls.certRequest.CertRequest.moveTo"></a>
+
+```csharp
+private void MoveTo(string MoveTarget, string|double Index = null)
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `MoveTarget`<sup>Required</sup> <a name="MoveTarget" id="@cdktn/provider-tls.certRequest.CertRequest.moveTo.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktn/provider-tls.certRequest.CertRequest.moveTo.parameter.index"></a>
+
+- *Type:* string|double
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-tls.certRequest.CertRequest.moveToId"></a>
+
+```csharp
+private void MoveToId(string Id)
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-tls.certRequest.CertRequest.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `PutSubject` <a name="PutSubject" id="@cdktn/provider-tls.certRequest.CertRequest.putSubject"></a>
+
+```csharp
+private void PutSubject(IResolvable|CertRequestSubject[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-tls.certRequest.CertRequest.putSubject.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]
+
+---
+
+##### `ResetDnsNames` <a name="ResetDnsNames" id="@cdktn/provider-tls.certRequest.CertRequest.resetDnsNames"></a>
+
+```csharp
+private void ResetDnsNames()
+```
+
+##### `ResetIpAddresses` <a name="ResetIpAddresses" id="@cdktn/provider-tls.certRequest.CertRequest.resetIpAddresses"></a>
+
+```csharp
+private void ResetIpAddresses()
+```
+
+##### `ResetSubject` <a name="ResetSubject" id="@cdktn/provider-tls.certRequest.CertRequest.resetSubject"></a>
+
+```csharp
+private void ResetSubject()
+```
+
+##### `ResetUris` <a name="ResetUris" id="@cdktn/provider-tls.certRequest.CertRequest.resetUris"></a>
+
+```csharp
+private void ResetUris()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a CertRequest resource upon running "cdktn plan <stack-name>". |
+
+---
+
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-tls.certRequest.CertRequest.isConstruct"></a>
+
+```csharp
+using Io.Cdktn.Providers.Tls;
+
+CertRequest.IsConstruct(object X);
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-tls.certRequest.CertRequest.isConstruct.parameter.x"></a>
+
+- *Type:* object
+
+Any object.
+
+---
+
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-tls.certRequest.CertRequest.isTerraformElement"></a>
+
+```csharp
+using Io.Cdktn.Providers.Tls;
+
+CertRequest.IsTerraformElement(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-tls.certRequest.CertRequest.isTerraformElement.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-tls.certRequest.CertRequest.isTerraformResource"></a>
+
+```csharp
+using Io.Cdktn.Providers.Tls;
+
+CertRequest.IsTerraformResource(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-tls.certRequest.CertRequest.isTerraformResource.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-tls.certRequest.CertRequest.generateConfigForImport"></a>
+
+```csharp
+using Io.Cdktn.Providers.Tls;
+
+CertRequest.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTN code for importing a CertRequest resource upon running "cdktn plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktn/provider-tls.certRequest.CertRequest.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktn/provider-tls.certRequest.CertRequest.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the CertRequest to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktn/provider-tls.certRequest.CertRequest.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing CertRequest that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-tls.certRequest.CertRequest.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* Io.Cdktn.TerraformProvider
+
+? Optional instance of the provider where the CertRequest to import is found.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.node">Node</a></code> | <code>Constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.cdktfStack">CdktfStack</a></code> | <code>Io.Cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>Io.Cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.connection">Connection</a></code> | <code>Io.Cdktn.SSHProvisionerConnection\|Io.Cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.count">Count</a></code> | <code>double\|Io.Cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.certRequestPem">CertRequestPem</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.keyAlgorithm">KeyAlgorithm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.subject">Subject</a></code> | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList">CertRequestSubjectList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.dnsNamesInput">DnsNamesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.ipAddressesInput">IpAddressesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPemInput">PrivateKeyPemInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.subjectInput">SubjectInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.urisInput">UrisInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.dnsNames">DnsNames</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.ipAddresses">IpAddresses</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPem">PrivateKeyPem</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.uris">Uris</a></code> | <code>string[]</code> | *No description.* |
+
+---
+
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-tls.certRequest.CertRequest.property.node"></a>
+
+```csharp
+public Node Node { get; }
+```
+
+- *Type:* Constructs.Node
+
+The tree node.
+
+---
+
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-tls.certRequest.CertRequest.property.cdktfStack"></a>
+
+```csharp
+public TerraformStack CdktfStack { get; }
+```
+
+- *Type:* Io.Cdktn.TerraformStack
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-tls.certRequest.CertRequest.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-tls.certRequest.CertRequest.property.friendlyUniqueId"></a>
+
+```csharp
+public string FriendlyUniqueId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-tls.certRequest.CertRequest.property.terraformMetaArguments"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, object> TerraformMetaArguments { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, object>
+
+---
+
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-tls.certRequest.CertRequest.property.terraformResourceType"></a>
+
+```csharp
+public string TerraformResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-tls.certRequest.CertRequest.property.terraformGeneratorMetadata"></a>
+
+```csharp
+public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
+```
+
+- *Type:* Io.Cdktn.TerraformProviderGeneratorMetadata
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-tls.certRequest.CertRequest.property.connection"></a>
+
+```csharp
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
+```
+
+- *Type:* Io.Cdktn.SSHProvisionerConnection|Io.Cdktn.WinrmProvisionerConnection
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-tls.certRequest.CertRequest.property.count"></a>
+
+```csharp
+public double|TerraformCount Count { get; }
+```
+
+- *Type:* double|Io.Cdktn.TerraformCount
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-tls.certRequest.CertRequest.property.dependsOn"></a>
+
+```csharp
+public string[] DependsOn { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-tls.certRequest.CertRequest.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; }
+```
+
+- *Type:* Io.Cdktn.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-tls.certRequest.CertRequest.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; }
+```
+
+- *Type:* Io.Cdktn.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-tls.certRequest.CertRequest.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; }
+```
+
+- *Type:* Io.Cdktn.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-tls.certRequest.CertRequest.property.provisioners"></a>
+
+```csharp
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
+```
+
+- *Type:* Io.Cdktn.FileProvisioner|Io.Cdktn.LocalExecProvisioner|Io.Cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `CertRequestPem`<sup>Required</sup> <a name="CertRequestPem" id="@cdktn/provider-tls.certRequest.CertRequest.property.certRequestPem"></a>
+
+```csharp
+public string CertRequestPem { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-tls.certRequest.CertRequest.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyAlgorithm`<sup>Required</sup> <a name="KeyAlgorithm" id="@cdktn/provider-tls.certRequest.CertRequest.property.keyAlgorithm"></a>
+
+```csharp
+public string KeyAlgorithm { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Subject`<sup>Required</sup> <a name="Subject" id="@cdktn/provider-tls.certRequest.CertRequest.property.subject"></a>
+
+```csharp
+public CertRequestSubjectList Subject { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList">CertRequestSubjectList</a>
+
+---
+
+##### `DnsNamesInput`<sup>Optional</sup> <a name="DnsNamesInput" id="@cdktn/provider-tls.certRequest.CertRequest.property.dnsNamesInput"></a>
+
+```csharp
+public string[] DnsNamesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `IpAddressesInput`<sup>Optional</sup> <a name="IpAddressesInput" id="@cdktn/provider-tls.certRequest.CertRequest.property.ipAddressesInput"></a>
+
+```csharp
+public string[] IpAddressesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `PrivateKeyPemInput`<sup>Optional</sup> <a name="PrivateKeyPemInput" id="@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPemInput"></a>
+
+```csharp
+public string PrivateKeyPemInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SubjectInput`<sup>Optional</sup> <a name="SubjectInput" id="@cdktn/provider-tls.certRequest.CertRequest.property.subjectInput"></a>
+
+```csharp
+public IResolvable|CertRequestSubject[] SubjectInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]
+
+---
+
+##### `UrisInput`<sup>Optional</sup> <a name="UrisInput" id="@cdktn/provider-tls.certRequest.CertRequest.property.urisInput"></a>
+
+```csharp
+public string[] UrisInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `DnsNames`<sup>Required</sup> <a name="DnsNames" id="@cdktn/provider-tls.certRequest.CertRequest.property.dnsNames"></a>
+
+```csharp
+public string[] DnsNames { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `IpAddresses`<sup>Required</sup> <a name="IpAddresses" id="@cdktn/provider-tls.certRequest.CertRequest.property.ipAddresses"></a>
+
+```csharp
+public string[] IpAddresses { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `PrivateKeyPem`<sup>Required</sup> <a name="PrivateKeyPem" id="@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPem"></a>
+
+```csharp
+public string PrivateKeyPem { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Uris`<sup>Required</sup> <a name="Uris" id="@cdktn/provider-tls.certRequest.CertRequest.property.uris"></a>
+
+```csharp
+public string[] Uris { get; }
+```
+
+- *Type:* string[]
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.tfResourceType">TfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-tls.certRequest.CertRequest.property.tfResourceType"></a>
+
+```csharp
+public string TfResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### CertRequestConfig <a name="CertRequestConfig" id="@cdktn/provider-tls.certRequest.CertRequestConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-tls.certRequest.CertRequestConfig.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Tls;
+
+new CertRequestConfig {
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
+    ITerraformDependable[] DependsOn = null,
+    ITerraformIterator ForEach = null,
+    TerraformResourceLifecycle Lifecycle = null,
+    TerraformProvider Provider = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string PrivateKeyPem,
+    string[] DnsNames = null,
+    string[] IpAddresses = null,
+    IResolvable|CertRequestSubject[] Subject = null,
+    string[] Uris = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.connection">Connection</a></code> | <code>Io.Cdktn.SSHProvisionerConnection\|Io.Cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.count">Count</a></code> | <code>double\|Io.Cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.dependsOn">DependsOn</a></code> | <code>Io.Cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.privateKeyPem">PrivateKeyPem</a></code> | <code>string</code> | Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.dnsNames">DnsNames</a></code> | <code>string[]</code> | List of DNS names for which a certificate is being requested (i.e. certificate subjects). |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.ipAddresses">IpAddresses</a></code> | <code>string[]</code> | List of IP addresses for which a certificate is being requested (i.e. certificate subjects). |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.subject">Subject</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]</code> | subject block. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.uris">Uris</a></code> | <code>string[]</code> | List of URIs for which a certificate is being requested (i.e. certificate subjects). |
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.connection"></a>
+
+```csharp
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
+```
+
+- *Type:* Io.Cdktn.SSHProvisionerConnection|Io.Cdktn.WinrmProvisionerConnection
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.count"></a>
+
+```csharp
+public double|TerraformCount Count { get; set; }
+```
+
+- *Type:* double|Io.Cdktn.TerraformCount
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.dependsOn"></a>
+
+```csharp
+public ITerraformDependable[] DependsOn { get; set; }
+```
+
+- *Type:* Io.Cdktn.ITerraformDependable[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; set; }
+```
+
+- *Type:* Io.Cdktn.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; set; }
+```
+
+- *Type:* Io.Cdktn.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; set; }
+```
+
+- *Type:* Io.Cdktn.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.provisioners"></a>
+
+```csharp
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
+```
+
+- *Type:* Io.Cdktn.FileProvisioner|Io.Cdktn.LocalExecProvisioner|Io.Cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `PrivateKeyPem`<sup>Required</sup> <a name="PrivateKeyPem" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.privateKeyPem"></a>
+
+```csharp
+public string PrivateKeyPem { get; set; }
+```
+
+- *Type:* string
+
+Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#private_key_pem CertRequest#private_key_pem}
+
+---
+
+##### `DnsNames`<sup>Optional</sup> <a name="DnsNames" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.dnsNames"></a>
+
+```csharp
+public string[] DnsNames { get; set; }
+```
+
+- *Type:* string[]
+
+List of DNS names for which a certificate is being requested (i.e. certificate subjects).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#dns_names CertRequest#dns_names}
+
+---
+
+##### `IpAddresses`<sup>Optional</sup> <a name="IpAddresses" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.ipAddresses"></a>
+
+```csharp
+public string[] IpAddresses { get; set; }
+```
+
+- *Type:* string[]
+
+List of IP addresses for which a certificate is being requested (i.e. certificate subjects).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#ip_addresses CertRequest#ip_addresses}
+
+---
+
+##### `Subject`<sup>Optional</sup> <a name="Subject" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.subject"></a>
+
+```csharp
+public IResolvable|CertRequestSubject[] Subject { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]
+
+subject block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#subject CertRequest#subject}
+
+---
+
+##### `Uris`<sup>Optional</sup> <a name="Uris" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.uris"></a>
+
+```csharp
+public string[] Uris { get; set; }
+```
+
+- *Type:* string[]
+
+List of URIs for which a certificate is being requested (i.e. certificate subjects).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#uris CertRequest#uris}
+
+---
+
+### CertRequestSubject <a name="CertRequestSubject" id="@cdktn/provider-tls.certRequest.CertRequestSubject"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-tls.certRequest.CertRequestSubject.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Tls;
+
+new CertRequestSubject {
+    string CommonName = null,
+    string Country = null,
+    string EmailAddress = null,
+    string Locality = null,
+    string Organization = null,
+    string OrganizationalUnit = null,
+    string PostalCode = null,
+    string Province = null,
+    string SerialNumber = null,
+    string[] StreetAddress = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject.property.commonName">CommonName</a></code> | <code>string</code> | Distinguished name: `CN`. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject.property.country">Country</a></code> | <code>string</code> | Distinguished name: `C`. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject.property.emailAddress">EmailAddress</a></code> | <code>string</code> | ASN.1 Object Identifier (OID): `1.2.840.113549.1.9.1`. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject.property.locality">Locality</a></code> | <code>string</code> | Distinguished name: `L`. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject.property.organization">Organization</a></code> | <code>string</code> | Distinguished name: `O`. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject.property.organizationalUnit">OrganizationalUnit</a></code> | <code>string</code> | Distinguished name: `OU`. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject.property.postalCode">PostalCode</a></code> | <code>string</code> | Distinguished name: `PC`. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject.property.province">Province</a></code> | <code>string</code> | Distinguished name: `ST`. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject.property.serialNumber">SerialNumber</a></code> | <code>string</code> | Distinguished name: `SERIALNUMBER`. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject.property.streetAddress">StreetAddress</a></code> | <code>string[]</code> | Distinguished name: `STREET`. |
+
+---
+
+##### `CommonName`<sup>Optional</sup> <a name="CommonName" id="@cdktn/provider-tls.certRequest.CertRequestSubject.property.commonName"></a>
+
+```csharp
+public string CommonName { get; set; }
+```
+
+- *Type:* string
+
+Distinguished name: `CN`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#common_name CertRequest#common_name}
+
+---
+
+##### `Country`<sup>Optional</sup> <a name="Country" id="@cdktn/provider-tls.certRequest.CertRequestSubject.property.country"></a>
+
+```csharp
+public string Country { get; set; }
+```
+
+- *Type:* string
+
+Distinguished name: `C`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#country CertRequest#country}
+
+---
+
+##### `EmailAddress`<sup>Optional</sup> <a name="EmailAddress" id="@cdktn/provider-tls.certRequest.CertRequestSubject.property.emailAddress"></a>
+
+```csharp
+public string EmailAddress { get; set; }
+```
+
+- *Type:* string
+
+ASN.1 Object Identifier (OID): `1.2.840.113549.1.9.1`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#email_address CertRequest#email_address}
+
+---
+
+##### `Locality`<sup>Optional</sup> <a name="Locality" id="@cdktn/provider-tls.certRequest.CertRequestSubject.property.locality"></a>
+
+```csharp
+public string Locality { get; set; }
+```
+
+- *Type:* string
+
+Distinguished name: `L`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#locality CertRequest#locality}
+
+---
+
+##### `Organization`<sup>Optional</sup> <a name="Organization" id="@cdktn/provider-tls.certRequest.CertRequestSubject.property.organization"></a>
+
+```csharp
+public string Organization { get; set; }
+```
+
+- *Type:* string
+
+Distinguished name: `O`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#organization CertRequest#organization}
+
+---
+
+##### `OrganizationalUnit`<sup>Optional</sup> <a name="OrganizationalUnit" id="@cdktn/provider-tls.certRequest.CertRequestSubject.property.organizationalUnit"></a>
+
+```csharp
+public string OrganizationalUnit { get; set; }
+```
+
+- *Type:* string
+
+Distinguished name: `OU`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#organizational_unit CertRequest#organizational_unit}
+
+---
+
+##### `PostalCode`<sup>Optional</sup> <a name="PostalCode" id="@cdktn/provider-tls.certRequest.CertRequestSubject.property.postalCode"></a>
+
+```csharp
+public string PostalCode { get; set; }
+```
+
+- *Type:* string
+
+Distinguished name: `PC`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#postal_code CertRequest#postal_code}
+
+---
+
+##### `Province`<sup>Optional</sup> <a name="Province" id="@cdktn/provider-tls.certRequest.CertRequestSubject.property.province"></a>
+
+```csharp
+public string Province { get; set; }
+```
+
+- *Type:* string
+
+Distinguished name: `ST`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#province CertRequest#province}
+
+---
+
+##### `SerialNumber`<sup>Optional</sup> <a name="SerialNumber" id="@cdktn/provider-tls.certRequest.CertRequestSubject.property.serialNumber"></a>
+
+```csharp
+public string SerialNumber { get; set; }
+```
+
+- *Type:* string
+
+Distinguished name: `SERIALNUMBER`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#serial_number CertRequest#serial_number}
+
+---
+
+##### `StreetAddress`<sup>Optional</sup> <a name="StreetAddress" id="@cdktn/provider-tls.certRequest.CertRequestSubject.property.streetAddress"></a>
+
+```csharp
+public string[] StreetAddress { get; set; }
+```
+
+- *Type:* string[]
+
+Distinguished name: `STREET`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/cert_request#street_address CertRequest#street_address}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### CertRequestSubjectList <a name="CertRequestSubjectList" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Tls;
+
+new CertRequestSubjectList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.get"></a>
+
+```csharp
+private CertRequestSubjectOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.property.internalValue"></a>
+
+```csharp
+public IResolvable|CertRequestSubject[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>[]
+
+---
+
+
+### CertRequestSubjectOutputReference <a name="CertRequestSubjectOutputReference" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Tls;
+
+new CertRequestSubjectOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetCommonName">ResetCommonName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetCountry">ResetCountry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetEmailAddress">ResetEmailAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetLocality">ResetLocality</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetOrganization">ResetOrganization</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetOrganizationalUnit">ResetOrganizationalUnit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetPostalCode">ResetPostalCode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetProvince">ResetProvince</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetSerialNumber">ResetSerialNumber</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetStreetAddress">ResetStreetAddress</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCommonName` <a name="ResetCommonName" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetCommonName"></a>
+
+```csharp
+private void ResetCommonName()
+```
+
+##### `ResetCountry` <a name="ResetCountry" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetCountry"></a>
+
+```csharp
+private void ResetCountry()
+```
+
+##### `ResetEmailAddress` <a name="ResetEmailAddress" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetEmailAddress"></a>
+
+```csharp
+private void ResetEmailAddress()
+```
+
+##### `ResetLocality` <a name="ResetLocality" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetLocality"></a>
+
+```csharp
+private void ResetLocality()
+```
+
+##### `ResetOrganization` <a name="ResetOrganization" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetOrganization"></a>
+
+```csharp
+private void ResetOrganization()
+```
+
+##### `ResetOrganizationalUnit` <a name="ResetOrganizationalUnit" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetOrganizationalUnit"></a>
+
+```csharp
+private void ResetOrganizationalUnit()
+```
+
+##### `ResetPostalCode` <a name="ResetPostalCode" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetPostalCode"></a>
+
+```csharp
+private void ResetPostalCode()
+```
+
+##### `ResetProvince` <a name="ResetProvince" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetProvince"></a>
+
+```csharp
+private void ResetProvince()
+```
+
+##### `ResetSerialNumber` <a name="ResetSerialNumber" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetSerialNumber"></a>
+
+```csharp
+private void ResetSerialNumber()
+```
+
+##### `ResetStreetAddress` <a name="ResetStreetAddress" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.resetStreetAddress"></a>
+
+```csharp
+private void ResetStreetAddress()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.commonNameInput">CommonNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.countryInput">CountryInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.emailAddressInput">EmailAddressInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.localityInput">LocalityInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.organizationalUnitInput">OrganizationalUnitInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.organizationInput">OrganizationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.postalCodeInput">PostalCodeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.provinceInput">ProvinceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.serialNumberInput">SerialNumberInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.streetAddressInput">StreetAddressInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.commonName">CommonName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.country">Country</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.emailAddress">EmailAddress</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.locality">Locality</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.organization">Organization</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.organizationalUnit">OrganizationalUnit</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.postalCode">PostalCode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.province">Province</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.serialNumber">SerialNumber</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.streetAddress">StreetAddress</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>\|Io.Cdktn.IResolvable</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CommonNameInput`<sup>Optional</sup> <a name="CommonNameInput" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.commonNameInput"></a>
+
+```csharp
+public string CommonNameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CountryInput`<sup>Optional</sup> <a name="CountryInput" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.countryInput"></a>
+
+```csharp
+public string CountryInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EmailAddressInput`<sup>Optional</sup> <a name="EmailAddressInput" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.emailAddressInput"></a>
+
+```csharp
+public string EmailAddressInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LocalityInput`<sup>Optional</sup> <a name="LocalityInput" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.localityInput"></a>
+
+```csharp
+public string LocalityInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `OrganizationalUnitInput`<sup>Optional</sup> <a name="OrganizationalUnitInput" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.organizationalUnitInput"></a>
+
+```csharp
+public string OrganizationalUnitInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `OrganizationInput`<sup>Optional</sup> <a name="OrganizationInput" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.organizationInput"></a>
+
+```csharp
+public string OrganizationInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PostalCodeInput`<sup>Optional</sup> <a name="PostalCodeInput" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.postalCodeInput"></a>
+
+```csharp
+public string PostalCodeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ProvinceInput`<sup>Optional</sup> <a name="ProvinceInput" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.provinceInput"></a>
+
+```csharp
+public string ProvinceInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SerialNumberInput`<sup>Optional</sup> <a name="SerialNumberInput" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.serialNumberInput"></a>
+
+```csharp
+public string SerialNumberInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StreetAddressInput`<sup>Optional</sup> <a name="StreetAddressInput" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.streetAddressInput"></a>
+
+```csharp
+public string[] StreetAddressInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `CommonName`<sup>Required</sup> <a name="CommonName" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.commonName"></a>
+
+```csharp
+public string CommonName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Country`<sup>Required</sup> <a name="Country" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.country"></a>
+
+```csharp
+public string Country { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EmailAddress`<sup>Required</sup> <a name="EmailAddress" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.emailAddress"></a>
+
+```csharp
+public string EmailAddress { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Locality`<sup>Required</sup> <a name="Locality" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.locality"></a>
+
+```csharp
+public string Locality { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Organization`<sup>Required</sup> <a name="Organization" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.organization"></a>
+
+```csharp
+public string Organization { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `OrganizationalUnit`<sup>Required</sup> <a name="OrganizationalUnit" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.organizationalUnit"></a>
+
+```csharp
+public string OrganizationalUnit { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PostalCode`<sup>Required</sup> <a name="PostalCode" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.postalCode"></a>
+
+```csharp
+public string PostalCode { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Province`<sup>Required</sup> <a name="Province" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.province"></a>
+
+```csharp
+public string Province { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SerialNumber`<sup>Required</sup> <a name="SerialNumber" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.serialNumber"></a>
+
+```csharp
+public string SerialNumber { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StreetAddress`<sup>Required</sup> <a name="StreetAddress" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.streetAddress"></a>
+
+```csharp
+public string[] StreetAddress { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.property.internalValue"></a>
+
+```csharp
+public CertRequestSubject|IResolvable InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>|Io.Cdktn.IResolvable
+
+---
+
+
+
