@@ -22,7 +22,7 @@ importers:
         version: 3.0.1
       '@cdktn/provider-project':
         specifier: ^0.9.0
-        version: 0.9.4(constructs@10.7.1)(projen@0.101.20(constructs@10.7.1))
+        version: 0.9.4(constructs@10.7.1)(projen@0.101.21(constructs@10.7.1))
       '@types/node':
         specifier: ^22
         version: 22.20.1
@@ -45,20 +45,20 @@ importers:
         specifier: ~5.9.0
         version: 5.9.48
       jsii-diff:
-        specifier: ^1.135.0
+        specifier: ^1.139.0
         version: 1.139.0
       jsii-docgen:
         specifier: ^10.2.3
         version: 10.12.5(jsii-rosetta@5.9.58)
       jsii-pacmak:
-        specifier: ^1.135.0
+        specifier: ^1.139.0
         version: 1.139.0(jsii-rosetta@5.9.58)
       jsii-rosetta:
         specifier: ~5.9.0
         version: 5.9.58
       projen:
-        specifier: ^0.101.20
-        version: 0.101.20(constructs@10.7.1)
+        specifier: ^0.101.21
+        version: 0.101.21(constructs@10.7.1)
       semver:
         specifier: ^7.5.3
         version: 7.8.5
@@ -1254,8 +1254,8 @@ packages:
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
-  projen@0.101.20:
-    resolution: {integrity: sha512-rQ0gy/4yGGcr50txthFg9F4LhL9eBORo0UG3n1Yg5GJ6Z7Kt4ju9F5TKjlXY799vZQaEEh7OqZiHegoqEVWycw==}
+  projen@0.101.21:
+    resolution: {integrity: sha512-VDJo1iE3f5BHXYKOU0pu6h1fyKozcfXMm1v+uxZMnBJXdDCLYplfPeGrvEOOhH3iJtmALvCaZd7+5qk1U8zRIQ==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     peerDependencies:
@@ -1688,7 +1688,7 @@ snapshots:
   '@babel/generator@7.29.1':
     dependencies:
       '@babel/parser': 7.29.7
-      '@babel/types': 7.29.0
+      '@babel/types': 7.29.7
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
       jsesc: 3.1.0
@@ -1705,7 +1705,7 @@ snapshots:
     dependencies:
       '@babel/code-frame': 7.29.7
       '@babel/parser': 7.29.7
-      '@babel/types': 7.29.0
+      '@babel/types': 7.29.7
 
   '@babel/types@7.29.0':
     dependencies:
@@ -1784,10 +1784,10 @@ snapshots:
       - jsii-rosetta
       - supports-color
 
-  '@cdktn/provider-project@0.9.4(constructs@10.7.1)(projen@0.101.20(constructs@10.7.1))':
+  '@cdktn/provider-project@0.9.4(constructs@10.7.1)(projen@0.101.21(constructs@10.7.1))':
     dependencies:
       constructs: 10.7.1
-      projen: 0.101.20(constructs@10.7.1)
+      projen: 0.101.21(constructs@10.7.1)
 
   '@cdktn/provider-schema@0.23.4(constructs@10.6.0)':
     dependencies:
@@ -2671,7 +2671,7 @@ snapshots:
       '@jsii/check-node': 1.128.0
       '@jsii/spec': 1.128.0
       clone: 2.1.2
-      codemaker: 1.128.0
+      codemaker: 1.139.0
       commonmark: 0.31.2
       escape-string-regexp: 4.0.0
       fs-extra: 10.1.0
@@ -2680,7 +2680,7 @@ snapshots:
       semver: 7.8.5
       spdx-license-list: 6.12.0
       xmlbuilder: 15.1.1
-      yargs: 17.7.2
+      yargs: 17.7.3
 
   jsii-pacmak@1.139.0(jsii-rosetta@5.9.58):
     dependencies:
@@ -2985,7 +2985,7 @@ snapshots:
 
   process-nextick-args@2.0.1: {}
 
-  projen@0.101.20(constructs@10.7.1):
+  projen@0.101.21(constructs@10.7.1):
     dependencies:
       constructs: 10.7.1
 
