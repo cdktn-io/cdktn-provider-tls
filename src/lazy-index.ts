@@ -10,5 +10,7 @@ Object.defineProperty(exports, 'privateKey', { get: function () { return require
 Object.defineProperty(exports, 'selfSignedCert', { get: function () { return require('./self-signed-cert'); } });
 Object.defineProperty(exports, 'dataTlsCertificate', { get: function () { return require('./data-tls-certificate'); } });
 Object.defineProperty(exports, 'dataTlsPublicKey', { get: function () { return require('./data-tls-public-key'); } });
+Object.defineProperty(exports, 'ephemeralTlsPrivateKey', { get: function () { return require('./ephemeral-tls-private-key'); } });
+Object.defineProperty(exports, 'ephemeralTlsPublicKey', { get: function () { return require('./ephemeral-tls-public-key'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
 
