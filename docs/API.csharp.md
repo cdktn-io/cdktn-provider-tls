@@ -7,6 +7,8 @@ The following submodules are available:
 - [certRequest](./certRequest.csharp.md)
 - [dataTlsCertificate](./dataTlsCertificate.csharp.md)
 - [dataTlsPublicKey](./dataTlsPublicKey.csharp.md)
+- [ephemeralTlsPrivateKey](./ephemeralTlsPrivateKey.csharp.md)
+- [ephemeralTlsPublicKey](./ephemeralTlsPublicKey.csharp.md)
 - [locallySignedCert](./locallySignedCert.csharp.md)
 - [privateKey](./privateKey.csharp.md)
 - [provider](./provider.csharp.md)
