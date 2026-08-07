@@ -7,6 +7,8 @@ The following submodules are available:
 - [certRequest](./certRequest.java.md)
 - [dataTlsCertificate](./dataTlsCertificate.java.md)
 - [dataTlsPublicKey](./dataTlsPublicKey.java.md)
+- [ephemeralTlsPrivateKey](./ephemeralTlsPrivateKey.java.md)
+- [ephemeralTlsPublicKey](./ephemeralTlsPublicKey.java.md)
 - [locallySignedCert](./locallySignedCert.java.md)
 - [privateKey](./privateKey.java.md)
 - [provider](./provider.java.md)

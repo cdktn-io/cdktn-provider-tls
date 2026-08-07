@@ -7,6 +7,8 @@ The following submodules are available:
 - [certRequest](./certRequest.python.md)
 - [dataTlsCertificate](./dataTlsCertificate.python.md)
 - [dataTlsPublicKey](./dataTlsPublicKey.python.md)
+- [ephemeralTlsPrivateKey](./ephemeralTlsPrivateKey.python.md)
+- [ephemeralTlsPublicKey](./ephemeralTlsPublicKey.python.md)
 - [locallySignedCert](./locallySignedCert.python.md)
 - [privateKey](./privateKey.python.md)
 - [provider](./provider.python.md)

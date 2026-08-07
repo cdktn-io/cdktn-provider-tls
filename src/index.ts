@@ -10,5 +10,7 @@ export * as privateKey from './private-key/index';
 export * as selfSignedCert from './self-signed-cert/index';
 export * as dataTlsCertificate from './data-tls-certificate/index';
 export * as dataTlsPublicKey from './data-tls-public-key/index';
+export * as ephemeralTlsPrivateKey from './ephemeral-tls-private-key/index';
+export * as ephemeralTlsPublicKey from './ephemeral-tls-public-key/index';
 export * as provider from './provider/index';
 

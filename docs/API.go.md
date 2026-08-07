@@ -7,6 +7,8 @@ The following submodules are available:
 - [certRequest](./certRequest.go.md)
 - [dataTlsCertificate](./dataTlsCertificate.go.md)
 - [dataTlsPublicKey](./dataTlsPublicKey.go.md)
+- [ephemeralTlsPrivateKey](./ephemeralTlsPrivateKey.go.md)
+- [ephemeralTlsPublicKey](./ephemeralTlsPublicKey.go.md)
 - [locallySignedCert](./locallySignedCert.go.md)
 - [privateKey](./privateKey.go.md)
 - [provider](./provider.go.md)

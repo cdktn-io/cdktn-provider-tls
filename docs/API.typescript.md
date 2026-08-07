@@ -7,6 +7,8 @@ The following submodules are available:
 - [certRequest](./certRequest.typescript.md)
 - [dataTlsCertificate](./dataTlsCertificate.typescript.md)
 - [dataTlsPublicKey](./dataTlsPublicKey.typescript.md)
+- [ephemeralTlsPrivateKey](./ephemeralTlsPrivateKey.typescript.md)
+- [ephemeralTlsPublicKey](./ephemeralTlsPublicKey.typescript.md)
 - [locallySignedCert](./locallySignedCert.typescript.md)
 - [privateKey](./privateKey.typescript.md)
 - [provider](./provider.typescript.md)
