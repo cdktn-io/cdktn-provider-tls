@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.ephemeralTlsPublicKey.EphemeralTlsPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/ephemeraltlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlspublickey"
 
 ephemeraltlspublickey.NewEphemeralTlsPublicKey(scope Construct, id *string, config EphemeralTlsPublicKeyConfig) EphemeralTlsPublicKey
 ```
@@ -309,7 +309,7 @@ func ResetPrivateKeyPem()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-tls.ephemeralTlsPublicKey.EphemeralTlsPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/ephemeraltlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlspublickey"
 
 ephemeraltlspublickey.EphemeralTlsPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-tls.ephemeralTlsPublicKey.EphemeralTlsPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/ephemeraltlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlspublickey"
 
 ephemeraltlspublickey.EphemeralTlsPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ ephemeraltlspublickey.EphemeralTlsPublicKey_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-tls.ephemeralTlsPublicKey.EphemeralTlsPublicKey.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/ephemeraltlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlspublickey"
 
 ephemeraltlspublickey.EphemeralTlsPublicKey_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-tls.ephemeralTlsPublicKey.EphemeralTlsPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v13/ephemeraltlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlspublickey"
 
 &ephemeraltlspublickey.EphemeralTlsPublicKeyConfig {
 	Count: interface{},
