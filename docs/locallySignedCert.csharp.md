@@ -4,7 +4,7 @@
 
 ### LocallySignedCert <a name="LocallySignedCert" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert tls_locally_signed_cert}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert tls_locally_signed_cert}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.Initializer"></a>
 
@@ -74,6 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetCaPrivateKeyPem">ResetCaPrivateKeyPem</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetCaPrivateKeyPemWo">ResetCaPrivateKeyPemWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetCaPrivateKeyPemWoVersion">ResetCaPrivateKeyPemWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetEarlyRenewalHours">ResetEarlyRenewalHours</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetIsCaCertificate">ResetIsCaCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetMaxPathLength">ResetMaxPathLength</a></code> | *No description.* |
@@ -390,6 +393,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetCaPrivateKeyPem` <a name="ResetCaPrivateKeyPem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetCaPrivateKeyPem"></a>
+
+```csharp
+private void ResetCaPrivateKeyPem()
+```
+
+##### `ResetCaPrivateKeyPemWo` <a name="ResetCaPrivateKeyPemWo" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetCaPrivateKeyPemWo"></a>
+
+```csharp
+private void ResetCaPrivateKeyPemWo()
+```
+
+##### `ResetCaPrivateKeyPemWoVersion` <a name="ResetCaPrivateKeyPemWoVersion" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetCaPrivateKeyPemWoVersion"></a>
+
+```csharp
+private void ResetCaPrivateKeyPemWoVersion()
+```
+
 ##### `ResetEarlyRenewalHours` <a name="ResetEarlyRenewalHours" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.resetEarlyRenewalHours"></a>
 
 ```csharp
@@ -517,7 +538,7 @@ The construct id used in the generated config for the LocallySignedCert to impor
 
 The id of the existing LocallySignedCert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -556,6 +577,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUsesInput">AllowedUsesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPemInput">CaCertPemInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemInput">CaPrivateKeyPemInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemWoInput">CaPrivateKeyPemWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemWoVersionInput">CaPrivateKeyPemWoVersionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPemInput">CertRequestPemInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHoursInput">EarlyRenewalHoursInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificateInput">IsCaCertificateInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -565,6 +588,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.allowedUses">AllowedUses</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caCertPem">CaCertPem</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPem">CaPrivateKeyPem</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemWo">CaPrivateKeyPemWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemWoVersion">CaPrivateKeyPemWoVersion</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPem">CertRequestPem</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.earlyRenewalHours">EarlyRenewalHours</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.isCaCertificate">IsCaCertificate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -806,6 +831,26 @@ public string CaPrivateKeyPemInput { get; }
 
 ---
 
+##### `CaPrivateKeyPemWoInput`<sup>Optional</sup> <a name="CaPrivateKeyPemWoInput" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemWoInput"></a>
+
+```csharp
+public string CaPrivateKeyPemWoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CaPrivateKeyPemWoVersionInput`<sup>Optional</sup> <a name="CaPrivateKeyPemWoVersionInput" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemWoVersionInput"></a>
+
+```csharp
+public double CaPrivateKeyPemWoVersionInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `CertRequestPemInput`<sup>Optional</sup> <a name="CertRequestPemInput" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.certRequestPemInput"></a>
 
 ```csharp
@@ -893,6 +938,28 @@ public string CaPrivateKeyPem { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### ~~`CaPrivateKeyPemWo`~~<sup>Required</sup> <a name="CaPrivateKeyPemWo" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```csharp
+public string CaPrivateKeyPemWo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CaPrivateKeyPemWoVersion`<sup>Required</sup> <a name="CaPrivateKeyPemWoVersion" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCert.property.caPrivateKeyPemWoVersion"></a>
+
+```csharp
+public double CaPrivateKeyPemWoVersion { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -993,9 +1060,11 @@ new LocallySignedCertConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string[] AllowedUses,
     string CaCertPem,
-    string CaPrivateKeyPem,
     string CertRequestPem,
     double ValidityPeriodHours,
+    string CaPrivateKeyPem = null,
+    string CaPrivateKeyPemWo = null,
+    double CaPrivateKeyPemWoVersion = null,
     double EarlyRenewalHours = null,
     bool|IResolvable IsCaCertificate = null,
     double MaxPathLength = null,
@@ -1016,9 +1085,11 @@ new LocallySignedCertConfig {
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.allowedUses">AllowedUses</a></code> | <code>string[]</code> | List of key usages allowed for the issued certificate. |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caCertPem">CaCertPem</a></code> | <code>string</code> | Certificate data of the Certificate Authority (CA) in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
-| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPem">CaPrivateKeyPem</a></code> | <code>string</code> | Private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.certRequestPem">CertRequestPem</a></code> | <code>string</code> | Certificate request data in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.validityPeriodHours">ValidityPeriodHours</a></code> | <code>double</code> | Number of hours, after initial issuing, that the certificate will remain valid for. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPem">CaPrivateKeyPem</a></code> | <code>string</code> | Private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. Exactly one of `ca_private_key_pem` or `ca_private_key_pem_wo` must be set. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPemWo">CaPrivateKeyPemWo</a></code> | <code>string</code> | Write-only private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. Unlike `ca_private_key_pem`, the value provided here is never persisted to Terraform state. Requires `ca_private_key_pem_wo_version` to be set, and exactly one of `ca_private_key_pem` or `ca_private_key_pem_wo` must be set. |
+| <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPemWoVersion">CaPrivateKeyPemWoVersion</a></code> | <code>double</code> | The version of the `ca_private_key_pem_wo` write-only private key. |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.earlyRenewalHours">EarlyRenewalHours</a></code> | <code>double</code> | The resource will consider the certificate to have expired the given number of hours before its actual expiry time. |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.isCaCertificate">IsCaCertificate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Is the generated certificate representing a Certificate Authority (CA) (default: `false`). |
 | <code><a href="#@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.maxPathLength">MaxPathLength</a></code> | <code>double</code> | Maximum number of intermediate certificates that may follow this certificate in a valid certification path. |
@@ -1108,7 +1179,7 @@ List of key usages allowed for the issued certificate.
 
 Values are defined in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280) and combine flags defined by both [Key Usages](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3) and [Extended Key Usages](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12). Accepted values: `any_extended`, `cert_signing`, `client_auth`, `code_signing`, `content_commitment`, `crl_signing`, `data_encipherment`, `decipher_only`, `digital_signature`, `email_protection`, `encipher_only`, `ipsec_end_system`, `ipsec_tunnel`, `ipsec_user`, `key_agreement`, `key_encipherment`, `microsoft_commercial_code_signing`, `microsoft_kernel_code_signing`, `microsoft_server_gated_crypto`, `netscape_server_gated_crypto`, `ocsp_signing`, `server_auth`, `timestamping`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#allowed_uses LocallySignedCert#allowed_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#allowed_uses LocallySignedCert#allowed_uses}
 
 ---
 
@@ -1122,21 +1193,7 @@ public string CaCertPem { get; set; }
 
 Certificate data of the Certificate Authority (CA) in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#ca_cert_pem LocallySignedCert#ca_cert_pem}
-
----
-
-##### `CaPrivateKeyPem`<sup>Required</sup> <a name="CaPrivateKeyPem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPem"></a>
-
-```csharp
-public string CaPrivateKeyPem { get; set; }
-```
-
-- *Type:* string
-
-Private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#ca_private_key_pem LocallySignedCert#ca_private_key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#ca_cert_pem LocallySignedCert#ca_cert_pem}
 
 ---
 
@@ -1150,7 +1207,7 @@ public string CertRequestPem { get; set; }
 
 Certificate request data in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#cert_request_pem LocallySignedCert#cert_request_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#cert_request_pem LocallySignedCert#cert_request_pem}
 
 ---
 
@@ -1164,7 +1221,51 @@ public double ValidityPeriodHours { get; set; }
 
 Number of hours, after initial issuing, that the certificate will remain valid for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#validity_period_hours LocallySignedCert#validity_period_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#validity_period_hours LocallySignedCert#validity_period_hours}
+
+---
+
+##### `CaPrivateKeyPem`<sup>Optional</sup> <a name="CaPrivateKeyPem" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPem"></a>
+
+```csharp
+public string CaPrivateKeyPem { get; set; }
+```
+
+- *Type:* string
+
+Private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. Exactly one of `ca_private_key_pem` or `ca_private_key_pem_wo` must be set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#ca_private_key_pem LocallySignedCert#ca_private_key_pem}
+
+---
+
+##### `CaPrivateKeyPemWo`<sup>Optional</sup> <a name="CaPrivateKeyPemWo" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPemWo"></a>
+
+```csharp
+public string CaPrivateKeyPemWo { get; set; }
+```
+
+- *Type:* string
+
+Write-only private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. Unlike `ca_private_key_pem`, the value provided here is never persisted to Terraform state. Requires `ca_private_key_pem_wo_version` to be set, and exactly one of `ca_private_key_pem` or `ca_private_key_pem_wo` must be set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#ca_private_key_pem_wo LocallySignedCert#ca_private_key_pem_wo}
+
+---
+
+##### `CaPrivateKeyPemWoVersion`<sup>Optional</sup> <a name="CaPrivateKeyPemWoVersion" id="@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig.property.caPrivateKeyPemWoVersion"></a>
+
+```csharp
+public double CaPrivateKeyPemWoVersion { get; set; }
+```
+
+- *Type:* double
+
+The version of the `ca_private_key_pem_wo` write-only private key.
+
+Because the write-only key is not stored in state, this version is the only signal the provider has that the key changed: increment it to force the certificate to be re-issued when rotating the CA key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#ca_private_key_pem_wo_version LocallySignedCert#ca_private_key_pem_wo_version}
 
 ---
 
@@ -1180,7 +1281,7 @@ The resource will consider the certificate to have expired the given number of h
 
 This can be useful to deploy an updated certificate in advance of the expiration of the current certificate. However, the old certificate remains valid until its true expiration time, since this resource does not (and cannot) support certificate revocation. Also, this advance update can only be performed should the Terraform configuration be applied during the early renewal period. (default: `0`)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#early_renewal_hours LocallySignedCert#early_renewal_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#early_renewal_hours LocallySignedCert#early_renewal_hours}
 
 ---
 
@@ -1194,7 +1295,7 @@ public bool|IResolvable IsCaCertificate { get; set; }
 
 Is the generated certificate representing a Certificate Authority (CA) (default: `false`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#is_ca_certificate LocallySignedCert#is_ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#is_ca_certificate LocallySignedCert#is_ca_certificate}
 
 ---
 
@@ -1210,7 +1311,7 @@ Maximum number of intermediate certificates that may follow this certificate in 
 
 If `is_ca_certificate` is `false`, this value is ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#max_path_length LocallySignedCert#max_path_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#max_path_length LocallySignedCert#max_path_length}
 
 ---
 
@@ -1224,7 +1325,7 @@ public bool|IResolvable SetSubjectKeyId { get; set; }
 
 Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#set_subject_key_id LocallySignedCert#set_subject_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#set_subject_key_id LocallySignedCert#set_subject_key_id}
 
 ---
 

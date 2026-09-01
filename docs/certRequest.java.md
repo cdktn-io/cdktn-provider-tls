@@ -4,7 +4,7 @@
 
 ### CertRequest <a name="CertRequest" id="@cdktn/provider-tls.certRequest.CertRequest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request tls_cert_request}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request tls_cert_request}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.certRequest.CertRequest.Initializer"></a>
 
@@ -19,9 +19,11 @@ CertRequest.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-    .privateKeyPem(java.lang.String)
 //  .dnsNames(java.util.List<java.lang.String>)
 //  .ipAddresses(java.util.List<java.lang.String>)
+//  .privateKeyPem(java.lang.String)
+//  .privateKeyPemWo(java.lang.String)
+//  .privateKeyPemWoVersion(java.lang.Number)
 //  .subject(IResolvable|java.util.List<CertRequestSubject>)
 //  .uris(java.util.List<java.lang.String>)
     .build();
@@ -38,9 +40,11 @@ CertRequest.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.privateKeyPem">privateKeyPem</a></code> | <code>java.lang.String</code> | Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.dnsNames">dnsNames</a></code> | <code>java.util.List<java.lang.String></code> | List of DNS names for which a certificate is being requested (i.e. certificate subjects). |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.ipAddresses">ipAddresses</a></code> | <code>java.util.List<java.lang.String></code> | List of IP addresses for which a certificate is being requested (i.e. certificate subjects). |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.privateKeyPem">privateKeyPem</a></code> | <code>java.lang.String</code> | Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. Exactly one of `private_key_pem` or `private_key_pem_wo` must be set. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.privateKeyPemWo">privateKeyPemWo</a></code> | <code>java.lang.String</code> | Write-only private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. Unlike `private_key_pem`, the value provided here is never persisted to Terraform state. Requires `private_key_pem_wo_version` to be set, and exactly one of `private_key_pem` or `private_key_pem_wo` must be set. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.privateKeyPemWoVersion">privateKeyPemWoVersion</a></code> | <code>java.lang.Number</code> | The version of the `private_key_pem_wo` write-only private key. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.subject">subject</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>></code> | subject block. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.uris">uris</a></code> | <code>java.util.List<java.lang.String></code> | List of URIs for which a certificate is being requested (i.e. certificate subjects). |
 
@@ -106,23 +110,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `privateKeyPem`<sup>Required</sup> <a name="privateKeyPem" id="@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.privateKeyPem"></a>
-
-- *Type:* java.lang.String
-
-Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#private_key_pem CertRequest#private_key_pem}
-
----
-
 ##### `dnsNames`<sup>Optional</sup> <a name="dnsNames" id="@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.dnsNames"></a>
 
 - *Type:* java.util.List<java.lang.String>
 
 List of DNS names for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#dns_names CertRequest#dns_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#dns_names CertRequest#dns_names}
 
 ---
 
@@ -132,7 +126,39 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of IP addresses for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#ip_addresses CertRequest#ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#ip_addresses CertRequest#ip_addresses}
+
+---
+
+##### `privateKeyPem`<sup>Optional</sup> <a name="privateKeyPem" id="@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.privateKeyPem"></a>
+
+- *Type:* java.lang.String
+
+Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. Exactly one of `private_key_pem` or `private_key_pem_wo` must be set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#private_key_pem CertRequest#private_key_pem}
+
+---
+
+##### `privateKeyPemWo`<sup>Optional</sup> <a name="privateKeyPemWo" id="@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.privateKeyPemWo"></a>
+
+- *Type:* java.lang.String
+
+Write-only private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. Unlike `private_key_pem`, the value provided here is never persisted to Terraform state. Requires `private_key_pem_wo_version` to be set, and exactly one of `private_key_pem` or `private_key_pem_wo` must be set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#private_key_pem_wo CertRequest#private_key_pem_wo}
+
+---
+
+##### `privateKeyPemWoVersion`<sup>Optional</sup> <a name="privateKeyPemWoVersion" id="@cdktn/provider-tls.certRequest.CertRequest.Initializer.parameter.privateKeyPemWoVersion"></a>
+
+- *Type:* java.lang.Number
+
+The version of the `private_key_pem_wo` write-only private key.
+
+Because the write-only key is not stored in state, this version is the only signal the provider has that the key changed: increment it to force the certificate request to be re-issued when rotating the key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#private_key_pem_wo_version CertRequest#private_key_pem_wo_version}
 
 ---
 
@@ -142,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 subject block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#subject CertRequest#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#subject CertRequest#subject}
 
 ---
 
@@ -152,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of URIs for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#uris CertRequest#uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#uris CertRequest#uris}
 
 ---
 
@@ -187,6 +213,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.putSubject">putSubject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.resetDnsNames">resetDnsNames</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.resetIpAddresses">resetIpAddresses</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.resetPrivateKeyPem">resetPrivateKeyPem</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.resetPrivateKeyPemWo">resetPrivateKeyPemWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.resetPrivateKeyPemWoVersion">resetPrivateKeyPemWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.resetSubject">resetSubject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.resetUris">resetUris</a></code> | *No description.* |
 
@@ -527,6 +556,24 @@ public void resetDnsNames()
 public void resetIpAddresses()
 ```
 
+##### `resetPrivateKeyPem` <a name="resetPrivateKeyPem" id="@cdktn/provider-tls.certRequest.CertRequest.resetPrivateKeyPem"></a>
+
+```java
+public void resetPrivateKeyPem()
+```
+
+##### `resetPrivateKeyPemWo` <a name="resetPrivateKeyPemWo" id="@cdktn/provider-tls.certRequest.CertRequest.resetPrivateKeyPemWo"></a>
+
+```java
+public void resetPrivateKeyPemWo()
+```
+
+##### `resetPrivateKeyPemWoVersion` <a name="resetPrivateKeyPemWoVersion" id="@cdktn/provider-tls.certRequest.CertRequest.resetPrivateKeyPemWoVersion"></a>
+
+```java
+public void resetPrivateKeyPemWoVersion()
+```
+
 ##### `resetSubject` <a name="resetSubject" id="@cdktn/provider-tls.certRequest.CertRequest.resetSubject"></a>
 
 ```java
@@ -642,7 +689,7 @@ The construct id used in the generated config for the CertRequest to import.
 
 The id of the existing CertRequest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,11 +726,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.dnsNamesInput">dnsNamesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.ipAddressesInput">ipAddressesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPemInput">privateKeyPemInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPemWoInput">privateKeyPemWoInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPemWoVersionInput">privateKeyPemWoVersionInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.subjectInput">subjectInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.urisInput">urisInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.dnsNames">dnsNames</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.ipAddresses">ipAddresses</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPem">privateKeyPem</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPemWo">privateKeyPemWo</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPemWoVersion">privateKeyPemWoVersion</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequest.property.uris">uris</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 
 ---
@@ -900,6 +951,26 @@ public java.lang.String getPrivateKeyPemInput();
 
 ---
 
+##### `privateKeyPemWoInput`<sup>Optional</sup> <a name="privateKeyPemWoInput" id="@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPemWoInput"></a>
+
+```java
+public java.lang.String getPrivateKeyPemWoInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `privateKeyPemWoVersionInput`<sup>Optional</sup> <a name="privateKeyPemWoVersionInput" id="@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPemWoVersionInput"></a>
+
+```java
+public java.lang.Number getPrivateKeyPemWoVersionInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `subjectInput`<sup>Optional</sup> <a name="subjectInput" id="@cdktn/provider-tls.certRequest.CertRequest.property.subjectInput"></a>
 
 ```java
@@ -950,6 +1021,28 @@ public java.lang.String getPrivateKeyPem();
 
 ---
 
+##### ~~`privateKeyPemWo`~~<sup>Required</sup> <a name="privateKeyPemWo" id="@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPemWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```java
+public java.lang.String getPrivateKeyPemWo();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `privateKeyPemWoVersion`<sup>Required</sup> <a name="privateKeyPemWoVersion" id="@cdktn/provider-tls.certRequest.CertRequest.property.privateKeyPemWoVersion"></a>
+
+```java
+public java.lang.Number getPrivateKeyPemWoVersion();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `uris`<sup>Required</sup> <a name="uris" id="@cdktn/provider-tls.certRequest.CertRequest.property.uris"></a>
 
 ```java
@@ -995,9 +1088,11 @@ CertRequestConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-    .privateKeyPem(java.lang.String)
 //  .dnsNames(java.util.List<java.lang.String>)
 //  .ipAddresses(java.util.List<java.lang.String>)
+//  .privateKeyPem(java.lang.String)
+//  .privateKeyPemWo(java.lang.String)
+//  .privateKeyPemWoVersion(java.lang.Number)
 //  .subject(IResolvable|java.util.List<CertRequestSubject>)
 //  .uris(java.util.List<java.lang.String>)
     .build();
@@ -1014,9 +1109,11 @@ CertRequestConfig.builder()
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.privateKeyPem">privateKeyPem</a></code> | <code>java.lang.String</code> | Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.dnsNames">dnsNames</a></code> | <code>java.util.List<java.lang.String></code> | List of DNS names for which a certificate is being requested (i.e. certificate subjects). |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.ipAddresses">ipAddresses</a></code> | <code>java.util.List<java.lang.String></code> | List of IP addresses for which a certificate is being requested (i.e. certificate subjects). |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.privateKeyPem">privateKeyPem</a></code> | <code>java.lang.String</code> | Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. Exactly one of `private_key_pem` or `private_key_pem_wo` must be set. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.privateKeyPemWo">privateKeyPemWo</a></code> | <code>java.lang.String</code> | Write-only private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. Unlike `private_key_pem`, the value provided here is never persisted to Terraform state. Requires `private_key_pem_wo_version` to be set, and exactly one of `private_key_pem` or `private_key_pem_wo` must be set. |
+| <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.privateKeyPemWoVersion">privateKeyPemWoVersion</a></code> | <code>java.lang.Number</code> | The version of the `private_key_pem_wo` write-only private key. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.subject">subject</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-tls.certRequest.CertRequestSubject">CertRequestSubject</a>></code> | subject block. |
 | <code><a href="#@cdktn/provider-tls.certRequest.CertRequestConfig.property.uris">uris</a></code> | <code>java.util.List<java.lang.String></code> | List of URIs for which a certificate is being requested (i.e. certificate subjects). |
 
@@ -1092,20 +1189,6 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `privateKeyPem`<sup>Required</sup> <a name="privateKeyPem" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.privateKeyPem"></a>
-
-```java
-public java.lang.String getPrivateKeyPem();
-```
-
-- *Type:* java.lang.String
-
-Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#private_key_pem CertRequest#private_key_pem}
-
----
-
 ##### `dnsNames`<sup>Optional</sup> <a name="dnsNames" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.dnsNames"></a>
 
 ```java
@@ -1116,7 +1199,7 @@ public java.util.List<java.lang.String> getDnsNames();
 
 List of DNS names for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#dns_names CertRequest#dns_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#dns_names CertRequest#dns_names}
 
 ---
 
@@ -1130,7 +1213,51 @@ public java.util.List<java.lang.String> getIpAddresses();
 
 List of IP addresses for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#ip_addresses CertRequest#ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#ip_addresses CertRequest#ip_addresses}
+
+---
+
+##### `privateKeyPem`<sup>Optional</sup> <a name="privateKeyPem" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.privateKeyPem"></a>
+
+```java
+public java.lang.String getPrivateKeyPem();
+```
+
+- *Type:* java.lang.String
+
+Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. Exactly one of `private_key_pem` or `private_key_pem_wo` must be set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#private_key_pem CertRequest#private_key_pem}
+
+---
+
+##### `privateKeyPemWo`<sup>Optional</sup> <a name="privateKeyPemWo" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.privateKeyPemWo"></a>
+
+```java
+public java.lang.String getPrivateKeyPemWo();
+```
+
+- *Type:* java.lang.String
+
+Write-only private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. Unlike `private_key_pem`, the value provided here is never persisted to Terraform state. Requires `private_key_pem_wo_version` to be set, and exactly one of `private_key_pem` or `private_key_pem_wo` must be set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#private_key_pem_wo CertRequest#private_key_pem_wo}
+
+---
+
+##### `privateKeyPemWoVersion`<sup>Optional</sup> <a name="privateKeyPemWoVersion" id="@cdktn/provider-tls.certRequest.CertRequestConfig.property.privateKeyPemWoVersion"></a>
+
+```java
+public java.lang.Number getPrivateKeyPemWoVersion();
+```
+
+- *Type:* java.lang.Number
+
+The version of the `private_key_pem_wo` write-only private key.
+
+Because the write-only key is not stored in state, this version is the only signal the provider has that the key changed: increment it to force the certificate request to be re-issued when rotating the key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#private_key_pem_wo_version CertRequest#private_key_pem_wo_version}
 
 ---
 
@@ -1144,7 +1271,7 @@ public IResolvable|java.util.List<CertRequestSubject> getSubject();
 
 subject block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#subject CertRequest#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#subject CertRequest#subject}
 
 ---
 
@@ -1158,7 +1285,7 @@ public java.util.List<java.lang.String> getUris();
 
 List of URIs for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#uris CertRequest#uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#uris CertRequest#uris}
 
 ---
 
@@ -1210,7 +1337,7 @@ public java.lang.String getCommonName();
 
 Distinguished name: `CN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#common_name CertRequest#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#common_name CertRequest#common_name}
 
 ---
 
@@ -1224,7 +1351,7 @@ public java.lang.String getCountry();
 
 Distinguished name: `C`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#country CertRequest#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#country CertRequest#country}
 
 ---
 
@@ -1238,7 +1365,7 @@ public java.lang.String getEmailAddress();
 
 ASN.1 Object Identifier (OID): `1.2.840.113549.1.9.1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#email_address CertRequest#email_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#email_address CertRequest#email_address}
 
 ---
 
@@ -1252,7 +1379,7 @@ public java.lang.String getLocality();
 
 Distinguished name: `L`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#locality CertRequest#locality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#locality CertRequest#locality}
 
 ---
 
@@ -1266,7 +1393,7 @@ public java.lang.String getOrganization();
 
 Distinguished name: `O`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#organization CertRequest#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#organization CertRequest#organization}
 
 ---
 
@@ -1280,7 +1407,7 @@ public java.lang.String getOrganizationalUnit();
 
 Distinguished name: `OU`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#organizational_unit CertRequest#organizational_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#organizational_unit CertRequest#organizational_unit}
 
 ---
 
@@ -1294,7 +1421,7 @@ public java.lang.String getPostalCode();
 
 Distinguished name: `PC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#postal_code CertRequest#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#postal_code CertRequest#postal_code}
 
 ---
 
@@ -1308,7 +1435,7 @@ public java.lang.String getProvince();
 
 Distinguished name: `ST`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#province CertRequest#province}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#province CertRequest#province}
 
 ---
 
@@ -1322,7 +1449,7 @@ public java.lang.String getSerialNumber();
 
 Distinguished name: `SERIALNUMBER`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#serial_number CertRequest#serial_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#serial_number CertRequest#serial_number}
 
 ---
 
@@ -1336,7 +1463,7 @@ public java.util.List<java.lang.String> getStreetAddress();
 
 Distinguished name: `STREET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/cert_request#street_address CertRequest#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/cert_request#street_address CertRequest#street_address}
 
 ---
 
