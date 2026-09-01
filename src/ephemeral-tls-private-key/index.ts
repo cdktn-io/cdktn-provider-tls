@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/ephemeral-resources/private_key
+// https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/ephemeral-resources/private_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface EphemeralTlsPrivateKeyConfig extends cdktn.TerraformEphemeralMe
   /**
   * Name of the algorithm to use when generating the private key. Currently-supported values are: `RSA`, `ECDSA`, `ED25519`. 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/ephemeral-resources/private_key#algorithm EphemeralTlsPrivateKey#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/ephemeral-resources/private_key#algorithm EphemeralTlsPrivateKey#algorithm}
   */
   readonly algorithm: string;
   /**
   * When `algorithm` is `ECDSA`, the name of the elliptic curve to use. Currently-supported values are: `P224`, `P256`, `P384`, `P521`. (default: `P224`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/ephemeral-resources/private_key#ecdsa_curve EphemeralTlsPrivateKey#ecdsa_curve}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/ephemeral-resources/private_key#ecdsa_curve EphemeralTlsPrivateKey#ecdsa_curve}
   */
   readonly ecdsaCurve?: string;
   /**
   * When `algorithm` is `RSA`, the size of the generated RSA key, in bits (default: `2048`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/ephemeral-resources/private_key#rsa_bits EphemeralTlsPrivateKey#rsa_bits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/ephemeral-resources/private_key#rsa_bits EphemeralTlsPrivateKey#rsa_bits}
   */
   readonly rsaBits?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/ephemeral-resources/private_key tls_private_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/ephemeral-resources/private_key tls_private_key}
 */
 export class EphemeralTlsPrivateKey extends cdktn.TerraformEphemeralResource {
 
@@ -47,7 +47,7 @@ export class EphemeralTlsPrivateKey extends cdktn.TerraformEphemeralResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/ephemeral-resources/private_key tls_private_key} Ephemeral Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/ephemeral-resources/private_key tls_private_key} Ephemeral Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +58,7 @@ export class EphemeralTlsPrivateKey extends cdktn.TerraformEphemeralResource {
       terraformResourceType: 'tls_private_key',
       terraformGeneratorMetadata: {
         providerName: 'tls',
-        providerVersion: '4.3.0',
+        providerVersion: '4.4.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
