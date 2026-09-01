@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert
+// https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,61 +15,73 @@ export interface LocallySignedCertConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of key usages allowed for the issued certificate. Values are defined in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280) and combine flags defined by both [Key Usages](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3) and [Extended Key Usages](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12). Accepted values: `any_extended`, `cert_signing`, `client_auth`, `code_signing`, `content_commitment`, `crl_signing`, `data_encipherment`, `decipher_only`, `digital_signature`, `email_protection`, `encipher_only`, `ipsec_end_system`, `ipsec_tunnel`, `ipsec_user`, `key_agreement`, `key_encipherment`, `microsoft_commercial_code_signing`, `microsoft_kernel_code_signing`, `microsoft_server_gated_crypto`, `netscape_server_gated_crypto`, `ocsp_signing`, `server_auth`, `timestamping`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#allowed_uses LocallySignedCert#allowed_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#allowed_uses LocallySignedCert#allowed_uses}
   */
   readonly allowedUses: string[];
   /**
   * Certificate data of the Certificate Authority (CA) in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#ca_cert_pem LocallySignedCert#ca_cert_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#ca_cert_pem LocallySignedCert#ca_cert_pem}
   */
   readonly caCertPem: string;
   /**
-  * Private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format.
+  * Private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. Exactly one of `ca_private_key_pem` or `ca_private_key_pem_wo` must be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#ca_private_key_pem LocallySignedCert#ca_private_key_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#ca_private_key_pem LocallySignedCert#ca_private_key_pem}
   */
-  readonly caPrivateKeyPem: string;
+  readonly caPrivateKeyPem?: string;
+  /**
+  * Write-only private key of the Certificate Authority (CA) used to sign the certificate, in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format. Unlike `ca_private_key_pem`, the value provided here is never persisted to Terraform state. Requires `ca_private_key_pem_wo_version` to be set, and exactly one of `ca_private_key_pem` or `ca_private_key_pem_wo` must be set.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#ca_private_key_pem_wo LocallySignedCert#ca_private_key_pem_wo}
+  */
+  readonly caPrivateKeyPemWo?: string;
+  /**
+  * The version of the `ca_private_key_pem_wo` write-only private key. Because the write-only key is not stored in state, this version is the only signal the provider has that the key changed: increment it to force the certificate to be re-issued when rotating the CA key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#ca_private_key_pem_wo_version LocallySignedCert#ca_private_key_pem_wo_version}
+  */
+  readonly caPrivateKeyPemWoVersion?: number;
   /**
   * Certificate request data in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#cert_request_pem LocallySignedCert#cert_request_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#cert_request_pem LocallySignedCert#cert_request_pem}
   */
   readonly certRequestPem: string;
   /**
   * The resource will consider the certificate to have expired the given number of hours before its actual expiry time. This can be useful to deploy an updated certificate in advance of the expiration of the current certificate. However, the old certificate remains valid until its true expiration time, since this resource does not (and cannot) support certificate revocation. Also, this advance update can only be performed should the Terraform configuration be applied during the early renewal period. (default: `0`)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#early_renewal_hours LocallySignedCert#early_renewal_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#early_renewal_hours LocallySignedCert#early_renewal_hours}
   */
   readonly earlyRenewalHours?: number;
   /**
   * Is the generated certificate representing a Certificate Authority (CA) (default: `false`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#is_ca_certificate LocallySignedCert#is_ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#is_ca_certificate LocallySignedCert#is_ca_certificate}
   */
   readonly isCaCertificate?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of intermediate certificates that may follow this certificate in a valid certification path. If `is_ca_certificate` is `false`, this value is ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#max_path_length LocallySignedCert#max_path_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#max_path_length LocallySignedCert#max_path_length}
   */
   readonly maxPathLength?: number;
   /**
   * Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#set_subject_key_id LocallySignedCert#set_subject_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#set_subject_key_id LocallySignedCert#set_subject_key_id}
   */
   readonly setSubjectKeyId?: boolean | cdktn.IResolvable;
   /**
   * Number of hours, after initial issuing, that the certificate will remain valid for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#validity_period_hours LocallySignedCert#validity_period_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#validity_period_hours LocallySignedCert#validity_period_hours}
   */
   readonly validityPeriodHours: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert tls_locally_signed_cert}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert tls_locally_signed_cert}
 */
 export class LocallySignedCert extends cdktn.TerraformResource {
 
@@ -85,7 +97,7 @@ export class LocallySignedCert extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LocallySignedCert resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LocallySignedCert to import
-  * @param importFromId The id of the existing LocallySignedCert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LocallySignedCert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LocallySignedCert to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +109,7 @@ export class LocallySignedCert extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.3.0/docs/resources/locally_signed_cert tls_locally_signed_cert} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/locally_signed_cert tls_locally_signed_cert} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +120,7 @@ export class LocallySignedCert extends cdktn.TerraformResource {
       terraformResourceType: 'tls_locally_signed_cert',
       terraformGeneratorMetadata: {
         providerName: 'tls',
-        providerVersion: '4.3.0',
+        providerVersion: '4.4.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -122,6 +134,8 @@ export class LocallySignedCert extends cdktn.TerraformResource {
     this._allowedUses = config.allowedUses;
     this._caCertPem = config.caCertPem;
     this._caPrivateKeyPem = config.caPrivateKeyPem;
+    this._caPrivateKeyPemWo = config.caPrivateKeyPemWo;
+    this._caPrivateKeyPemWoVersion = config.caPrivateKeyPemWoVersion;
     this._certRequestPem = config.certRequestPem;
     this._earlyRenewalHours = config.earlyRenewalHours;
     this._isCaCertificate = config.isCaCertificate;
@@ -165,7 +179,7 @@ export class LocallySignedCert extends cdktn.TerraformResource {
     return this.getStringAttribute('ca_key_algorithm');
   }
 
-  // ca_private_key_pem - computed: false, optional: false, required: true
+  // ca_private_key_pem - computed: false, optional: true, required: false
   private _caPrivateKeyPem?: string; 
   public get caPrivateKeyPem() {
     return this.getStringAttribute('ca_private_key_pem');
@@ -173,9 +187,47 @@ export class LocallySignedCert extends cdktn.TerraformResource {
   public set caPrivateKeyPem(value: string) {
     this._caPrivateKeyPem = value;
   }
+  public resetCaPrivateKeyPem() {
+    this._caPrivateKeyPem = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get caPrivateKeyPemInput() {
     return this._caPrivateKeyPem;
+  }
+
+  // ca_private_key_pem_wo - computed: false, optional: true, required: false
+  private _caPrivateKeyPemWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get caPrivateKeyPemWo() {
+    return this.getStringAttribute('ca_private_key_pem_wo');
+  }
+  public set caPrivateKeyPemWo(value: string) {
+    this._caPrivateKeyPemWo = value;
+  }
+  public resetCaPrivateKeyPemWo() {
+    this._caPrivateKeyPemWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get caPrivateKeyPemWoInput() {
+    return this._caPrivateKeyPemWo;
+  }
+
+  // ca_private_key_pem_wo_version - computed: false, optional: true, required: false
+  private _caPrivateKeyPemWoVersion?: number; 
+  public get caPrivateKeyPemWoVersion() {
+    return this.getNumberAttribute('ca_private_key_pem_wo_version');
+  }
+  public set caPrivateKeyPemWoVersion(value: number) {
+    this._caPrivateKeyPemWoVersion = value;
+  }
+  public resetCaPrivateKeyPemWoVersion() {
+    this._caPrivateKeyPemWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get caPrivateKeyPemWoVersionInput() {
+    return this._caPrivateKeyPemWoVersion;
   }
 
   // cert_pem - computed: true, optional: false, required: false
@@ -302,6 +354,8 @@ export class LocallySignedCert extends cdktn.TerraformResource {
       allowed_uses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedUses),
       ca_cert_pem: cdktn.stringToTerraform(this._caCertPem),
       ca_private_key_pem: cdktn.stringToTerraform(this._caPrivateKeyPem),
+      ca_private_key_pem_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._caPrivateKeyPemWo)),
+      ca_private_key_pem_wo_version: cdktn.numberToTerraform(this._caPrivateKeyPemWoVersion),
       cert_request_pem: cdktn.stringToTerraform(this._certRequestPem),
       early_renewal_hours: cdktn.numberToTerraform(this._earlyRenewalHours),
       is_ca_certificate: cdktn.booleanToTerraform(this._isCaCertificate),
@@ -330,6 +384,18 @@ export class LocallySignedCert extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      ca_private_key_pem_wo: {
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._caPrivateKeyPemWo)),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ca_private_key_pem_wo_version: {
+        value: cdktn.numberToHclTerraform(this._caPrivateKeyPemWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       cert_request_pem: {
         value: cdktn.stringToHclTerraform(this._certRequestPem),
