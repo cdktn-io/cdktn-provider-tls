@@ -4,7 +4,7 @@
 
 ### SelfSignedCert <a name="SelfSignedCert" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert tls_self_signed_cert}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert tls_self_signed_cert}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.selfSignedCert.SelfSignedCert.Initializer"></a>
 
@@ -132,7 +132,7 @@ List of key usages allowed for the issued certificate.
 
 Values are defined in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280) and combine flags defined by both [Key Usages](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3) and [Extended Key Usages](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12). Accepted values: `any_extended`, `cert_signing`, `client_auth`, `code_signing`, `content_commitment`, `crl_signing`, `data_encipherment`, `decipher_only`, `digital_signature`, `email_protection`, `encipher_only`, `ipsec_end_system`, `ipsec_tunnel`, `ipsec_user`, `key_agreement`, `key_encipherment`, `microsoft_commercial_code_signing`, `microsoft_kernel_code_signing`, `microsoft_server_gated_crypto`, `netscape_server_gated_crypto`, `ocsp_signing`, `server_auth`, `timestamping`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#allowed_uses SelfSignedCert#allowed_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#allowed_uses SelfSignedCert#allowed_uses}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Number of hours, after initial issuing, that the certificate will remain valid for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#validity_period_hours SelfSignedCert#validity_period_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#validity_period_hours SelfSignedCert#validity_period_hours}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of DNS names for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#dns_names SelfSignedCert#dns_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#dns_names SelfSignedCert#dns_names}
 
 ---
 
@@ -164,7 +164,7 @@ The resource will consider the certificate to have expired the given number of h
 
 This can be useful to deploy an updated certificate in advance of the expiration of the current certificate. However, the old certificate remains valid until its true expiration time, since this resource does not (and cannot) support certificate revocation. Also, this advance update can only be performed should the Terraform configuration be applied during the early renewal period. (default: `0`)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#early_renewal_hours SelfSignedCert#early_renewal_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#early_renewal_hours SelfSignedCert#early_renewal_hours}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of IP addresses for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#ip_addresses SelfSignedCert#ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#ip_addresses SelfSignedCert#ip_addresses}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Is the generated certificate representing a Certificate Authority (CA) (default: `false`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#is_ca_certificate SelfSignedCert#is_ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#is_ca_certificate SelfSignedCert#is_ca_certificate}
 
 ---
 
@@ -196,7 +196,7 @@ Maximum number of intermediate certificates that may follow this certificate in 
 
 If `is_ca_certificate` is `false`, this value is ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#max_path_length SelfSignedCert#max_path_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#max_path_length SelfSignedCert#max_path_length}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. Exactly one of `private_key_pem` or `private_key_pem_wo` must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#private_key_pem SelfSignedCert#private_key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#private_key_pem SelfSignedCert#private_key_pem}
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Write-only private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. Unlike `private_key_pem`, the value provided here is never persisted to Terraform state. Requires `private_key_pem_wo_version` to be set, and exactly one of `private_key_pem` or `private_key_pem_wo` must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#private_key_pem_wo SelfSignedCert#private_key_pem_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#private_key_pem_wo SelfSignedCert#private_key_pem_wo}
 
 ---
 
@@ -228,7 +228,7 @@ The version of the `private_key_pem_wo` write-only private key.
 
 Because the write-only key is not stored in state, this version is the only signal the provider has that the key changed: increment it to force the certificate to be re-issued when rotating the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#private_key_pem_wo_version SelfSignedCert#private_key_pem_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#private_key_pem_wo_version SelfSignedCert#private_key_pem_wo_version}
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Should the generated certificate include an [authority key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.1): for self-signed certificates this is the same value as the [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#set_authority_key_id SelfSignedCert#set_authority_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#set_authority_key_id SelfSignedCert#set_authority_key_id}
 
 ---
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#set_subject_key_id SelfSignedCert#set_subject_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#set_subject_key_id SelfSignedCert#set_subject_key_id}
 
 ---
 
@@ -258,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 subject block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#subject SelfSignedCert#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#subject SelfSignedCert#subject}
 
 ---
 
@@ -268,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of URIs for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#uris SelfSignedCert#uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#uris SelfSignedCert#uris}
 
 ---
 
@@ -814,7 +814,7 @@ The construct id used in the generated config for the SelfSignedCert to import.
 
 The id of the existing SelfSignedCert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1527,7 +1527,7 @@ List of key usages allowed for the issued certificate.
 
 Values are defined in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280) and combine flags defined by both [Key Usages](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3) and [Extended Key Usages](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12). Accepted values: `any_extended`, `cert_signing`, `client_auth`, `code_signing`, `content_commitment`, `crl_signing`, `data_encipherment`, `decipher_only`, `digital_signature`, `email_protection`, `encipher_only`, `ipsec_end_system`, `ipsec_tunnel`, `ipsec_user`, `key_agreement`, `key_encipherment`, `microsoft_commercial_code_signing`, `microsoft_kernel_code_signing`, `microsoft_server_gated_crypto`, `netscape_server_gated_crypto`, `ocsp_signing`, `server_auth`, `timestamping`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#allowed_uses SelfSignedCert#allowed_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#allowed_uses SelfSignedCert#allowed_uses}
 
 ---
 
@@ -1541,7 +1541,7 @@ public java.lang.Number getValidityPeriodHours();
 
 Number of hours, after initial issuing, that the certificate will remain valid for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#validity_period_hours SelfSignedCert#validity_period_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#validity_period_hours SelfSignedCert#validity_period_hours}
 
 ---
 
@@ -1555,7 +1555,7 @@ public java.util.List<java.lang.String> getDnsNames();
 
 List of DNS names for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#dns_names SelfSignedCert#dns_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#dns_names SelfSignedCert#dns_names}
 
 ---
 
@@ -1571,7 +1571,7 @@ The resource will consider the certificate to have expired the given number of h
 
 This can be useful to deploy an updated certificate in advance of the expiration of the current certificate. However, the old certificate remains valid until its true expiration time, since this resource does not (and cannot) support certificate revocation. Also, this advance update can only be performed should the Terraform configuration be applied during the early renewal period. (default: `0`)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#early_renewal_hours SelfSignedCert#early_renewal_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#early_renewal_hours SelfSignedCert#early_renewal_hours}
 
 ---
 
@@ -1585,7 +1585,7 @@ public java.util.List<java.lang.String> getIpAddresses();
 
 List of IP addresses for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#ip_addresses SelfSignedCert#ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#ip_addresses SelfSignedCert#ip_addresses}
 
 ---
 
@@ -1599,7 +1599,7 @@ public java.lang.Boolean|IResolvable getIsCaCertificate();
 
 Is the generated certificate representing a Certificate Authority (CA) (default: `false`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#is_ca_certificate SelfSignedCert#is_ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#is_ca_certificate SelfSignedCert#is_ca_certificate}
 
 ---
 
@@ -1615,7 +1615,7 @@ Maximum number of intermediate certificates that may follow this certificate in 
 
 If `is_ca_certificate` is `false`, this value is ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#max_path_length SelfSignedCert#max_path_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#max_path_length SelfSignedCert#max_path_length}
 
 ---
 
@@ -1629,7 +1629,7 @@ public java.lang.String getPrivateKeyPem();
 
 Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. Exactly one of `private_key_pem` or `private_key_pem_wo` must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#private_key_pem SelfSignedCert#private_key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#private_key_pem SelfSignedCert#private_key_pem}
 
 ---
 
@@ -1643,7 +1643,7 @@ public java.lang.String getPrivateKeyPemWo();
 
 Write-only private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. Unlike `private_key_pem`, the value provided here is never persisted to Terraform state. Requires `private_key_pem_wo_version` to be set, and exactly one of `private_key_pem` or `private_key_pem_wo` must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#private_key_pem_wo SelfSignedCert#private_key_pem_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#private_key_pem_wo SelfSignedCert#private_key_pem_wo}
 
 ---
 
@@ -1659,7 +1659,7 @@ The version of the `private_key_pem_wo` write-only private key.
 
 Because the write-only key is not stored in state, this version is the only signal the provider has that the key changed: increment it to force the certificate to be re-issued when rotating the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#private_key_pem_wo_version SelfSignedCert#private_key_pem_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#private_key_pem_wo_version SelfSignedCert#private_key_pem_wo_version}
 
 ---
 
@@ -1673,7 +1673,7 @@ public java.lang.Boolean|IResolvable getSetAuthorityKeyId();
 
 Should the generated certificate include an [authority key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.1): for self-signed certificates this is the same value as the [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#set_authority_key_id SelfSignedCert#set_authority_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#set_authority_key_id SelfSignedCert#set_authority_key_id}
 
 ---
 
@@ -1687,7 +1687,7 @@ public java.lang.Boolean|IResolvable getSetSubjectKeyId();
 
 Should the generated certificate include a [subject key identifier](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.2) (default: `false`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#set_subject_key_id SelfSignedCert#set_subject_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#set_subject_key_id SelfSignedCert#set_subject_key_id}
 
 ---
 
@@ -1701,7 +1701,7 @@ public IResolvable|java.util.List<SelfSignedCertSubject> getSubject();
 
 subject block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#subject SelfSignedCert#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#subject SelfSignedCert#subject}
 
 ---
 
@@ -1715,7 +1715,7 @@ public java.util.List<java.lang.String> getUris();
 
 List of URIs for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#uris SelfSignedCert#uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#uris SelfSignedCert#uris}
 
 ---
 
@@ -1767,7 +1767,7 @@ public java.lang.String getCommonName();
 
 Distinguished name: `CN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#common_name SelfSignedCert#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#common_name SelfSignedCert#common_name}
 
 ---
 
@@ -1781,7 +1781,7 @@ public java.lang.String getCountry();
 
 Distinguished name: `C`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#country SelfSignedCert#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#country SelfSignedCert#country}
 
 ---
 
@@ -1795,7 +1795,7 @@ public java.lang.String getEmailAddress();
 
 ASN.1 Object Identifier (OID): `1.2.840.113549.1.9.1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#email_address SelfSignedCert#email_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#email_address SelfSignedCert#email_address}
 
 ---
 
@@ -1809,7 +1809,7 @@ public java.lang.String getLocality();
 
 Distinguished name: `L`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#locality SelfSignedCert#locality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#locality SelfSignedCert#locality}
 
 ---
 
@@ -1823,7 +1823,7 @@ public java.lang.String getOrganization();
 
 Distinguished name: `O`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#organization SelfSignedCert#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#organization SelfSignedCert#organization}
 
 ---
 
@@ -1837,7 +1837,7 @@ public java.lang.String getOrganizationalUnit();
 
 Distinguished name: `OU`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#organizational_unit SelfSignedCert#organizational_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#organizational_unit SelfSignedCert#organizational_unit}
 
 ---
 
@@ -1851,7 +1851,7 @@ public java.lang.String getPostalCode();
 
 Distinguished name: `PC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#postal_code SelfSignedCert#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#postal_code SelfSignedCert#postal_code}
 
 ---
 
@@ -1865,7 +1865,7 @@ public java.lang.String getProvince();
 
 Distinguished name: `ST`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#province SelfSignedCert#province}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#province SelfSignedCert#province}
 
 ---
 
@@ -1879,7 +1879,7 @@ public java.lang.String getSerialNumber();
 
 Distinguished name: `SERIALNUMBER`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#serial_number SelfSignedCert#serial_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#serial_number SelfSignedCert#serial_number}
 
 ---
 
@@ -1893,7 +1893,7 @@ public java.util.List<java.lang.String> getStreetAddress();
 
 Distinguished name: `STREET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.0/docs/resources/self_signed_cert#street_address SelfSignedCert#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/self_signed_cert#street_address SelfSignedCert#street_address}
 
 ---
 
