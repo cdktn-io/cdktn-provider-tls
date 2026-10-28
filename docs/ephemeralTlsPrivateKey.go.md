@@ -4,12 +4,12 @@
 
 ### EphemeralTlsPrivateKey <a name="EphemeralTlsPrivateKey" id="@cdktn/provider-tls.ephemeralTlsPrivateKey.EphemeralTlsPrivateKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/private_key tls_private_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/private_key tls_private_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.ephemeralTlsPrivateKey.EphemeralTlsPrivateKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlsprivatekey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/ephemeraltlsprivatekey"
 
 ephemeraltlsprivatekey.NewEphemeralTlsPrivateKey(scope Construct, id *string, config EphemeralTlsPrivateKeyConfig) EphemeralTlsPrivateKey
 ```
@@ -309,7 +309,7 @@ func ResetRsaBits()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-tls.ephemeralTlsPrivateKey.EphemeralTlsPrivateKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlsprivatekey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/ephemeraltlsprivatekey"
 
 ephemeraltlsprivatekey.EphemeralTlsPrivateKey_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-tls.ephemeralTlsPrivateKey.EphemeralTlsPrivateKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlsprivatekey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/ephemeraltlsprivatekey"
 
 ephemeraltlsprivatekey.EphemeralTlsPrivateKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ ephemeraltlsprivatekey.EphemeralTlsPrivateKey_IsTerraformElement(x interface{}) 
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-tls.ephemeralTlsPrivateKey.EphemeralTlsPrivateKey.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlsprivatekey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/ephemeraltlsprivatekey"
 
 ephemeraltlsprivatekey.EphemeralTlsPrivateKey_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-tls.ephemeralTlsPrivateKey.EphemeralTlsPrivateKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlsprivatekey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/ephemeraltlsprivatekey"
 
 &ephemeraltlsprivatekey.EphemeralTlsPrivateKeyConfig {
 	Count: interface{},
@@ -764,7 +764,7 @@ Algorithm *string
 
 Name of the algorithm to use when generating the private key. Currently-supported values are: `RSA`, `ECDSA`, `ED25519`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/private_key#algorithm EphemeralTlsPrivateKey#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/private_key#algorithm EphemeralTlsPrivateKey#algorithm}
 
 ---
 
@@ -780,7 +780,7 @@ When `algorithm` is `ECDSA`, the name of the elliptic curve to use.
 
 Currently-supported values are: `P224`, `P256`, `P384`, `P521`. (default: `P224`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/private_key#ecdsa_curve EphemeralTlsPrivateKey#ecdsa_curve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/private_key#ecdsa_curve EphemeralTlsPrivateKey#ecdsa_curve}
 
 ---
 
@@ -794,7 +794,7 @@ RsaBits *f64
 
 When `algorithm` is `RSA`, the size of the generated RSA key, in bits (default: `2048`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/private_key#rsa_bits EphemeralTlsPrivateKey#rsa_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/private_key#rsa_bits EphemeralTlsPrivateKey#rsa_bits}
 
 ---
 

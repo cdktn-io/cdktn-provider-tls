@@ -4,12 +4,12 @@
 
 ### PrivateKey <a name="PrivateKey" id="@cdktn/provider-tls.privateKey.PrivateKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/private_key tls_private_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/private_key tls_private_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.privateKey.PrivateKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/privatekey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/privatekey"
 
 privatekey.NewPrivateKey(scope Construct, id *string, config PrivateKeyConfig) PrivateKey
 ```
@@ -414,7 +414,7 @@ func ResetRsaBits()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-tls.privateKey.PrivateKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/privatekey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/privatekey"
 
 privatekey.PrivateKey_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-tls.privateKey.PrivateKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/privatekey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/privatekey"
 
 privatekey.PrivateKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ privatekey.PrivateKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-tls.privateKey.PrivateKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/privatekey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/privatekey"
 
 privatekey.PrivateKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ privatekey.PrivateKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-tls.privateKey.PrivateKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/privatekey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/privatekey"
 
 privatekey.PrivateKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the PrivateKey to import.
 
 The id of the existing PrivateKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/private_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/private_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-tls.privateKey.PrivateKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/privatekey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/privatekey"
 
 &privatekey.PrivateKeyConfig {
 	Connection: interface{},
@@ -970,7 +970,7 @@ Algorithm *string
 
 Name of the algorithm to use when generating the private key. Currently-supported values are: `RSA`, `ECDSA`, `ED25519`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/private_key#algorithm PrivateKey#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/private_key#algorithm PrivateKey#algorithm}
 
 ---
 
@@ -986,7 +986,7 @@ When `algorithm` is `ECDSA`, the name of the elliptic curve to use.
 
 Currently-supported values are: `P224`, `P256`, `P384`, `P521`. (default: `P224`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/private_key#ecdsa_curve PrivateKey#ecdsa_curve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/private_key#ecdsa_curve PrivateKey#ecdsa_curve}
 
 ---
 
@@ -1000,7 +1000,7 @@ RsaBits *f64
 
 When `algorithm` is `RSA`, the size of the generated RSA key, in bits (default: `2048`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/private_key#rsa_bits PrivateKey#rsa_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/private_key#rsa_bits PrivateKey#rsa_bits}
 
 ---
 

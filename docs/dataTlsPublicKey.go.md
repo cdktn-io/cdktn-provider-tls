@@ -4,12 +4,12 @@
 
 ### DataTlsPublicKey <a name="DataTlsPublicKey" id="@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/data-sources/public_key tls_public_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/data-sources/public_key tls_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/datatlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/datatlspublickey"
 
 datatlspublickey.NewDataTlsPublicKey(scope Construct, id *string, config DataTlsPublicKeyConfig) DataTlsPublicKey
 ```
@@ -312,7 +312,7 @@ func ResetPrivateKeyPem()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/datatlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/datatlspublickey"
 
 datatlspublickey.DataTlsPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/datatlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/datatlspublickey"
 
 datatlspublickey.DataTlsPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datatlspublickey.DataTlsPublicKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/datatlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/datatlspublickey"
 
 datatlspublickey.DataTlsPublicKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datatlspublickey.DataTlsPublicKey_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/datatlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/datatlspublickey"
 
 datatlspublickey.DataTlsPublicKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataTlsPublicKey to import
 
 The id of the existing DataTlsPublicKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/data-sources/public_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/data-sources/public_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-tls.dataTlsPublicKey.DataTlsPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/datatlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/datatlspublickey"
 
 &datatlspublickey.DataTlsPublicKeyConfig {
 	Connection: interface{},
@@ -800,7 +800,7 @@ PrivateKeyOpenssh *string
 
 The private key (in  [OpenSSH PEM (RFC 4716)](https://datatracker.ietf.org/doc/html/rfc4716) format) to extract the public key from. This is _mutually exclusive_ with `private_key_pem`. Currently-supported algorithms for keys are: `RSA`, `ECDSA`, `ED25519`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/data-sources/public_key#private_key_openssh DataTlsPublicKey#private_key_openssh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/data-sources/public_key#private_key_openssh DataTlsPublicKey#private_key_openssh}
 
 ---
 
@@ -814,7 +814,7 @@ PrivateKeyPem *string
 
 The private key (in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format) to extract the public key from. This is _mutually exclusive_ with `private_key_openssh`. Currently-supported algorithms for keys are: `RSA`, `ECDSA`, `ED25519`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/data-sources/public_key#private_key_pem DataTlsPublicKey#private_key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/data-sources/public_key#private_key_pem DataTlsPublicKey#private_key_pem}
 
 ---
 
