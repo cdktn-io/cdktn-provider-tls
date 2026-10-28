@@ -4,12 +4,12 @@
 
 ### CertRequest <a name="CertRequest" id="@cdktn/provider-tls.certRequest.CertRequest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request tls_cert_request}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request tls_cert_request}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.certRequest.CertRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/certrequest"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/certrequest"
 
 certrequest.NewCertRequest(scope Construct, id *string, config CertRequestConfig) CertRequest
 ```
@@ -462,7 +462,7 @@ func ResetUris()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-tls.certRequest.CertRequest.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/certrequest"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/certrequest"
 
 certrequest.CertRequest_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-tls.certRequest.CertRequest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/certrequest"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/certrequest"
 
 certrequest.CertRequest_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ certrequest.CertRequest_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-tls.certRequest.CertRequest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/certrequest"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/certrequest"
 
 certrequest.CertRequest_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ certrequest.CertRequest_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-tls.certRequest.CertRequest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/certrequest"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/certrequest"
 
 certrequest.CertRequest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -551,7 +551,7 @@ The construct id used in the generated config for the CertRequest to import.
 
 The id of the existing CertRequest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -940,7 +940,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-tls.certRequest.CertRequestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/certrequest"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/certrequest"
 
 &certrequest.CertRequestConfig {
 	Connection: interface{},
@@ -1061,7 +1061,7 @@ DnsNames *[]*string
 
 List of DNS names for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#dns_names CertRequest#dns_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#dns_names CertRequest#dns_names}
 
 ---
 
@@ -1075,7 +1075,7 @@ IpAddresses *[]*string
 
 List of IP addresses for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#ip_addresses CertRequest#ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#ip_addresses CertRequest#ip_addresses}
 
 ---
 
@@ -1089,7 +1089,7 @@ PrivateKeyPem *string
 
 Private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. This can be read from a separate file using the [`file`](https://www.terraform.io/language/functions/file) interpolation function. Exactly one of `private_key_pem` or `private_key_pem_wo` must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#private_key_pem CertRequest#private_key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#private_key_pem CertRequest#private_key_pem}
 
 ---
 
@@ -1103,7 +1103,7 @@ PrivateKeyPemWo *string
 
 Write-only private key in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format, that the certificate will belong to. Unlike `private_key_pem`, the value provided here is never persisted to Terraform state. Requires `private_key_pem_wo_version` to be set, and exactly one of `private_key_pem` or `private_key_pem_wo` must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#private_key_pem_wo CertRequest#private_key_pem_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#private_key_pem_wo CertRequest#private_key_pem_wo}
 
 ---
 
@@ -1119,7 +1119,7 @@ The version of the `private_key_pem_wo` write-only private key.
 
 Because the write-only key is not stored in state, this version is the only signal the provider has that the key changed: increment it to force the certificate request to be re-issued when rotating the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#private_key_pem_wo_version CertRequest#private_key_pem_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#private_key_pem_wo_version CertRequest#private_key_pem_wo_version}
 
 ---
 
@@ -1133,7 +1133,7 @@ Subject interface{}
 
 subject block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#subject CertRequest#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#subject CertRequest#subject}
 
 ---
 
@@ -1147,7 +1147,7 @@ Uris *[]*string
 
 List of URIs for which a certificate is being requested (i.e. certificate subjects).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#uris CertRequest#uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#uris CertRequest#uris}
 
 ---
 
@@ -1156,7 +1156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-tls.certRequest.CertRequestSubject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/certrequest"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/certrequest"
 
 &certrequest.CertRequestSubject {
 	CommonName: *string,
@@ -1199,7 +1199,7 @@ CommonName *string
 
 Distinguished name: `CN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#common_name CertRequest#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#common_name CertRequest#common_name}
 
 ---
 
@@ -1213,7 +1213,7 @@ Country *string
 
 Distinguished name: `C`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#country CertRequest#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#country CertRequest#country}
 
 ---
 
@@ -1227,7 +1227,7 @@ EmailAddress *string
 
 ASN.1 Object Identifier (OID): `1.2.840.113549.1.9.1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#email_address CertRequest#email_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#email_address CertRequest#email_address}
 
 ---
 
@@ -1241,7 +1241,7 @@ Locality *string
 
 Distinguished name: `L`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#locality CertRequest#locality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#locality CertRequest#locality}
 
 ---
 
@@ -1255,7 +1255,7 @@ Organization *string
 
 Distinguished name: `O`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#organization CertRequest#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#organization CertRequest#organization}
 
 ---
 
@@ -1269,7 +1269,7 @@ OrganizationalUnit *string
 
 Distinguished name: `OU`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#organizational_unit CertRequest#organizational_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#organizational_unit CertRequest#organizational_unit}
 
 ---
 
@@ -1283,7 +1283,7 @@ PostalCode *string
 
 Distinguished name: `PC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#postal_code CertRequest#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#postal_code CertRequest#postal_code}
 
 ---
 
@@ -1297,7 +1297,7 @@ Province *string
 
 Distinguished name: `ST`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#province CertRequest#province}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#province CertRequest#province}
 
 ---
 
@@ -1311,7 +1311,7 @@ SerialNumber *string
 
 Distinguished name: `SERIALNUMBER`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#serial_number CertRequest#serial_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#serial_number CertRequest#serial_number}
 
 ---
 
@@ -1325,7 +1325,7 @@ StreetAddress *[]*string
 
 Distinguished name: `STREET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/resources/cert_request#street_address CertRequest#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/resources/cert_request#street_address CertRequest#street_address}
 
 ---
 
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.certRequest.CertRequestSubjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/certrequest"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/certrequest"
 
 certrequest.NewCertRequestSubjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertRequestSubjectList
 ```
@@ -1496,7 +1496,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.certRequest.CertRequestSubjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/certrequest"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/certrequest"
 
 certrequest.NewCertRequestSubjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertRequestSubjectOutputReference
 ```

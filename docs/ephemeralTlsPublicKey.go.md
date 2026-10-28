@@ -4,12 +4,12 @@
 
 ### EphemeralTlsPublicKey <a name="EphemeralTlsPublicKey" id="@cdktn/provider-tls.ephemeralTlsPublicKey.EphemeralTlsPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/public_key tls_public_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/public_key tls_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-tls.ephemeralTlsPublicKey.EphemeralTlsPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/ephemeraltlspublickey"
 
 ephemeraltlspublickey.NewEphemeralTlsPublicKey(scope Construct, id *string, config EphemeralTlsPublicKeyConfig) EphemeralTlsPublicKey
 ```
@@ -309,7 +309,7 @@ func ResetPrivateKeyPem()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-tls.ephemeralTlsPublicKey.EphemeralTlsPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/ephemeraltlspublickey"
 
 ephemeraltlspublickey.EphemeralTlsPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-tls.ephemeralTlsPublicKey.EphemeralTlsPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/ephemeraltlspublickey"
 
 ephemeraltlspublickey.EphemeralTlsPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ ephemeraltlspublickey.EphemeralTlsPublicKey_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-tls.ephemeralTlsPublicKey.EphemeralTlsPublicKey.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/ephemeraltlspublickey"
 
 ephemeraltlspublickey.EphemeralTlsPublicKey_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-tls.ephemeralTlsPublicKey.EphemeralTlsPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v14/ephemeraltlspublickey"
+import "github.com/cdktn-io/cdktn-provider-tls-go/tls/v15/ephemeraltlspublickey"
 
 &ephemeraltlspublickey.EphemeralTlsPublicKeyConfig {
 	Count: interface{},
@@ -729,7 +729,7 @@ PrivateKeyOpenssh *string
 
 The private key (in  [OpenSSH PEM (RFC 4716)](https://datatracker.ietf.org/doc/html/rfc4716) format) to extract the public key from. This is _mutually exclusive_ with `private_key_pem`. Currently-supported algorithms for keys are: `RSA`, `ECDSA`, `ED25519`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/public_key#private_key_openssh EphemeralTlsPublicKey#private_key_openssh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/public_key#private_key_openssh EphemeralTlsPublicKey#private_key_openssh}
 
 ---
 
@@ -743,7 +743,7 @@ PrivateKeyPem *string
 
 The private key (in [PEM (RFC 1421)](https://datatracker.ietf.org/doc/html/rfc1421) format) to extract the public key from. This is _mutually exclusive_ with `private_key_openssh`. Currently-supported algorithms for keys are: `RSA`, `ECDSA`, `ED25519`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.1/docs/ephemeral-resources/public_key#private_key_pem EphemeralTlsPublicKey#private_key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tls/4.4.2/docs/ephemeral-resources/public_key#private_key_pem EphemeralTlsPublicKey#private_key_pem}
 
 ---
 
